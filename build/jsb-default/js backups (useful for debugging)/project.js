@@ -12,18 +12,729 @@ throw new Error("Cannot find module '" + a + "'");
 }
 a = c;
 }
-var u = o[a] = {
+var d = o[a] = {
 exports: {}
 };
-e[a][0].call(u.exports, function(t) {
+e[a][0].call(d.exports, function(t) {
 return i(e[a][1][t] || t);
-}, u, u.exports, t, e, o, n);
+}, d, d.exports, t, e, o, n);
 }
 return o[a].exports;
 }
 for (var r = "function" == typeof __require && __require, a = 0; a < n.length; a++) i(n[a]);
 return i;
 }({
+ATAndroidBannerJS: [ function(t, e, o) {
+"use strict";
+cc._RF.push(e, "605f1PDXJhOza9UfeFOGtJm", "ATAndroidBannerJS");
+var n = "com/anythink/cocosjs/ATBannerJSBridge", i = i || {
+loadBanner: function(t, e) {
+cc.log("Android-loadBanner:" + e);
+jsb.reflection.callStaticMethod(n, "load", "(Ljava/lang/String;Ljava/lang/String;)V", t, e);
+},
+setAdListener: function(t) {
+cc.log("Android-setAdListener");
+jsb.reflection.callStaticMethod(n, "setAdListener", "(Ljava/lang/String;)V", t);
+},
+hasAdReady: function(t) {
+cc.log("Android-hasAdReady");
+return jsb.reflection.callStaticMethod(n, "isAdReady", "(Ljava/lang/String;)Z", t);
+},
+showAdInPosistion: function(t, e) {
+cc.log("Android-showAdInPosistion");
+jsb.reflection.callStaticMethod(n, "showWithPostion", "(Ljava/lang/String;Ljava/lang/String;)V", t, e);
+},
+showAdInRectangle: function(t, e) {
+cc.log("Android-showAdInRectangle");
+jsb.reflection.callStaticMethod(n, "showWithRect", "(Ljava/lang/String;Ljava/lang/String;)V", t, e);
+},
+rewoveAd: function(t) {
+cc.log("Android-rewoveAd");
+jsb.reflection.callStaticMethod(n, "remove", "(Ljava/lang/String;)V", t);
+},
+reShowAd: function(t) {
+cc.log("Android-reShowAd");
+jsb.reflection.callStaticMethod(n, "reshow", "(Ljava/lang/String;)V", t);
+},
+hideAd: function(t) {
+cc.log("Android-hideAd");
+jsb.reflection.callStaticMethod(n, "hide", "(Ljava/lang/String;)V", t);
+}
+};
+e.exports = i;
+cc._RF.pop();
+}, {} ],
+ATAndroidInterstitialJS: [ function(t, e, o) {
+"use strict";
+cc._RF.push(e, "abc0crmB4lG14Lb2AHMMA/7", "ATAndroidInterstitialJS");
+var n = "com/anythink/cocosjs/ATInterstitialJSBridge", i = i || {
+loadInterstitial: function(t) {
+cc.log("Android-loadInterstitial");
+jsb.reflection.callStaticMethod(n, "load", "(Ljava/lang/String;)V", t);
+},
+setAdListener: function(t) {
+cc.log("Android-setAdListener");
+jsb.reflection.callStaticMethod(n, "setAdListener", "(Ljava/lang/String;)V", t);
+},
+hasAdReady: function(t) {
+cc.log("Android-hasAdReady");
+return jsb.reflection.callStaticMethod(n, "isAdReady", "(Ljava/lang/String;)Z", t);
+},
+showAd: function(t) {
+cc.log("Android-showAd:" + t);
+jsb.reflection.callStaticMethod(n, "show", "(Ljava/lang/String;)V", t);
+},
+showAdInScenario: function(t, e) {
+cc.log("Android-showAdInScenario:" + t + "---" + e);
+jsb.reflection.callStaticMethod(n, "show", "(Ljava/lang/String;Ljava/lang/String;)V", t, e);
+}
+};
+e.exports = i;
+cc._RF.pop();
+}, {} ],
+ATAndroidJS: [ function(t, e, o) {
+"use strict";
+cc._RF.push(e, "d41e4p4ko9I44l3fEjYo0eQ", "ATAndroidJS");
+var n = "com/anythink/cocosjs/ATJSBridge", i = i || {
+printJsLog: function(t) {
+void 0 != t && null != t && jsb.reflection.callStaticMethod("android/util/Log", "i", "(Ljava/lang/String;Ljava/lang/String;)I", "AT-Cocos-JS", t);
+},
+initSDK: function(t, e) {
+jsb.reflection.callStaticMethod(n, "initSDK", "(Ljava/lang/String;Ljava/lang/String;)V", t, e);
+},
+initCustomMap: function(t) {
+jsb.reflection.callStaticMethod(n, "initCustomMap", "(Ljava/lang/String;)V", t);
+},
+setPlacementCustomMap: function(t, e) {
+jsb.reflection.callStaticMethod(n, "setPlacementCustomMap", "(Ljava/lang/String;Ljava/lang/String;)V", t, e);
+},
+setGDPRLevel: function(t) {
+jsb.reflection.callStaticMethod(n, "setGDPRLevel", "(I)V", t);
+},
+getGDPRLevel: function() {
+return jsb.reflection.callStaticMethod(n, "getGDPRLevel", "()I");
+},
+getUserLocation: function(t) {
+jsb.reflection.callStaticMethod(n, "getUserLocation", "(Ljava/lang/String;)V", t);
+},
+showGDPRAuth: function() {
+jsb.reflection.callStaticMethod(n, "showGDPRAuth", "()V");
+},
+setLogDebug: function(t) {
+jsb.reflection.callStaticMethod(n, "setLogDebug", "(Z)V", t);
+}
+};
+e.exports = i;
+cc._RF.pop();
+}, {} ],
+ATAndroidNativeJS: [ function(t, e, o) {
+"use strict";
+cc._RF.push(e, "f6cafvJ9ZhP660O5tpX6Kf7", "ATAndroidNativeJS");
+var n = "com/anythink/cocosjs/ATNativeJSBridge", i = i || {
+loadNative: function(t, e) {
+cc.log("Android-loadNative");
+jsb.reflection.callStaticMethod(n, "load", "(Ljava/lang/String;Ljava/lang/String;)V", t, e);
+},
+setAdListener: function(t) {
+cc.log("Android-setAdListener");
+jsb.reflection.callStaticMethod(n, "setAdListener", "(Ljava/lang/String;)V", t);
+},
+hasAdReady: function(t) {
+cc.log("Android-hasAdReady");
+return jsb.reflection.callStaticMethod(n, "isAdReady", "(Ljava/lang/String;)Z", t);
+},
+showAd: function(t, e) {
+cc.log("Android-showAd");
+jsb.reflection.callStaticMethod(n, "show", "(Ljava/lang/String;Ljava/lang/String;)V", t, e);
+},
+rewoveAd: function(t) {
+cc.log("Android-rewoveAd");
+jsb.reflection.callStaticMethod(n, "remove", "(Ljava/lang/String;)V", t);
+}
+};
+e.exports = i;
+cc._RF.pop();
+}, {} ],
+ATAndroidRewardedVideoJS: [ function(t, e, o) {
+"use strict";
+cc._RF.push(e, "86d80XErzRN/5FbSyffHIGN", "ATAndroidRewardedVideoJS");
+var n = "com/anythink/cocosjs/ATRewardedVideoJSBridge", i = i || {
+loadRewardedVideo: function(t, e) {
+cc.log("Android-loadRewardedVideo");
+jsb.reflection.callStaticMethod(n, "load", "(Ljava/lang/String;Ljava/lang/String;)V", t, e);
+},
+setAdListener: function(t) {
+cc.log("Android-setAdListener");
+jsb.reflection.callStaticMethod(n, "setAdListener", "(Ljava/lang/String;)V", t);
+},
+hasAdReady: function(t) {
+cc.log("Android-hasAdReady");
+return jsb.reflection.callStaticMethod(n, "isAdReady", "(Ljava/lang/String;)Z", t);
+},
+showAd: function(t) {
+cc.log("Android-rv_showAd:" + t);
+jsb.reflection.callStaticMethod(n, "show", "(Ljava/lang/String;)V", t);
+},
+showAdInScenario: function(t, e) {
+cc.log("Android-rv_showAdInScenario:" + t + "---" + e);
+jsb.reflection.callStaticMethod(n, "show", "(Ljava/lang/String;Ljava/lang/String;)V", t, e);
+}
+};
+e.exports = i;
+cc._RF.pop();
+}, {} ],
+ATBannerJSSDK: [ function(t, e, o) {
+"use strict";
+cc._RF.push(e, "27dbdAtJ+lEZ4gtD82v9sHp", "ATBannerJSSDK");
+var n = t("./Android/ATAndroidBannerJS"), i = t("./iOS/ATiOSBannerJS"), r = cc.sys.os === cc.sys.OS_IOS ? i : cc.sys.os === cc.sys.OS_ANDROID ? n : void 0, a = a || {
+kATBannerAdLoadingExtraBannerAdSizeStruct: "banner_ad_size_struct",
+kATBannerAdShowingPisitionTop: "top",
+kATBannerAdShowingPisitionBottom: "bottom",
+ATBannerListener: {
+developerCallback: null,
+onBannerAdLoaded: function(t) {
+null != this.developerCallback && null != this.developerCallback.onBannerAdLoaded && void 0 != this.developerCallback.onBannerAdLoaded && this.developerCallback.onBannerAdLoaded(t);
+},
+onBannerAdLoadFail: function(t, e) {
+null != this.developerCallback && null != this.developerCallback.onBannerAdLoadFail && void 0 != this.developerCallback.onBannerAdLoadFail && this.developerCallback.onBannerAdLoadFail(t, e);
+},
+onBannerAdShow: function(t, e) {
+null != this.developerCallback && null != this.developerCallback.onBannerAdShow && void 0 != this.developerCallback.onBannerAdShow && this.developerCallback.onBannerAdShow(t, e);
+},
+onBannerAdClick: function(t, e) {
+null != this.developerCallback && null != this.developerCallback.onBannerAdClick && void 0 != this.developerCallback.onBannerAdClick && this.developerCallback.onBannerAdClick(t, e);
+},
+onBannerAdAutoRefresh: function(t, e) {
+null != this.developerCallback && null != this.developerCallback.onBannerAdAutoRefresh && void 0 != this.developerCallback.onBannerAdAutoRefresh && this.developerCallback.onBannerAdAutoRefresh(t, e);
+},
+onBannerAdAutoRefreshFail: function(t, e) {
+null != this.developerCallback && null != this.developerCallback.onBannerAdAutoRefreshFail && void 0 != this.developerCallback.onBannerAdAutoRefreshFail && this.developerCallback.onBannerAdAutoRefreshFail(t, e);
+},
+onBannerAdCloseButtonTapped: function(t, e) {
+null != this.developerCallback && null != this.developerCallback.onBannerAdCloseButtonTapped && void 0 != this.developerCallback.onBannerAdCloseButtonTapped && this.developerCallback.onBannerAdCloseButtonTapped(t, e);
+}
+},
+loadBanner: function(t) {
+var e = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {};
+void 0 != r && null != r ? r.loadBanner(t, JSON.stringify(e)) : cc.log("You must run on Android or iOS.");
+},
+setAdListener: function(t) {
+var e = {};
+e[s] = "ATBannerJSSDK.ATBannerListener.onBannerAdLoaded", e[c] = "ATBannerJSSDK.ATBannerListener.onBannerAdLoadFail", 
+e[l] = "ATBannerJSSDK.ATBannerListener.onBannerAdCloseButtonTapped", e[d] = "ATBannerJSSDK.ATBannerListener.onBannerAdClick", 
+e[u] = "ATBannerJSSDK.ATBannerListener.onBannerAdShow", e[p] = "ATBannerJSSDK.ATBannerListener.onBannerAdAutoRefresh", 
+e[f] = "ATBannerJSSDK.ATBannerListener.onBannerAdAutoRefreshFail";
+void 0 != r && null != r ? r.setAdListener(JSON.stringify(e)) : cc.log("You must run on Android or iOS.");
+this.ATBannerListener.developerCallback = t;
+},
+hasAdReady: function(t) {
+if (void 0 != r && null != r) return r.hasAdReady(t);
+cc.log("You must run on Android or iOS.");
+return !1;
+},
+showAdInPosistion: function(t, e) {
+void 0 != r && null != r ? r.showAdInPosistion(t, e) : cc.log("You must run on Android or iOS.");
+},
+showAdInRectangle: function(t, e) {
+void 0 != r && null != r ? r.showAdInRectangle(t, JSON.stringify(e)) : cc.log("You must run on Android or iOS.");
+},
+rewoveAd: function(t) {
+void 0 != r && null != r ? r.rewoveAd(t) : cc.log("You must run on Android or iOS.");
+},
+reShowAd: function(t) {
+void 0 != r && null != r ? r.reShowAd(t) : cc.log("You must run on Android or iOS.");
+},
+hideAd: function(t) {
+void 0 != r && null != r ? r.hideAd(t) : cc.log("You must run on Android or iOS.");
+},
+createLoadAdSize: function(t, e) {
+var o = {};
+o.width = t;
+o.height = e;
+return o;
+},
+createShowAdRect: function(t, e, o, n) {
+var i = {};
+i.x = t;
+i.y = e;
+i.width = o;
+i.height = n;
+return i;
+}
+}, s = "BannerLoaded", c = "BannerLoadFail", l = "BannerCloseButtonTapped", d = "BannerClick", u = "BannerShow", p = "BannerRefresh", f = "BannerRefreshFail";
+window.ATBannerJSSDK = a;
+cc._RF.pop();
+}, {
+"./Android/ATAndroidBannerJS": "ATAndroidBannerJS",
+"./iOS/ATiOSBannerJS": "ATiOSBannerJS"
+} ],
+ATInterstitialJSSDK: [ function(t, e, o) {
+"use strict";
+cc._RF.push(e, "bc30ap3dBNIoIY3CJlsLa9a", "ATInterstitialJSSDK");
+var n = t("./iOS/ATiOSInterstitialJS"), i = t("./Android/ATAndroidInterstitialJS"), r = cc.sys.os === cc.sys.OS_IOS ? n : cc.sys.os === cc.sys.OS_ANDROID ? i : void 0, a = a || {
+ATInterstitialListener: {
+developerCallback: null,
+onInterstitialAdLoaded: function(t) {
+null != this.developerCallback && null != this.developerCallback.onInterstitialAdLoaded && void 0 != this.developerCallback.onInterstitialAdLoaded && this.developerCallback.onInterstitialAdLoaded(t);
+},
+onInterstitialAdLoadFail: function(t, e) {
+null != this.developerCallback && null != this.developerCallback.onInterstitialAdLoadFail && void 0 != this.developerCallback.onInterstitialAdLoadFail && this.developerCallback.onInterstitialAdLoadFail(t, e);
+},
+onInterstitialAdShow: function(t, e) {
+null != this.developerCallback && null != this.developerCallback.onInterstitialAdShow && void 0 != this.developerCallback.onInterstitialAdShow && this.developerCallback.onInterstitialAdShow(t, e);
+},
+onInterstitialAdStartPlayingVideo: function(t, e) {
+null != this.developerCallback && null != this.developerCallback.onInterstitialAdStartPlayingVideo && void 0 != this.developerCallback.onInterstitialAdStartPlayingVideo && this.developerCallback.onInterstitialAdStartPlayingVideo(t, e);
+},
+onInterstitialAdEndPlayingVideo: function(t, e) {
+null != this.developerCallback && null != this.developerCallback.onInterstitialAdEndPlayingVideo && void 0 != this.developerCallback.onInterstitialAdEndPlayingVideo && this.developerCallback.onInterstitialAdEndPlayingVideo(t, e);
+},
+onInterstitialAdFailedToPlayVideo: function(t, e) {
+null != this.developerCallback && null != this.developerCallback.onInterstitialAdFailedToPlayVideo && void 0 != this.developerCallback.onInterstitialAdFailedToPlayVideo && this.developerCallback.onInterstitialAdFailedToPlayVideo(t, e);
+},
+onInterstitialAdFailedToShow: function(t) {
+null != this.developerCallback && null != this.developerCallback.onInterstitialAdFailedToShow && void 0 != this.developerCallback.onInterstitialAdFailedToShow && this.developerCallback.onInterstitialAdFailedToShow(t);
+},
+onInterstitialAdClose: function(t, e) {
+null != this.developerCallback && null != this.developerCallback.onInterstitialAdClose && void 0 != this.developerCallback.onInterstitialAdClose && this.developerCallback.onInterstitialAdClose(t, e);
+},
+onInterstitialAdClick: function(t, e) {
+null != this.developerCallback && null != this.developerCallback.onInterstitialAdClick && void 0 != this.developerCallback.onInterstitialAdClick && this.developerCallback.onInterstitialAdClick(t, e);
+}
+},
+loadInterstitial: function(t) {
+void 0 != r && null != r ? r.loadInterstitial(t) : cc.log("You must run on Android or iOS.");
+},
+setAdListener: function(t) {
+var e = {};
+e[s] = "ATInterstitialJSSDK.ATInterstitialListener.onInterstitialAdLoaded", e[c] = "ATInterstitialJSSDK.ATInterstitialListener.onInterstitialAdLoadFail", 
+e[l] = "ATInterstitialJSSDK.ATInterstitialListener.onInterstitialAdStartPlayingVideo", 
+e[d] = "ATInterstitialJSSDK.ATInterstitialListener.onInterstitialAdEndPlayingVideo", 
+e[u] = "ATInterstitialJSSDK.ATInterstitialListener.onInterstitialAdFailedToPlayVideo", 
+e[p] = "ATInterstitialJSSDK.ATInterstitialListener.onInterstitialAdClose", e[f] = "ATInterstitialJSSDK.ATInterstitialListener.onInterstitialAdClick", 
+e[h] = "ATInterstitialJSSDK.ATInterstitialListener.onInterstitialAdShow", e[g] = "ATInterstitialJSSDK.ATInterstitialListener.onInterstitialAdFailedToShow";
+void 0 != r && null != r ? r.setAdListener(JSON.stringify(e)) : cc.log("You must run on Android or iOS.");
+this.ATInterstitialListener.developerCallback = t;
+},
+hasAdReady: function(t) {
+if (void 0 != r && null != r) return r.hasAdReady(t);
+cc.log("You must run on Android or iOS.");
+return !1;
+},
+showAd: function(t) {
+void 0 != r && null != r ? r.showAd(t) : cc.log("You must run on Android or iOS.");
+},
+showAdInScenario: function(t) {
+var e = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : "";
+void 0 != r && null != r ? r.showAdInScenario(t, e) : cc.log("You must run on Android or iOS.");
+}
+}, s = "InterstitialLoaded", c = "InterstitialLoadFail", l = "InterstitialPlayStart", d = "InterstitialPlayEnd", u = "InterstitialPlayFail", p = "InterstitialClose", f = "InterstitialClick", h = "InterstitialAdShow", g = "InterstitialAdShowFail";
+window.ATInterstitialJSSDK = a;
+cc._RF.pop();
+}, {
+"./Android/ATAndroidInterstitialJS": "ATAndroidInterstitialJS",
+"./iOS/ATiOSInterstitialJS": "ATiOSInterstitialJS"
+} ],
+ATJSSDK: [ function(t, e, o) {
+"use strict";
+cc._RF.push(e, "ac674mWNsBLUJv45yK5rg7Q", "ATJSSDK");
+var n = t("./Android/ATAndroidJS"), i = t("./iOS/ATiOSJS"), r = !1, a = cc.sys.os === cc.sys.OS_IOS ? i : cc.sys.os === cc.sys.OS_ANDROID ? n : void 0, s = s || {
+kATUserLocationUnknown: 0,
+kATUserLocationInEU: 1,
+kATUserLocationOutOfEU: 2,
+PERSONALIZED: 0,
+NONPERSONALIZED: 1,
+UNKNOWN: 2,
+ATSDKListener: {
+userLocationCallback: null,
+getUserLocationCallback: function(t) {
+void 0 != this.userLocationCallback && null != this.userLocationCallback && this.userLocationCallback(t);
+}
+},
+initSDK: function(t, e) {
+void 0 != a && null != a ? a.initSDK(t, e) : cc.log("You must run on Android or iOS.");
+},
+initCustomMap: function(t) {
+void 0 != a && null != a ? void 0 != t && null != t && a.initCustomMap(JSON.stringify(t)) : cc.log("You must run on Android or iOS.");
+},
+setPlacementCustomMap: function(t, e) {
+void 0 != a && null != a ? void 0 != e && null != e && a.setPlacementCustomMap(t, JSON.stringify(e)) : cc.log("You must run on Android or iOS.");
+},
+setGDPRLevel: function(t) {
+void 0 != a && null != a ? a.setGDPRLevel(t) : cc.log("You must run on Android or iOS.");
+},
+getGDPRLevel: function() {
+if (void 0 != a && null != a) return a.getGDPRLevel();
+cc.log("You must run on Android or iOS.");
+return this.UNKNOWN;
+},
+getUserLocation: function(t) {
+this.ATSDKListener.userLocationCallback = t;
+void 0 != a && null != a ? a.getUserLocation(c) : cc.log("You must run on Android or iOS.");
+},
+showGDPRAuth: function() {
+void 0 != a && null != a ? a.showGDPRAuth() : cc.log("You must run on Android or iOS.");
+},
+setLogDebug: function(t) {
+r = t;
+void 0 != a && null != a ? a.setLogDebug(t) : cc.log("You must run on Android or iOS.");
+},
+printLog: function(t) {
+void 0 != t && null != t && r && null != a && (void 0 != a && null != a ? a.printJsLog(t) : cc.log("You must run on Android or iOS."));
+}
+}, c = "ATJSSDK.ATSDKListener.getUserLocationCallback";
+window.ATJSSDK = s;
+cc._RF.pop();
+}, {
+"./Android/ATAndroidJS": "ATAndroidJS",
+"./iOS/ATiOSJS": "ATiOSJS"
+} ],
+ATNativeJSSDK: [ function(t, e, o) {
+"use strict";
+cc._RF.push(e, "6c52fIZK8FHiKOLn/Q0An9i", "ATNativeJSSDK");
+var n = t("./Android/ATAndroidNativeJS"), i = t("./iOS/ATiOSNativeJS"), r = cc.sys.os === cc.sys.OS_IOS ? i : cc.sys.os === cc.sys.OS_ANDROID ? n : void 0, a = a || {
+ATNativeListener: {
+developerCallback: null,
+onNativeAdLoaded: function(t) {
+null != this.developerCallback && null != this.developerCallback.onNativeAdLoaded && void 0 != this.developerCallback.onNativeAdLoaded && this.developerCallback.onNativeAdLoaded(t);
+},
+onNativeAdLoadFail: function(t, e) {
+null != this.developerCallback && null != this.developerCallback.onNativeAdLoadFail && void 0 != this.developerCallback.onNativeAdLoadFail && this.developerCallback.onNativeAdLoadFail(t, e);
+},
+onNativeAdShow: function(t, e) {
+null != this.developerCallback && null != this.developerCallback.onNativeAdShow && void 0 != this.developerCallback.onNativeAdShow && this.developerCallback.onNativeAdShow(t, e);
+},
+onNativeAdClick: function(t, e) {
+null != this.developerCallback && null != this.developerCallback.onNativeAdClick && void 0 != this.developerCallback.onNativeAdClick && this.developerCallback.onNativeAdClick(t, e);
+},
+onNativeAdVideoStart: function(t) {
+null != this.developerCallback && null != this.developerCallback.onNativeAdVideoStart && void 0 != this.developerCallback.onNativeAdVideoStart && this.developerCallback.onNativeAdVideoStart(t);
+},
+onNativeAdVideoEnd: function(t) {
+null != this.developerCallback && null != this.developerCallback.onNativeAdVideoEnd && void 0 != this.developerCallback.onNativeAdVideoEnd && this.developerCallback.onNativeAdVideoEnd(t);
+},
+onNativeAdCloseButtonTapped: function(t, e) {
+null != this.developerCallback && null != this.developerCallback.onNativeAdCloseButtonTapped && void 0 != this.developerCallback.onNativeAdCloseButtonTapped && this.developerCallback.onNativeAdCloseButtonTapped(t, e);
+}
+},
+loadNative: function(t) {
+var e = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {};
+void 0 != r && null != r ? r.loadNative(t, JSON.stringify(e)) : cc.log("You must run on Android or iOS.");
+},
+setAdListener: function(t) {
+var e = {};
+e[s] = "ATNativeJSSDK.ATNativeListener.onNativeAdLoaded", e[c] = "ATNativeJSSDK.ATNativeListener.onNativeAdLoadFail", 
+e[l] = "ATNativeJSSDK.ATNativeListener.onNativeAdCloseButtonTapped", e[d] = "ATNativeJSSDK.ATNativeListener.onNativeAdClick", 
+e[u] = "ATNativeJSSDK.ATNativeListener.onNativeAdShow", e[p] = "ATNativeJSSDK.ATNativeListener.onNativeAdVideoStart", 
+e[f] = "ATNativeJSSDK.ATNativeListener.onNativeAdVideoEnd";
+void 0 != r && null != r ? r.setAdListener(JSON.stringify(e)) : cc.log("You must run on Android or iOS.");
+this.ATNativeListener.developerCallback = t;
+},
+hasAdReady: function(t) {
+if (void 0 != r && null != r) return r.hasAdReady(t);
+cc.log("You must run on Android or iOS.");
+return !1;
+},
+showAd: function(t, e) {
+void 0 != r && null != r ? r.showAd(t, JSON.stringify(e.getAdViewProperty())) : cc.log("You must run on Android or iOS.");
+},
+rewoveAd: function(t) {
+void 0 != r && null != r ? r.rewoveAd(t) : cc.log("You must run on Android or iOS.");
+},
+createLoadAdSize: function(t, e) {
+var o = {};
+o.width = t;
+o.height = e;
+return o;
+},
+AdViewProperty: cc.Class({
+parent: null,
+appIcon: null,
+mainImage: null,
+title: null,
+desc: null,
+adLogo: null,
+cta: null,
+rating: null,
+createItemViewProperty: function(t, e, o, n, i, r, a) {
+var s = {};
+s.x = t;
+s.y = e;
+s.width = o;
+s.height = n;
+s.backgroundColor = i;
+s.textColor = r;
+s.textSize = a;
+return s;
+},
+getAdViewProperty: function() {
+var t = {};
+null != this.parent && (t.parent = this.parent);
+null != this.appIcon && (t.icon = this.appIcon);
+null != this.mainImage && (t.mainImage = this.mainImage);
+null != this.title && (t.title = this.title);
+null != this.desc && (t.desc = this.desc);
+null != this.adLogo && (t.adLogo = this.adLogo);
+null != this.cta && (t.cta = this.cta);
+null != this.rating && (t.rating = this.rating);
+return t;
+}
+})
+}, s = "NativeLoaded", c = "NativeLoadFail", l = "NativeCloseButtonTapped", d = "NativeClick", u = "NativeShow", p = "NativeVideoStart", f = "NativeVideoEnd";
+window.ATNativeJSSDK = a;
+cc._RF.pop();
+}, {
+"./Android/ATAndroidNativeJS": "ATAndroidNativeJS",
+"./iOS/ATiOSNativeJS": "ATiOSNativeJS"
+} ],
+ATRewardedVideoJSSDK: [ function(t, e, o) {
+"use strict";
+cc._RF.push(e, "8ff7dtFKRJKs5ENDmTISl8j", "ATRewardedVideoJSSDK");
+var n = t("./Android/ATAndroidRewardedVideoJS"), i = t("./iOS/ATiOSRewardedVideoJS"), r = cc.sys.os === cc.sys.OS_IOS ? i : cc.sys.os === cc.sys.OS_ANDROID ? n : void 0, a = a || {
+userIdKey: "userID",
+userDataKey: "media_ext",
+ATRewardedVideoListener: {
+developerCallback: null,
+onRewardedVideoAdLoaded: function(t) {
+null != this.developerCallback && null != this.developerCallback.onRewardedVideoAdLoaded && void 0 != this.developerCallback.onRewardedVideoAdLoaded && this.developerCallback.onRewardedVideoAdLoaded(t);
+},
+onRewardedVideoAdFailed: function(t, e) {
+null != this.developerCallback && null != this.developerCallback.onRewardedVideoAdFailed && void 0 != this.developerCallback.onRewardedVideoAdFailed && this.developerCallback.onRewardedVideoAdFailed(t, e);
+},
+onRewardedVideoAdPlayStart: function(t, e) {
+null != this.developerCallback && null != this.developerCallback.onRewardedVideoAdPlayStart && void 0 != this.developerCallback.onRewardedVideoAdPlayStart && this.developerCallback.onRewardedVideoAdPlayStart(t, e);
+},
+onRewardedVideoAdPlayEnd: function(t, e) {
+null != this.developerCallback && null != this.developerCallback.onRewardedVideoAdPlayEnd && void 0 != this.developerCallback.onRewardedVideoAdPlayEnd && this.developerCallback.onRewardedVideoAdPlayEnd(t, e);
+},
+onRewardedVideoAdPlayFailed: function(t, e, o) {
+null != this.developerCallback && null != this.developerCallback.onRewardedVideoAdPlayFailed && void 0 != this.developerCallback.onRewardedVideoAdPlayFailed && this.developerCallback.onRewardedVideoAdPlayFailed(t, e, o);
+},
+onRewardedVideoAdClosed: function(t, e) {
+null != this.developerCallback && null != this.developerCallback.onRewardedVideoAdClosed && void 0 != this.developerCallback.onRewardedVideoAdClosed && this.developerCallback.onRewardedVideoAdClosed(t, e);
+},
+onRewardedVideoAdPlayClicked: function(t, e) {
+null != this.developerCallback && null != this.developerCallback.onRewardedVideoAdPlayClicked && void 0 != this.developerCallback.onRewardedVideoAdPlayClicked && this.developerCallback.onRewardedVideoAdPlayClicked(t, e);
+},
+onReward: function(t, e) {
+null != this.developerCallback && null != this.developerCallback.onReward && void 0 != this.developerCallback.onReward && this.developerCallback.onReward(t, e);
+}
+},
+loadRewardedVideo: function(t) {
+var e = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {};
+void 0 != r && null != r ? r.loadRewardedVideo(t, JSON.stringify(e)) : cc.log("You must run on Android or iOS.");
+},
+setAdListener: function(t) {
+var e = {};
+e[s] = "ATRewardedVideoJSSDK.ATRewardedVideoListener.onRewardedVideoAdLoaded", e[c] = "ATRewardedVideoJSSDK.ATRewardedVideoListener.onRewardedVideoAdFailed", 
+e[l] = "ATRewardedVideoJSSDK.ATRewardedVideoListener.onRewardedVideoAdPlayStart", 
+e[d] = "ATRewardedVideoJSSDK.ATRewardedVideoListener.onRewardedVideoAdPlayEnd", 
+e[u] = "ATRewardedVideoJSSDK.ATRewardedVideoListener.onRewardedVideoAdPlayFailed", 
+e[p] = "ATRewardedVideoJSSDK.ATRewardedVideoListener.onRewardedVideoAdClosed", e[f] = "ATRewardedVideoJSSDK.ATRewardedVideoListener.onRewardedVideoAdPlayClicked", 
+e[h] = "ATRewardedVideoJSSDK.ATRewardedVideoListener.onReward";
+void 0 != r && null != r ? r.setAdListener(JSON.stringify(e)) : cc.log("You must run on Android or iOS.");
+this.ATRewardedVideoListener.developerCallback = t;
+},
+hasAdReady: function(t) {
+if (void 0 != r && null != r) return r.hasAdReady(t);
+cc.log("You must run on Android or iOS.");
+return !1;
+},
+showAd: function(t) {
+void 0 != r && null != r ? r.showAd(t) : cc.log("You must run on Android or iOS.");
+},
+showAdInScenario: function(t) {
+var e = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : "";
+void 0 != r && null != r ? r.showAdInScenario(t, e) : cc.log("You must run on Android or iOS.");
+}
+}, s = "RewardedVideoLoaded", c = "RewardedVideoLoadFail", l = "RewardedVideoPlayStart", d = "RewardedVideoPlayEnd", u = "RewardedVideoPlayFail", p = "RewardedVideoClose", f = "RewardedVideoClick", h = "RewardedVideoReward";
+window.ATRewardedVideoJSSDK = a;
+cc._RF.pop();
+}, {
+"./Android/ATAndroidRewardedVideoJS": "ATAndroidRewardedVideoJS",
+"./iOS/ATiOSRewardedVideoJS": "ATiOSRewardedVideoJS"
+} ],
+ATiOSBannerJS: [ function(t, e, o) {
+"use strict";
+cc._RF.push(e, "c4d951eDhdCO41Twj/Orjic", "ATiOSBannerJS");
+var n = t("ATiOSJS"), i = i || {
+loadBanner: function(t, e) {
+n.printJsLog("ATiOSBannerJS::loadBanner(" + t + ", " + e + ")");
+jsb.reflection.callStaticMethod("ATBannerAdWrapper", "loadBannerWithPlacementID:extra:", t, e);
+},
+setAdListener: function(t) {
+n.printJsLog("ATiOSBannerJS::setAdListener(" + t + ")");
+jsb.reflection.callStaticMethod("ATBannerAdWrapper", "setDelegates:", t);
+},
+hasAdReady: function(t) {
+n.printJsLog("ATiOSBannerJS::hasAdReady(" + t + ")");
+return jsb.reflection.callStaticMethod("ATBannerAdWrapper", "bannerReadyForPlacementID:", t);
+},
+showAdInPosistion: function(t, e) {
+n.printJsLog("ATiOSBannerJS::showAdInPosistion(" + t + ", " + e + ")");
+jsb.reflection.callStaticMethod("ATBannerAdWrapper", "showBannerWithPlacementID:position:", t, e);
+},
+showAdInRectangle: function(t, e) {
+n.printJsLog("ATiOSBannerJS::showAdInRectangle(" + t + ", " + e + ")");
+jsb.reflection.callStaticMethod("ATBannerAdWrapper", "showBannerWithPlacementID:rect:", t, e);
+},
+rewoveAd: function(t) {
+n.printJsLog("ATiOSBannerJS::rewoveAd(" + t + ")");
+jsb.reflection.callStaticMethod("ATBannerAdWrapper", "rewoveAd:", t);
+},
+reShowAd: function(t) {
+n.printJsLog("ATiOSBannerJS::reShowAd(" + t + ")");
+jsb.reflection.callStaticMethod("ATBannerAdWrapper", "reShowAd:", t);
+},
+hideAd: function(t) {
+n.printJsLog("ATiOSBannerJS::hideAd(" + t + ")");
+jsb.reflection.callStaticMethod("ATBannerAdWrapper", "hideAd:", t);
+}
+};
+e.exports = i;
+cc._RF.pop();
+}, {
+ATiOSJS: "ATiOSJS"
+} ],
+ATiOSInterstitialJS: [ function(t, e, o) {
+"use strict";
+cc._RF.push(e, "fe489+SD7xMGq/GJd5fr6ld", "ATiOSInterstitialJS");
+var n = t("ATiOSJS"), i = "ATInterstitialAdWrapper", r = r || {
+loadInterstitial: function(t) {
+n.printJsLog("ATiOSInterstitialJS::loadInterstitial(" + t + ")");
+jsb.reflection.callStaticMethod(i, "loadInterstitialWithPlacementID:extra:", t, null);
+},
+setAdListener: function(t) {
+n.printJsLog("ATiOSInterstitialJS::setAdListener(" + t + ")");
+jsb.reflection.callStaticMethod(i, "setDelegates:", t);
+},
+hasAdReady: function(t) {
+n.printJsLog("ATiOSInterstitialJS::hasAdReady(" + t + ")");
+return jsb.reflection.callStaticMethod(i, "interstitialReadyForPlacementID:", t);
+},
+setUserData: function(t, e, o) {
+cc.log("Android-setUserData");
+},
+showAd: function(t) {
+n.printJsLog("ATiOSInterstitialJS::showAd(" + t + ")");
+return jsb.reflection.callStaticMethod(i, "showInterstitialWithPlacementID:scene:", t, null);
+},
+showAdInScenario: function(t, e) {
+n.printJsLog("ATiOSInterstitialJS::showAd(" + t + ", " + e + ")");
+return jsb.reflection.callStaticMethod(i, "showInterstitialWithPlacementID:scene:", t, e);
+}
+};
+e.exports = r;
+cc._RF.pop();
+}, {
+ATiOSJS: "ATiOSJS"
+} ],
+ATiOSJS: [ function(t, e, o) {
+"use strict";
+cc._RF.push(e, "dc9fdyQKA1AEqs/qTXKxw8e", "ATiOSJS");
+var n = n || {
+initSDK: function(t, e) {
+this.printJsLog("ATiOSJS::initSDK(" + t + "," + e + ")");
+jsb.reflection.callStaticMethod("ATSDKManager", "startWithAppID:appKey:", t, e);
+},
+initCustomMap: function(t) {
+this.printJsLog("ATiOSJS::initCustomMap(" + t + ")");
+jsb.reflection.callStaticMethod("ATSDKManager", "setCustomData:", t);
+},
+setPlacementCustomMap: function(t, e) {
+this.printJsLog("ATiOSJS::setPlacementCustomMap(" + t + ", " + e + ")");
+jsb.reflection.callStaticMethod("ATSDKManager", "setCustomData:forPlacementID:", e, t);
+},
+setGDPRLevel: function(t) {
+this.printJsLog("ATiOSJS::setGDPRLevel(" + t + ")");
+jsb.reflection.callStaticMethod("ATSDKManager", "setDataConsent:", t);
+},
+getGDPRLevel: function() {
+this.printJsLog("ATiOSJS::getGDPRLevel()");
+return jsb.reflection.callStaticMethod("ATSDKManager", "dataConsent");
+},
+getUserLocation: function(t) {
+this.printJsLog("ATiOSJS::getUserLocation(" + t + ")");
+jsb.reflection.callStaticMethod("ATSDKManager", "getUserLocationWithCallback:", t);
+},
+showGDPRAuth: function() {
+this.printJsLog("ATiOSJS::showGDPRAuth()");
+jsb.reflection.callStaticMethod("ATSDKManager", "presentDataConsentDialog");
+},
+setLogDebug: function(t) {
+this.printJsLog("ATiOSJS::setLogDebug(" + t + ")");
+jsb.reflection.callStaticMethod("ATSDKManager", "setDebugLog:", t);
+},
+printJsLog: function(t) {
+void 0 != t && null != t && jsb.reflection.callStaticMethod("ATJSBridge", "log:", t);
+}
+};
+e.exports = n;
+cc._RF.pop();
+}, {} ],
+ATiOSNativeJS: [ function(t, e, o) {
+"use strict";
+cc._RF.push(e, "879ddiwctlO5pR+qZQ87WJh", "ATiOSNativeJS");
+var n = t("ATiOSJS"), i = i || {
+loadNative: function(t, e) {
+n.printJsLog("ATiOSBannerJS::loadNative(" + t + ", " + e + ")");
+jsb.reflection.callStaticMethod("ATNativeAdWrapper", "loadNativeWithPlacementID:extra:", t, e);
+},
+setAdListener: function(t) {
+n.printJsLog("ATiOSNativeJS::setAdListener(" + t + ")");
+jsb.reflection.callStaticMethod("ATNativeAdWrapper", "setDelegates:", t);
+},
+hasAdReady: function(t) {
+n.printJsLog("ATiOSNativeJS::hasAdReady(" + t + ")");
+return jsb.reflection.callStaticMethod("ATNativeAdWrapper", "nativeReadyForPlacementID:", t);
+},
+showAd: function(t, e) {
+n.printJsLog("ATiOSNativeJS::showAd(" + t + ", " + e + ")");
+jsb.reflection.callStaticMethod("ATNativeAdWrapper", "showNativeWithPlacementID:metrics:", t, e);
+},
+rewoveAd: function(t) {
+n.printJsLog("ATiOSNativeJS::rewoveAd(" + t + ")");
+jsb.reflection.callStaticMethod("ATNativeAdWrapper", "removeNativeWithPlacementID:", t);
+}
+};
+e.exports = i;
+cc._RF.pop();
+}, {
+ATiOSJS: "ATiOSJS"
+} ],
+ATiOSRewardedVideoJS: [ function(t, e, o) {
+"use strict";
+cc._RF.push(e, "a0e61Z+J79OzKNs0S1evcmU", "ATiOSRewardedVideoJS");
+var n = t("ATiOSJS"), i = i || {
+loadRewardedVideo: function(t, e) {
+n.printJsLog("ATiOSRewardedVideoJS::loadRewardedVideo(" + t + ", " + e + ")");
+jsb.reflection.callStaticMethod("ATRewardedVideoWrapper", "loadRewardedVideoWithPlacementID:extra:", t, e);
+},
+setAdListener: function(t) {
+n.printJsLog("ATiOSRewardedVideoJS::setAdListener(" + t + ")");
+jsb.reflection.callStaticMethod("ATRewardedVideoWrapper", "setDelegates:", t);
+},
+hasAdReady: function(t) {
+n.printJsLog("ATiOSRewardedVideoJS::hasAdReady(" + t + ")");
+return jsb.reflection.callStaticMethod("ATRewardedVideoWrapper", "rewardedVideoReadyForPlacementID:", t);
+},
+setUserData: function(t, e, o) {
+cc.log("Android-setUserData");
+},
+showAd: function(t) {
+n.printJsLog("ATiOSRewardedVideoJS::showAd(" + t + ")");
+return jsb.reflection.callStaticMethod("ATRewardedVideoWrapper", "showRewardedVideoWithPlacementID:scene:", t, null);
+},
+showAdInScenario: function(t, e) {
+n.printJsLog("ATiOSRewardedVideoJS::showAdInScenario(" + t + ", " + e + ")");
+return jsb.reflection.callStaticMethod("ATRewardedVideoWrapper", "showRewardedVideoWithPlacementID:scene:", t, e);
+}
+};
+e.exports = i;
+cc._RF.pop();
+}, {
+ATiOSJS: "ATiOSJS"
+} ],
 Actions: [ function(t, e, o) {
 "use strict";
 cc._RF.push(e, "0e349ca6ytENZGhroHTugf2", "Actions");
@@ -249,7 +960,7 @@ return;
 t.prototype.addCionMove = function(t, e, o, r, a, s) {
 void 0 === s && (s = !1);
 return n(this, void 0, Promise, function() {
-var n, c, l, u, p, d;
+var n, c, l, d, u, p;
 return i(this, function(i) {
 switch (i.label) {
 case 0:
@@ -271,10 +982,10 @@ t.getComponent("StarEnd").init();
 GPool.put(n);
 });
 l = .8 * Math.random();
-u = -200 + Math.floor(401 * Math.random());
-p = 100 + Math.floor(101 * Math.random());
-d = cc.sequence(cc.jumpTo(l, cc.v2(u, 0), p, 1), cc.spawn(cc.moveTo(.5, r).easing(cc.easeBackIn()), cc.scaleTo(.5, .8).easing(cc.easeBackIn())), c);
-n.runAction(d);
+d = -200 + Math.floor(401 * Math.random());
+u = 100 + Math.floor(101 * Math.random());
+p = cc.sequence(cc.jumpTo(l, cc.v2(d, 0), u, 1), cc.spawn(cc.moveTo(.5, r).easing(cc.easeBackIn()), cc.scaleTo(.5, .8).easing(cc.easeBackIn())), c);
+n.runAction(p);
 t.addChild(n);
 return [ 2 ];
 }
@@ -447,22 +1158,22 @@ return r > 3 && a && Object.defineProperty(e, o, a), a;
 Object.defineProperty(o, "__esModule", {
 value: !0
 });
-var r = t("./Events"), a = t("./EventConstants"), s = t("./User"), c = cc._decorator, l = c.ccclass, u = c.property, p = function() {
+var r = t("./Events"), a = t("./EventConstants"), s = t("./User"), c = cc._decorator, l = c.ccclass, d = c.property, u = function() {
 function t() {
 this.audio = null;
 this.volume = 1;
 }
-i([ u({
+i([ d({
 type: cc.AudioClip
 }) ], t.prototype, "audio", void 0);
-i([ u({
+i([ d({
 type: cc.Float,
 tooltip: "音频音量"
 }) ], t.prototype, "volume", void 0);
 return t = i([ l("Sound") ], t);
 }();
-o.Sound = p;
-var d = function(t) {
+o.Sound = u;
+var p = function(t) {
 n(e, t);
 function e() {
 var e = null !== t && t.apply(this, arguments) || this;
@@ -587,21 +1298,21 @@ this.isMute || this.bgmPlaying && this.playBGM(this.key);
 e.prototype.switchSound = function() {
 this.isSound = !this.isSound;
 };
-i([ u(p) ], e.prototype, "soundMainBgm", void 0);
-i([ u(p) ], e.prototype, "click", void 0);
-i([ u(p) ], e.prototype, "pop", void 0);
-i([ u(p) ], e.prototype, "shoot", void 0);
-i([ u(p) ], e.prototype, "settlement", void 0);
-i([ u(p) ], e.prototype, "crash", void 0);
-i([ u(p) ], e.prototype, "eliminate", void 0);
-i([ u(p) ], e.prototype, "award", void 0);
-i([ u(p) ], e.prototype, "cion", void 0);
-i([ u(p) ], e.prototype, "dingdong", void 0);
-i([ u(p) ], e.prototype, "bigwingold", void 0);
-i([ u(p) ], e.prototype, "luck", void 0);
+i([ d(u) ], e.prototype, "soundMainBgm", void 0);
+i([ d(u) ], e.prototype, "click", void 0);
+i([ d(u) ], e.prototype, "pop", void 0);
+i([ d(u) ], e.prototype, "shoot", void 0);
+i([ d(u) ], e.prototype, "settlement", void 0);
+i([ d(u) ], e.prototype, "crash", void 0);
+i([ d(u) ], e.prototype, "eliminate", void 0);
+i([ d(u) ], e.prototype, "award", void 0);
+i([ d(u) ], e.prototype, "cion", void 0);
+i([ d(u) ], e.prototype, "dingdong", void 0);
+i([ d(u) ], e.prototype, "bigwingold", void 0);
+i([ d(u) ], e.prototype, "luck", void 0);
 return e = i([ l ], e);
 }(cc.Component);
-o.default = d;
+o.default = p;
 cc._RF.pop();
 }, {
 "./EventConstants": "EventConstants",
@@ -752,7 +1463,7 @@ return r > 3 && a && Object.defineProperty(e, o, a), a;
 Object.defineProperty(o, "__esModule", {
 value: !0
 });
-var r = t("../common/EventConstants"), a = t("../common/User"), s = t("../common/Utils"), c = t("./Ball"), l = cc._decorator, u = l.ccclass, p = l.property, d = function(t) {
+var r = t("../common/EventConstants"), a = t("../common/User"), s = t("../common/Utils"), c = t("./Ball"), l = cc._decorator, d = l.ccclass, u = l.property, p = function(t) {
 n(e, t);
 function e() {
 var e = null !== t && t.apply(this, arguments) || this;
@@ -853,13 +1564,13 @@ r.GameConstant.game.shake(this.node);
 }
 }
 };
-i([ p(cc.Label) ], e.prototype, "lbScore", void 0);
-i([ p() ], e.prototype, "isAddBuffBall", void 0);
-i([ p() ], e.prototype, "isAddRed", void 0);
-i([ p() ], e.prototype, "isBigBuffBall", void 0);
-return e = i([ u ], e);
+i([ u(cc.Label) ], e.prototype, "lbScore", void 0);
+i([ u() ], e.prototype, "isAddBuffBall", void 0);
+i([ u() ], e.prototype, "isAddRed", void 0);
+i([ u() ], e.prototype, "isBigBuffBall", void 0);
+return e = i([ d ], e);
 }(cc.Component);
-o.default = d;
+o.default = p;
 cc._RF.pop();
 }, {
 "../common/EventConstants": "EventConstants",
@@ -1085,12 +1796,12 @@ e = null;
 a += 1;
 i += (c - 128) * Math.pow(64, r - a);
 if (a !== r) e = null; else {
-var l = i, u = s;
+var l = i, d = s;
 i = 0;
 r = 0;
 a = 0;
 s = 0;
-e = this.inRange(l, u, 1114111) && !this.inRange(l, 55296, 57343) ? l : this.decoderError(!1, c);
+e = this.inRange(l, d, 1114111) && !this.inRange(l, 55296, 57343) ? l : this.decoderError(!1, c);
 }
 } else {
 i = 0;
@@ -1365,7 +2076,7 @@ return r > 3 && a && Object.defineProperty(e, o, a), a;
 Object.defineProperty(o, "__esModule", {
 value: !0
 });
-var r = t("../FModel/FPanelManager"), a = t("../FModel/FGlobal"), s = t("../FNetWork/FSocketSend"), c = cc._decorator, l = c.ccclass, u = c.property, p = function(t) {
+var r = t("../FModel/FPanelManager"), a = t("../FModel/FGlobal"), s = t("../FNetWork/FSocketSend"), c = cc._decorator, l = c.ccclass, d = c.property, u = function(t) {
 n(e, t);
 function e() {
 var e = null !== t && t.apply(this, arguments) || this;
@@ -1438,14 +2149,14 @@ this.mTosScroll.scrollToTop(0);
 e.prototype.closeTos = function() {
 this.mTos.active = !1;
 };
-i([ u(cc.Label) ], e.prototype, "mPP", void 0);
-i([ u(cc.EditBox) ], e.prototype, "mEM1", void 0);
-i([ u(cc.EditBox) ], e.prototype, "mEM2", void 0);
-i([ u(cc.Node) ], e.prototype, "mTos", void 0);
-i([ u(cc.ScrollView) ], e.prototype, "mTosScroll", void 0);
+i([ d(cc.Label) ], e.prototype, "mPP", void 0);
+i([ d(cc.EditBox) ], e.prototype, "mEM1", void 0);
+i([ d(cc.EditBox) ], e.prototype, "mEM2", void 0);
+i([ d(cc.Node) ], e.prototype, "mTos", void 0);
+i([ d(cc.ScrollView) ], e.prototype, "mTosScroll", void 0);
 return e = i([ l ], e);
 }(cc.Component);
-o.FCardPage = p;
+o.FCardPage = u;
 cc._RF.pop();
 }, {
 "../FModel/FGlobal": "FGlobal",
@@ -1591,7 +2302,7 @@ done: !0
 Object.defineProperty(o, "__esModule", {
 value: !0
 });
-var s = t("../common/User"), c = t("../common/Events"), l = t("../common/EventConstants"), u = t("../common/PopupConstants"), p = cc._decorator, d = p.ccclass, f = p.property, h = function(t) {
+var s = t("../common/User"), c = t("../common/Events"), l = t("../common/EventConstants"), d = t("../common/PopupConstants"), u = cc._decorator, p = u.ccclass, f = u.property, h = function(t) {
 n(e, t);
 function e() {
 var e = null !== t && t.apply(this, arguments) || this;
@@ -1684,7 +2395,7 @@ case 3:
 n[0] = "credit";
 n[1] = s.user.getLumpData().bxCredit;
 }
-c.events.emit(l.GameEvents.SHOW_POPUP, u.PopUpName.SUPERPRIZE, null, n);
+c.events.emit(l.GameEvents.SHOW_POPUP, d.PopUpName.SUPERPRIZE, null, n);
 s.user.IsShake && FSDK.shake(50);
 return [ 2 ];
 });
@@ -1692,7 +2403,7 @@ return [ 2 ];
 }).start();
 };
 i([ f(cc.Node) ], e.prototype, "tipsLable", void 0);
-return e = i([ d ], e);
+return e = i([ p ], e);
 }(cc.Component);
 o.default = h;
 cc._RF.pop();
@@ -2137,6 +2848,31 @@ target: null
 } ],
 link: "https://www.baidu.com"
 };
+t.UMENG_CONFIG = {
+video_apply: "video_apply",
+video_load: "video_load",
+video_fail: "video_fail",
+video_show: "video_show",
+video_click: "video_click",
+video_suc: "video_suc",
+banner_apply: "banner_apply",
+banner_load: "banner_load",
+banner_fail: "banner_fail",
+banner_show: "banner_show",
+banner_click: "banner_click",
+inter_apply: "inter_apply",
+inter_load: "inter_load",
+inter_fail: "inter_fail",
+inter_show: "inter_show",
+inter_click: "inter_click",
+Redeem_pp_100: "Redeem_pp_100",
+Redeem_gp_100: "Redeem_gp_100",
+Redeem_pp_max: "Redeem_pp_max",
+Redeem_gp_max: "Redeem_gp_max",
+Redeem_coin_100000: "Redeem_coin_100000",
+Redeem_coin_225000: "Redeem_coin_225000",
+Redeem_coin_400000: "Redeem_coin_400000"
+};
 t.EMAIL_SUFFIX = [ "gamail.com", "hotmail.fr", "t-online.de", "libero.it", "yahoo.com.ph", "hotmail.com", "hotmail.fr", "live.fr", "live.com" ];
 t.conf_hash = "";
 t.conf = null;
@@ -2150,8 +2886,8 @@ zip: ""
 };
 t.LOGIN_DATA = {
 pg: "",
-ver: "9.9.9",
-ver_code: 999,
+ver: "1.0.1",
+ver_code: 101,
 sdk_int: 26,
 os_ver: "Android 6.0",
 lang: "zh_CN",
@@ -2201,7 +2937,7 @@ return r > 3 && a && Object.defineProperty(e, o, a), a;
 Object.defineProperty(o, "__esModule", {
 value: !0
 });
-var r = t("../FNetWork/FSocketSend"), a = t("../FModel/FPanelManager"), s = t("../FModel/FGlobal"), c = cc._decorator, l = c.ccclass, u = c.property, p = function(t) {
+var r = t("../FNetWork/FSocketSend"), a = t("../FModel/FPanelManager"), s = t("../FModel/FGlobal"), c = cc._decorator, l = c.ccclass, d = c.property, u = function(t) {
 n(e, t);
 function e() {
 var e = null !== t && t.apply(this, arguments) || this;
@@ -2247,13 +2983,13 @@ n.getChildByName("time").getComponent(cc.Label).string = s.FGlobal.getDateDay1(e
 } else for (o = 0; o < this.mScroll.content.childrenCount; o++) this.mScroll.content.children[o].active = !1;
 FLog.normal("历史记录 ", t);
 };
-i([ u(cc.Node) ], e.prototype, "mTitle_pp", void 0);
-i([ u(cc.Node) ], e.prototype, "mTitle_gp", void 0);
-i([ u(cc.ScrollView) ], e.prototype, "mScroll", void 0);
-i([ u(cc.Node) ], e.prototype, "mItem", void 0);
+i([ d(cc.Node) ], e.prototype, "mTitle_pp", void 0);
+i([ d(cc.Node) ], e.prototype, "mTitle_gp", void 0);
+i([ d(cc.ScrollView) ], e.prototype, "mScroll", void 0);
+i([ d(cc.Node) ], e.prototype, "mItem", void 0);
 return e = i([ l ], e);
 }(cc.Component);
-o.FCreditRecord = p;
+o.FCreditRecord = u;
 cc._RF.pop();
 }, {
 "../FModel/FGlobal": "FGlobal",
@@ -2343,6 +3079,7 @@ signDay: 0,
 isSign: 0,
 isLongSign: 0
 };
+t.ONE_UMENG = [];
 t.TASK_INFO = {};
 t.invite_task = [];
 t.setConf = function() {
@@ -2479,6 +3216,7 @@ t.setPreferences = function() {
 "AD_SHOW_CNT" in t.USER_INFO.preferences && (FNative.AD_SHOW_CNT = t.USER_INFO.preferences.AD_SHOW_CNT);
 "AD_COUNT" in t.USER_INFO.preferences && (FNative.AD_COUNT = t.USER_INFO.preferences.AD_COUNT);
 "CARD_GET" in t.USER_INFO.preferences && (t.USER_INFO.cardGet = t.USER_INFO.preferences.CARD_GET);
+"ONE_UMENG" in t.USER_INFO.preferences && (t.ONE_UMENG = t.USER_INFO.preferences);
 cc.sys.os == cc.sys.OS_IOS && (t.USER_INFO.isGrade = !0);
 };
 t.getEmail = function() {
@@ -2594,6 +3332,10 @@ type: 3,
 num: FSDK.getCreditDif()
 };
 };
+t.isOnUmeng = function(e) {
+for (var o = !1, n = 0; n < t.ONE_UMENG.length; n++) t.ONE_UMENG[n] == e && (o = !0);
+return o;
+};
 })(o.FGlobal || (o.FGlobal = {}));
 cc._RF.pop();
 }, {
@@ -2627,7 +3369,7 @@ return r > 3 && a && Object.defineProperty(e, o, a), a;
 Object.defineProperty(o, "__esModule", {
 value: !0
 });
-var r = t("../FModel/FGlobal"), a = t("../FModel/FPanelManager"), s = cc._decorator, c = s.ccclass, l = s.property, u = function(t) {
+var r = t("../FModel/FGlobal"), a = t("../FModel/FPanelManager"), s = cc._decorator, c = s.ccclass, l = s.property, d = function(t) {
 n(e, t);
 function e() {
 var e = null !== t && t.apply(this, arguments) || this;
@@ -2666,7 +3408,7 @@ a.FPanelManager.close_eff(this.node, !0);
 i([ l(cc.Node) ], e.prototype, "mStarNode", void 0);
 return e = i([ c ], e);
 }(cc.Component);
-o.FGrade = u;
+o.FGrade = d;
 cc._RF.pop();
 }, {
 "../FModel/FGlobal": "FGlobal",
@@ -2718,26 +3460,19 @@ e && t.init();
 }, this);
 };
 e.prototype.init = function() {
+this.inviteNode[0].active = !1;
+this.inviteNode[1].active = !1;
 this.ui.getChildByName("coin_3").active = !0;
-if (r.user.serverData.isBlack) {
-this.inviteNode[0].active = !1;
-this.inviteNode[1].active = !1;
-} else if (cc.sys.os == cc.sys.OS_IOS) {
-this.inviteNode[0].active = !1;
-this.inviteNode[1].active = !1;
+if (cc.sys.os == cc.sys.OS_IOS) {
 this.turnTableNode.active = !0;
 this.ui.getChildByName("coin_1").getChildByName("gp").getComponent(cc.Sprite).spriteFrame = this.icon[1];
 this.ui.getChildByName("coin_1").active = !0;
 this.ui.getChildByName("coin_2").active = !0;
-} else {
-this.inviteNode[0].active = !0;
-this.inviteNode[1].active = !0;
-if (r.user.serverData.isFlag) {
+} else if (r.user.serverData.isFlag) {
 this.ui.getChildByName("coin_1").getChildByName("gp").getComponent(cc.Sprite).spriteFrame = this.icon[0];
 this.ui.getChildByName("coin_1").active = !0;
 this.ui.getChildByName("coin_2").active = !0;
 this.turnTableNode.active = !0;
-}
 }
 this.ui.active = !0;
 };
@@ -2784,7 +3519,7 @@ return r > 3 && a && Object.defineProperty(e, o, a), a;
 Object.defineProperty(o, "__esModule", {
 value: !0
 });
-var r = t("../FModel/FGlobal"), a = t("./FInvityTaskItem"), s = t("../FNetWork/FSocketSend"), c = cc._decorator, l = c.ccclass, u = c.property, p = function(t) {
+var r = t("../FModel/FGlobal"), a = t("./FInvityTaskItem"), s = t("../FNetWork/FSocketSend"), c = cc._decorator, l = c.ccclass, d = c.property, u = function(t) {
 n(e, t);
 function e() {
 var e = null !== t && t.apply(this, arguments) || this;
@@ -2871,19 +3606,19 @@ i.getComponent(a.FInvityTaskItem).setData(n, t[n], this.node);
 e.prototype.getCode = function() {
 this.mInvityEdit.string.length > 0 ? s.FSocketSend.C2S_invited(this.mInvityEdit.string) : FSDK.showToast("Sorry, the invitation code cannot be empty");
 };
-i([ u(cc.Label) ], e.prototype, "mInviteCnt", void 0);
-i([ u(cc.Label) ], e.prototype, "mInviteCode", void 0);
-i([ u(cc.Label) ], e.prototype, "mInviteLink", void 0);
-i([ u(cc.ScrollView) ], e.prototype, "mScroll", void 0);
-i([ u(cc.Node) ], e.prototype, "mInvityItem", void 0);
-i([ u(cc.EditBox) ], e.prototype, "mInvityEdit", void 0);
-i([ u(cc.Node) ], e.prototype, "mRewardNode", void 0);
-i([ u(cc.Node) ], e.prototype, "mInviteNode", void 0);
-i([ u(cc.Node) ], e.prototype, "mMsg1", void 0);
-i([ u(cc.Node) ], e.prototype, "mMsg2", void 0);
+i([ d(cc.Label) ], e.prototype, "mInviteCnt", void 0);
+i([ d(cc.Label) ], e.prototype, "mInviteCode", void 0);
+i([ d(cc.Label) ], e.prototype, "mInviteLink", void 0);
+i([ d(cc.ScrollView) ], e.prototype, "mScroll", void 0);
+i([ d(cc.Node) ], e.prototype, "mInvityItem", void 0);
+i([ d(cc.EditBox) ], e.prototype, "mInvityEdit", void 0);
+i([ d(cc.Node) ], e.prototype, "mRewardNode", void 0);
+i([ d(cc.Node) ], e.prototype, "mInviteNode", void 0);
+i([ d(cc.Node) ], e.prototype, "mMsg1", void 0);
+i([ d(cc.Node) ], e.prototype, "mMsg2", void 0);
 return e = i([ l ], e);
 }(cc.Component);
-o.FInvityPage = p;
+o.FInvityPage = u;
 cc._RF.pop();
 }, {
 "../FModel/FGlobal": "FGlobal",
@@ -3159,6 +3894,7 @@ this.mFlagNode[1].getChildByName("label").getComponent(cc.Label).string = "$" + 
 this.mFlagNode[2].getChildByName("label").getComponent(cc.Label).string = "$" + r.FGlobal.USER_INFO.credit_gp.toFixed(2);
 this.mFlagNode[3].getChildByName("label").getComponent(cc.Label).string = "" + r.FGlobal.USER_INFO.credit;
 this.mFlagNode[4].getChildByName("label").getComponent(cc.Label).string = "" + r.FGlobal.USER_INFO.invite_count;
+this.mFlagNode[4].active = !1;
 };
 e.prototype.setData = function(t, e, o, n) {
 void 0 === o && (o = 0);
@@ -3493,6 +4229,7 @@ if (e.data) {
 n.FGlobal.USER_INFO.preferences = e.data.preferences;
 n.FGlobal.setPreferences();
 n.FGlobal.USER_INFO.invite_code = e.data.invite_code;
+cc.log("Kankan      ", e.data);
 n.FGlobal.USER_INFO.invite_count = e.data.invite_count;
 n.FGlobal.USER_INFO.be_invite = e.data.personal.invited;
 n.FGlobal.USER_INFO.login_cnt = e.data.login_cnt;
@@ -3546,6 +4283,9 @@ var e = 0;
 if (t.data) {
 e = t.data.credit - n.FGlobal.USER_INFO.credit;
 n.FGlobal.USER_INFO.credit = t.data.credit;
+n.FGlobal.USER_INFO.credit >= 1e5 && FSDK.umengEvent(FConfig.UMENG_CONFIG.Redeem_coin_100000, "1", !0);
+n.FGlobal.USER_INFO.credit >= 225e3 && FSDK.umengEvent(FConfig.UMENG_CONFIG.Redeem_coin_225000, "1", !0);
+n.FGlobal.USER_INFO.credit >= 4e5 && FSDK.umengEvent(FConfig.UMENG_CONFIG.Redeem_coin_400000, "1", !0);
 }
 var o = {
 type: "credit",
@@ -3562,13 +4302,17 @@ if (t.data) switch (t.data.name) {
 case "pp":
 e = t.data.coin - n.FGlobal.USER_INFO.credit_pp;
 n.FGlobal.USER_INFO.credit_pp = t.data.coin;
+n.FGlobal.USER_INFO.credit_pp >= 100 && FSDK.umengEvent(FConfig.UMENG_CONFIG.Redeem_pp_100, "1", !0);
 n.FGlobal.USER_INFO.cardGet.pp++;
+n.FGlobal.USER_INFO.cardGet.pp >= 497 && FSDK.umengEvent(FConfig.UMENG_CONFIG.Redeem_pp_max, "1", !0);
 break;
 
 case "gp":
 e = t.data.coin - n.FGlobal.USER_INFO.credit_gp;
 n.FGlobal.USER_INFO.credit_gp = t.data.coin;
+n.FGlobal.USER_INFO.credit_gp >= 100 && FSDK.umengEvent(FConfig.UMENG_CONFIG.Redeem_gp_100, "1", !0);
 n.FGlobal.USER_INFO.cardGet.gp++;
+n.FGlobal.USER_INFO.cardGet.gp >= 497 && FSDK.umengEvent(FConfig.UMENG_CONFIG.Redeem_gp_max, "1", !0);
 }
 var o = {
 type: t.data.name,
@@ -3800,7 +4544,10 @@ t.preloadInters = function(e) {
 cc.sys.isNative && (cc.sys.os == cc.sys.OS_ANDROID ? jsb.reflection.callStaticMethod(t.getNativeClass(), "preloadInters", "(Ljava/lang/String;)V", e) : cc.sys.os == cc.sys.OS_IOS && jsb.reflection.callStaticMethod(t.getNativeClass(), "preloadInters:", e));
 };
 t.openVideo = function() {
-cc.sys.isNative && (cc.sys.os == cc.sys.OS_ANDROID ? jsb.reflection.callStaticMethod(t.getNativeClass(), "openVideo", "()V") : cc.sys.os == cc.sys.OS_IOS && jsb.reflection.callStaticMethod(t.getNativeClass(), "openVideo:", "11"));
+if (cc.sys.isNative) if (get_simple_ad().hasReward()) {
+FSDK.showToLoad("AD Loading...");
+get_simple_ad().showReward("所有场景");
+} else t.videoFail();
 };
 t.openBanner = function(e) {
 cc.sys.isNative && (cc.sys.os == cc.sys.OS_ANDROID ? jsb.reflection.callStaticMethod(t.getNativeClass(), "openBanner", "(Ljava/lang/String;)V", e) : cc.sys.os == cc.sys.OS_IOS && jsb.reflection.callStaticMethod(t.getNativeClass(), "openBanner:", e));
@@ -3809,7 +4556,10 @@ t.closeBanner = function() {
 cc.sys.isNative && (cc.sys.os == cc.sys.OS_ANDROID ? jsb.reflection.callStaticMethod(t.getNativeClass(), "closeBanner", "()V") : cc.sys.os == cc.sys.OS_IOS && jsb.reflection.callStaticMethod(t.getNativeClass(), "closeBanner", "()V"));
 };
 t.openInters = function() {
-cc.sys.isNative && (cc.sys.os == cc.sys.OS_ANDROID ? jsb.reflection.callStaticMethod(t.getNativeClass(), "openInters", "()V") : cc.sys.os == cc.sys.OS_IOS && jsb.reflection.callStaticMethod(t.getNativeClass(), "openInters:", "11"));
+if (cc.sys.isNative) if (get_simple_ad().hasInter()) {
+FSDK.showToLoad("AD Loading...");
+get_simple_ad().showInter("所有场景");
+} else t.intersFail();
 };
 t.wxLogin = function() {
 FSDK.showToLoad("正在授权中...");
@@ -3817,6 +4567,10 @@ cc.sys.os == cc.sys.OS_ANDROID ? jsb.reflection.callStaticMethod(t.getNativeClas
 cc.sys.OS_IOS);
 };
 t.videoShow = function() {
+cc.audioEngine.setMusicVolume(0);
+cc.audioEngine.setEffectsVolume(0);
+FSDK.umengEvent(FConfig.UMENG_CONFIG.video_show, "0");
+FSDK.hideToLoad();
 FSDK.adEvent("topon", "video");
 t.AD_COUNT.video++;
 FSDK.saveData("AD_COUNT", t.AD_COUNT);
@@ -3824,13 +4578,17 @@ FSDK.umengEvent("video_show_scene", t.videoCb.from);
 FLog.normal("视频展示");
 };
 t.videoSuc = function() {
+FSDK.umengEvent(FConfig.UMENG_CONFIG.video_suc, "0");
 t.videoCb.cb && t.videoCb.target && t.videoCb.cb.call(t.videoCb.target);
 t.AD_SHOW_CNT.AD_SUC++;
 t.AD_SHOW_CNT.AD_SUC >= FConfig.FSDK_CONF.REAL_USER.ad_num && FSDK.setActiveUser();
 FSDK.saveData("AD_SHOW_CNT", t.AD_SHOW_CNT);
 FLog.normal("视频看完  ", t.AD_SHOW_CNT.AD_SUC);
+t.videoClose();
 };
 t.videoClose = function() {
+cc.audioEngine.setMusicVolume(1);
+cc.audioEngine.setEffectsVolume(1);
 if (!t.VIDEO_FRESH_TIME && FConfig.FSDK_CONF.AD_CONF.video_fresh_time) {
 t.video_fresh_time = FConfig.FSDK_CONF.AD_CONF.video_fresh_time;
 t.VIDEO_FRESH_TIME = setInterval(function() {
@@ -3843,6 +4601,7 @@ t.VIDEO_FRESH_TIME = null;
 FLog.normal("视频关闭");
 };
 t.videoFail = function() {
+FSDK.umengEvent(FConfig.UMENG_CONFIG.video_fail, "0");
 if (t.isLoad) {
 FSDK.hideToLoad();
 FSDK.showToast("Video is loading");
@@ -3856,9 +4615,11 @@ FLog.normal("视频失败");
 }
 };
 t.videoClick = function() {
+FSDK.umengEvent(FConfig.UMENG_CONFIG.video_click, "0");
 FLog.normal("视频点击");
 };
 t.intersShow = function() {
+FSDK.umengEvent(FConfig.UMENG_CONFIG.inter_show, "0");
 FSDK.adEvent("topon", "interstitial");
 t.AD_COUNT.inters++;
 t.AD_SHOW_CNT.AD_SHOW++;
@@ -3875,6 +4636,7 @@ t.INTERS_FRESH_TIME = null;
 }, 1e3));
 };
 t.intersClose = function() {
+FSDK.hideToLoad();
 t.intersCb.cb && t.intersCb.target && t.intersCb.cb.call(t.intersCb.target);
 t.inters_fresh_time = FConfig.FSDK_CONF.AD_CONF.inters_fresh_time[FSDK.getUserType()];
 t.freshInters();
@@ -3882,15 +4644,20 @@ FLog.normal("插屏关闭");
 };
 t.intersFail = function() {
 t.intersCb.cb && t.intersCb.target && t.intersCb.cb.call(t.intersCb.target);
+FSDK.umengEvent(FConfig.UMENG_CONFIG.inter_fail, "0");
+FSDK.hideToLoad();
 FLog.normal("插屏失败");
 };
 t.intersClick = function() {
+FSDK.umengEvent(FConfig.UMENG_CONFIG.inter_click, "0");
 FLog.normal("插屏点击");
 };
 t.bannerShow = function() {
+FSDK.umengEvent(FConfig.UMENG_CONFIG.banner_show, "0");
 FLog.normal("banner展示");
 };
 t.bannerClick = function() {
+FSDK.umengEvent(FConfig.UMENG_CONFIG.banner_click, "0");
 FLog.normal("banner点击");
 };
 t.wxLoginFail = function() {
@@ -3912,11 +4679,11 @@ t.intersCb = {
 cb: null,
 target: null
 };
-t.isLoad = !1;
 t.AD_SHOW_CNT = {
 AD_SHOW: 0,
 AD_SUC: 0
 };
+t.isLoad = !1;
 t.AD_COUNT = {
 video: 0,
 inters: 0
@@ -4258,7 +5025,7 @@ t.C2S_reg_login = {
 type: "C2S_reg_login",
 data: {
 pg: "",
-ver_code: 999,
+ver_code: 0,
 info: {
 pg: "",
 ver: "",
@@ -4277,6 +5044,8 @@ tz: 0,
 imsi: ""
 },
 aid: "",
+idfa: "",
+adid: "",
 network_config: [ "" ],
 conf_hash: "",
 activate: 1,
@@ -4419,7 +5188,7 @@ cc._RF.push(e, "aecfcOmfbxHJ6i0FFKQMW7+", "FSDKModel");
 Object.defineProperty(o, "__esModule", {
 value: !0
 });
-var n = t("../FNetWork/FNetWorkCtrl"), i = t("../FNetWork/FSocketSend"), r = t("../FNetWork/FLogic"), a = t("./FGlobal"), s = t("./FToLoad"), c = t("./FPanelManager"), l = t("../FView/FTaskPage"), u = t("../FView/FGrade"), p = t("../FView/FTwoCard"), d = t("../FView/FTransList"), f = t("../FView/FTransPage"), h = t("../FView/FLeft"), _ = function() {
+var n = t("../FNetWork/FNetWorkCtrl"), i = t("../FNetWork/FSocketSend"), r = t("../FNetWork/FLogic"), a = t("./FGlobal"), s = t("./FToLoad"), c = t("./FPanelManager"), l = t("../FView/FTaskPage"), d = t("../FView/FGrade"), u = t("../FView/FTwoCard"), p = t("../FView/FTransList"), f = t("../FView/FTransPage"), h = t("../FView/FLeft"), g = t("../../../SDK/script/SimpleSDK"), _ = t("../../../SDK/script/SimpleAd"), m = function() {
 function t() {}
 t.prototype.initSocket = function(t, e) {
 r.FLogic.getInstance().cbList[FEventID.S2C_reg_login] = {
@@ -4462,14 +5231,25 @@ ProtocolCode.C2S_reg_login.data.aid = FConfig.LOGIN_DATA.aid;
 ProtocolCode.C2S_reg_login.data.pg = t;
 ProtocolCode.C2S_reg_login.data.info.pg = t;
 var a = FNative.getSystemInfo() ? FNative.getSystemInfo() : FConfig.LOGIN_DATA;
-for (var s in ProtocolCode.C2S_reg_login.data) if ("info" == s) for (var c in ProtocolCode.C2S_reg_login.data.info) for (var l in a) c == l && (ProtocolCode.C2S_reg_login.data.info[c] = a[l]); else for (var u in a) s == u && (ProtocolCode.C2S_reg_login.data[s] = a[u]);
+for (var s in ProtocolCode.C2S_reg_login.data) if ("info" == s) for (var c in ProtocolCode.C2S_reg_login.data.info) for (var l in a) c == l && (ProtocolCode.C2S_reg_login.data.info[c] = a[l]); else for (var d in a) s == d && (ProtocolCode.C2S_reg_login.data[s] = a[d]);
 i.FSocketSend.C2S_reg_login();
 };
 t.prototype.setActiveUser = function() {
+FLog.normal("上报活跃   ", !a.FGlobal.USER_INFO.preferences.real);
 if (FNative.AD_SHOW_CNT.AD_SUC >= FConfig.FSDK_CONF.REAL_USER.ad_num && a.FGlobal.USER_INFO.online_total >= FConfig.FSDK_CONF.REAL_USER.online_time && !a.FGlobal.USER_INFO.preferences.real) {
 a.FGlobal.USER_INFO.preferences.real = 1;
 i.FSocketSend.C2S_preference("real", 1);
 }
+};
+t.prototype.umengEvent = function(t, e, o) {
+void 0 === o && (o = !1);
+if (o) {
+if (!a.FGlobal.isOnUmeng(t)) {
+FNative.UmengOnEvemt(t, e);
+a.FGlobal.ONE_UMENG.push(t);
+FSDK.saveData("ONE_UMENG", a.FGlobal.ONE_UMENG);
+}
+} else FNative.UmengOnEvemt(t, e);
 };
 t.prototype.saveData = function(t, e) {
 void 0 === e && (e = null);
@@ -4539,7 +5319,7 @@ e.parent = t;
 };
 t.prototype.showGrade = function(t, e, o) {
 a.FGlobal.USER_INFO.isGrade || a.FGlobal.USER_INFO.isBlack || !a.FGlobal.USER_INFO.isFlag || c.FPanelManager.load("FGrade", t, function(t) {
-t.getComponent(u.FGrade).setCb(e, o);
+t.getComponent(d.FGrade).setCb(e, o);
 });
 };
 t.prototype.showMarQuee = function(t) {
@@ -4563,6 +5343,12 @@ if (FNative.AD_COUNT.inters >= FConfig.FSDK_CONF.AD_CONF.inters_limit[FSDK.getUs
 FNative.intersCb.cb && FNative.intersCb.target && FNative.intersCb.cb.call(FNative.intersCb.target);
 FLog.normal("还有" + FNative.inters_fresh_time + "秒刷新");
 } else FNative.openInters();
+};
+t.prototype.openBanner = function(t) {
+cc.sys.isNative && get_simple_ad().showOrReShowBanner(_.default.BANNER_BOTTOM);
+};
+t.prototype.closeBanner = function() {
+cc.sys.isNative && get_simple_ad().hideBanner();
 };
 t.prototype.adEvent = function(t, e) {
 i.FSocketSend.C2S_ad_event(t, e);
@@ -4601,7 +5387,7 @@ i.FSocketSend.C2S_pg_user_cnt([ t ]);
 t.prototype.showTwoCard = function(t, e) {
 c.FPanelManager.loadPage("FTwoCard", function(o) {
 o.parent = e;
-o.getComponent(p.FTwoCard).setType(t);
+o.getComponent(u.FTwoCard).setType(t);
 }, this);
 };
 t.prototype.showTransList = function(t, e, o) {
@@ -4609,7 +5395,7 @@ void 0 === e && (e = 0);
 void 0 === o && (o = null);
 c.FPanelManager.loadPage("FTransList", function(n) {
 n.parent = t;
-n.getComponent(d.FTransList).setTask(e, o);
+n.getComponent(p.FTransList).setTask(e, o);
 }, this);
 };
 t.prototype.showTransPage = function(t, e, o, n, i, r) {
@@ -4658,11 +5444,67 @@ this.touchEndClone(e);
 t.prototype.getRandomReward = function() {
 return a.FGlobal.getRandomReward();
 };
+t.prototype.initSZSDK = function() {
+FLog.normal("有没有进来2222");
+g.default.instance();
+g.default.analytics_instance();
+g.default.ad_instance().setRewardListener(new v());
+g.default.ad_instance().setInterListener(new y());
+g.default.ad_instance().setBannerListener(new S());
+};
 return t;
 }();
-window.FSDKModel = _;
+window.FSDKModel = m;
+var v = function() {
+function t() {}
+t.prototype.onRewardedVideoAdPlayStart = function(t, e) {
+FLog.normal("demo reward play start" + t + " " + e);
+FNative.videoShow();
+};
+t.prototype.onRewardedVideoAdPlayFailed = function(t, e, o) {
+FNative.videoFail();
+FLog.normal("demo reward play fail" + t + " " + o);
+};
+t.prototype.onRewardedVideoAdClosed = function(t, e) {
+FNative.videoSuc();
+FLog.normal("demo reward close" + t + " " + e);
+};
+t.prototype.onRewardedVideoAdPlayClicked = function(t, e) {
+FNative.videoClick();
+FLog.normal("demo reward play click" + t + " " + e);
+};
+return t;
+}(), y = function() {
+function t() {}
+t.prototype.onInterstitialAdShow = function(t, e) {
+FNative.intersShow();
+FLog.normal("demo inter show" + t + " " + e);
+};
+t.prototype.onInterstitialAdClose = function(t, e) {
+FNative.intersClose();
+FLog.normal("demo inter close" + t + " " + e);
+};
+t.prototype.onInterstitialAdClick = function(t, e) {
+FNative.intersClick();
+FLog.normal("demo inter click" + t + " " + e);
+};
+return t;
+}(), S = function() {
+function t() {}
+t.prototype.onBannerAdShow = function(t, e) {
+FNative.bannerShow();
+FLog.normal("demo banner show" + t + " " + e);
+};
+t.prototype.onBannerAdClick = function(t, e) {
+FNative.bannerClick();
+FLog.normal("demo banner click" + t + " " + e);
+};
+return t;
+}();
 cc._RF.pop();
 }, {
+"../../../SDK/script/SimpleAd": "SimpleAd",
+"../../../SDK/script/SimpleSDK": "SimpleSDK",
 "../FNetWork/FLogic": "FLogic",
 "../FNetWork/FNetWorkCtrl": "FNetWorkCtrl",
 "../FNetWork/FSocketSend": "FSocketSend",
@@ -4695,6 +5537,16 @@ t.object.login(e, o, n, i);
 };
 t.setActiveUser = function() {
 t.object.setActiveUser();
+};
+t.onShow = function(t) {
+cc.game.on(cc.game.EVENT_SHOW, function() {
+t && t();
+});
+};
+t.onHide = function(t) {
+cc.game.on(cc.game.EVENT_HIDE, function() {
+t && t();
+});
 };
 t.addUserInfoListen = function(e, o) {
 t.object.addUserInfoListen(e, o);
@@ -4761,16 +5613,18 @@ t.openInters = function(e, o) {
 t.object.openInters(e, o);
 };
 t.openBanner = function() {
-FNative.openBanner(FConfig.FSDK_CONF.AD_CONF.banner);
+t.object.openBanner(FConfig.FSDK_CONF.AD_CONF.banner);
 };
 t.closeBanner = function() {
-FNative.closeBanner();
+t.object.closeBanner();
 };
 t.shake = function(t) {
 FNative.shake(t);
 };
-t.umengEvent = function(t, e) {
-FNative.UmengOnEvemt(t, e);
+t.umengEvent = function(e, o, n) {
+void 0 === n && (n = !1);
+t.object || (t.object = new window.FSDKModel());
+t.object.umengEvent(e, o, n);
 };
 t.adEvent = function(e, o) {
 t.object.adEvent(e, o);
@@ -4834,6 +5688,10 @@ t.object.setBtnSound(e);
 t.getRandomReward = function() {
 return t.object.getRandomReward();
 };
+t.initSZSDK = function() {
+t.object || (t.object = new window.FSDKModel());
+t.object.initSZSDK();
+};
 t.object = null;
 return t;
 }();
@@ -4868,7 +5726,7 @@ return r > 3 && a && Object.defineProperty(e, o, a), a;
 Object.defineProperty(o, "__esModule", {
 value: !0
 });
-var r = t("./common/User"), a = t("./common/EventConstants"), s = t("./common/Events"), c = cc._decorator, l = c.ccclass, u = c.property, p = function(t) {
+var r = t("./common/User"), a = t("./common/EventConstants"), s = t("./common/Events"), c = cc._decorator, l = c.ccclass, d = c.property, u = function(t) {
 n(e, t);
 function e() {
 var e = null !== t && t.apply(this, arguments) || this;
@@ -4905,11 +5763,11 @@ return;
 }
 }, 1);
 };
-i([ u(cc.SpriteFrame) ], e.prototype, "iconSpriteFrame", void 0);
-i([ u(cc.Node) ], e.prototype, "sidebarNode", void 0);
+i([ d(cc.SpriteFrame) ], e.prototype, "iconSpriteFrame", void 0);
+i([ d(cc.Node) ], e.prototype, "sidebarNode", void 0);
 return e = i([ l ], e);
 }(cc.Component);
-o.default = p;
+o.default = u;
 cc._RF.pop();
 }, {
 "./common/EventConstants": "EventConstants",
@@ -4944,7 +5802,7 @@ return r > 3 && a && Object.defineProperty(e, o, a), a;
 Object.defineProperty(o, "__esModule", {
 value: !0
 });
-var r = t("../FModel/FGlobal"), a = t("../FModel/FPanelManager"), s = t("./FCreditRecord"), c = cc._decorator, l = c.ccclass, u = c.property, p = function(t) {
+var r = t("../FModel/FGlobal"), a = t("../FModel/FPanelManager"), s = t("./FCreditRecord"), c = cc._decorator, l = c.ccclass, d = c.property, u = function(t) {
 n(e, t);
 function e() {
 var e = null !== t && t.apply(this, arguments) || this;
@@ -5075,22 +5933,22 @@ t.getComponent(s.FCreditRecord).setType("gp");
 e.prototype.getTrans = function() {
 FSDK.showToast("You have abnormal behaviors," + FConfig.FSDK_CONF.word.tip2 + " failed");
 };
-i([ u(cc.Label) ], e.prototype, "mTip1", void 0);
-i([ u(cc.Sprite) ], e.prototype, "mTransPro", void 0);
-i([ u(cc.Label) ], e.prototype, "mNowNum", void 0);
-i([ u(cc.Label) ], e.prototype, "mSignDay", void 0);
-i([ u(cc.Label) ], e.prototype, "mLabelPro", void 0);
-i([ u(cc.Button) ], e.prototype, "mBtnTrans", void 0);
-i([ u(cc.Node) ], e.prototype, "mSignNode", void 0);
-i([ u(cc.Node) ], e.prototype, "mProbaly", void 0);
-i([ u(cc.Button) ], e.prototype, "mCollect", void 0);
-i([ u(cc.Node) ], e.prototype, "mCard", void 0);
-i([ u(cc.Node) ], e.prototype, "mCardNode", void 0);
-i([ u(cc.Sprite) ], e.prototype, "mProbablyPro", void 0);
-i([ u(cc.Label) ], e.prototype, "mProbablyLab", void 0);
+i([ d(cc.Label) ], e.prototype, "mTip1", void 0);
+i([ d(cc.Sprite) ], e.prototype, "mTransPro", void 0);
+i([ d(cc.Label) ], e.prototype, "mNowNum", void 0);
+i([ d(cc.Label) ], e.prototype, "mSignDay", void 0);
+i([ d(cc.Label) ], e.prototype, "mLabelPro", void 0);
+i([ d(cc.Button) ], e.prototype, "mBtnTrans", void 0);
+i([ d(cc.Node) ], e.prototype, "mSignNode", void 0);
+i([ d(cc.Node) ], e.prototype, "mProbaly", void 0);
+i([ d(cc.Button) ], e.prototype, "mCollect", void 0);
+i([ d(cc.Node) ], e.prototype, "mCard", void 0);
+i([ d(cc.Node) ], e.prototype, "mCardNode", void 0);
+i([ d(cc.Sprite) ], e.prototype, "mProbablyPro", void 0);
+i([ d(cc.Label) ], e.prototype, "mProbablyLab", void 0);
 return e = i([ l ], e);
 }(cc.Component);
-o.FSignPage = p;
+o.FSignPage = u;
 cc._RF.pop();
 }, {
 "../FModel/FGlobal": "FGlobal",
@@ -5247,7 +6105,7 @@ return r > 3 && a && Object.defineProperty(e, o, a), a;
 Object.defineProperty(o, "__esModule", {
 value: !0
 });
-var r = t("./FTaskPage"), a = t("../FModel/FGlobal"), s = cc._decorator, c = s.ccclass, l = s.property, u = function(t) {
+var r = t("./FTaskPage"), a = t("../FModel/FGlobal"), s = cc._decorator, c = s.ccclass, l = s.property, d = function(t) {
 n(e, t);
 function e() {
 var e = null !== t && t.apply(this, arguments) || this;
@@ -5332,7 +6190,7 @@ i([ l(cc.Node) ], e.prototype, "mCard", void 0);
 i([ l(cc.Node) ], e.prototype, "mAl", void 0);
 return e = i([ c ], e);
 }(cc.Component);
-o.FTaskItem = u;
+o.FTaskItem = d;
 cc._RF.pop();
 }, {
 "../FModel/FGlobal": "FGlobal",
@@ -5366,7 +6224,7 @@ return r > 3 && a && Object.defineProperty(e, o, a), a;
 Object.defineProperty(o, "__esModule", {
 value: !0
 });
-var r = t("../FModel/FPanelManager"), a = t("./FCreditRecord"), s = t("../FModel/FGlobal"), c = t("./FTaskItem"), l = cc._decorator, u = l.ccclass, p = l.property, d = function(t) {
+var r = t("../FModel/FPanelManager"), a = t("./FCreditRecord"), s = t("../FModel/FGlobal"), c = t("./FTaskItem"), l = cc._decorator, d = l.ccclass, u = l.property, p = function(t) {
 n(e, t);
 function e() {
 var e = null !== t && t.apply(this, arguments) || this;
@@ -5433,17 +6291,17 @@ t.getComponent(a.FCreditRecord).setType("pp");
 e.prototype.getTrans = function() {
 FSDK.showToast("You have abnormal behaviors," + FConfig.FSDK_CONF.word.tip2 + " failed");
 };
-i([ p(cc.Label) ], e.prototype, "mTip1", void 0);
-i([ p(cc.Sprite) ], e.prototype, "mTransPro", void 0);
-i([ p(cc.Label) ], e.prototype, "mNowNum", void 0);
-i([ p(cc.Label) ], e.prototype, "mLabelPro", void 0);
-i([ p(cc.Button) ], e.prototype, "mBtnTrans", void 0);
-i([ p(cc.Node) ], e.prototype, "mItem", void 0);
-i([ p(cc.ScrollView) ], e.prototype, "mScroll", void 0);
-i([ p(cc.Node) ], e.prototype, "mCardNode", void 0);
-return e = i([ u ], e);
+i([ u(cc.Label) ], e.prototype, "mTip1", void 0);
+i([ u(cc.Sprite) ], e.prototype, "mTransPro", void 0);
+i([ u(cc.Label) ], e.prototype, "mNowNum", void 0);
+i([ u(cc.Label) ], e.prototype, "mLabelPro", void 0);
+i([ u(cc.Button) ], e.prototype, "mBtnTrans", void 0);
+i([ u(cc.Node) ], e.prototype, "mItem", void 0);
+i([ u(cc.ScrollView) ], e.prototype, "mScroll", void 0);
+i([ u(cc.Node) ], e.prototype, "mCardNode", void 0);
+return e = i([ d ], e);
 }(cc.Component);
-o.FTaskPage = d;
+o.FTaskPage = p;
 cc._RF.pop();
 }, {
 "../FModel/FGlobal": "FGlobal",
@@ -5555,7 +6413,7 @@ return r > 3 && a && Object.defineProperty(e, o, a), a;
 Object.defineProperty(o, "__esModule", {
 value: !0
 });
-var r = t("../FModel/FPanelManager"), a = t("../FModel/FGlobal"), s = cc._decorator, c = s.ccclass, l = s.property, u = function(t) {
+var r = t("../FModel/FPanelManager"), a = t("../FModel/FGlobal"), s = cc._decorator, c = s.ccclass, l = s.property, d = function(t) {
 n(e, t);
 function e() {
 var e = null !== t && t.apply(this, arguments) || this;
@@ -5698,7 +6556,7 @@ i([ l(cc.AudioSource) ], e.prototype, "mErrSound", void 0);
 i([ l(cc.Sprite) ], e.prototype, "mIcon", void 0);
 return e = i([ c ], e);
 }(cc.Component);
-o.FTransInfo = u;
+o.FTransInfo = d;
 cc._RF.pop();
 }, {
 "../FModel/FGlobal": "FGlobal",
@@ -5732,7 +6590,7 @@ return r > 3 && a && Object.defineProperty(e, o, a), a;
 Object.defineProperty(o, "__esModule", {
 value: !0
 });
-var r = t("../FModel/FPanelManager"), a = t("../FModel/FGlobal"), s = cc._decorator, c = s.ccclass, l = s.property, u = function(t) {
+var r = t("../FModel/FPanelManager"), a = t("../FModel/FGlobal"), s = cc._decorator, c = s.ccclass, l = s.property, d = function(t) {
 n(e, t);
 function e() {
 var e = null !== t && t.apply(this, arguments) || this;
@@ -5834,7 +6692,7 @@ i([ l(cc.Label) ], e.prototype, "mAmount", void 0);
 i([ l(cc.Sprite) ], e.prototype, "mIcon", void 0);
 return e = i([ c ], e);
 }(cc.Component);
-o.FTransItem = u;
+o.FTransItem = d;
 cc._RF.pop();
 }, {
 "../FModel/FGlobal": "FGlobal",
@@ -5868,7 +6726,7 @@ return r > 3 && a && Object.defineProperty(e, o, a), a;
 Object.defineProperty(o, "__esModule", {
 value: !0
 });
-var r = t("../FModel/FGlobal"), a = t("./FTransItem"), s = t("./FTransInfo"), c = t("../FNetWork/FSocketSend"), l = cc._decorator, u = l.ccclass, p = l.property, d = function(t) {
+var r = t("../FModel/FGlobal"), a = t("./FTransItem"), s = t("./FTransInfo"), c = t("../FNetWork/FSocketSend"), l = cc._decorator, d = l.ccclass, u = l.property, p = function(t) {
 n(e, t);
 function e() {
 var e = null !== t && t.apply(this, arguments) || this;
@@ -5917,16 +6775,16 @@ n.getComponent(a.FTransItem).setData(FConfig.conf.redeem_task.list[o], this.mFTr
 e.prototype.closePage = function() {
 this.node.parent = null;
 };
-i([ p(cc.Label) ], e.prototype, "mMyCoin", void 0);
-i([ p(cc.Label) ], e.prototype, "mAbout", void 0);
-i([ p(cc.Prefab) ], e.prototype, "mTransItem", void 0);
-i([ p(cc.ScrollView) ], e.prototype, "mScroll", void 0);
-i([ p(s.FTransInfo) ], e.prototype, "mFTransInfo", void 0);
-i([ p(cc.Sprite) ], e.prototype, "mIcom", void 0);
-i([ p(cc.SpriteFrame) ], e.prototype, "mIconSp", void 0);
-return e = i([ u ], e);
+i([ u(cc.Label) ], e.prototype, "mMyCoin", void 0);
+i([ u(cc.Label) ], e.prototype, "mAbout", void 0);
+i([ u(cc.Prefab) ], e.prototype, "mTransItem", void 0);
+i([ u(cc.ScrollView) ], e.prototype, "mScroll", void 0);
+i([ u(s.FTransInfo) ], e.prototype, "mFTransInfo", void 0);
+i([ u(cc.Sprite) ], e.prototype, "mIcom", void 0);
+i([ u(cc.SpriteFrame) ], e.prototype, "mIconSp", void 0);
+return e = i([ d ], e);
 }(cc.Component);
-o.FTransList = d;
+o.FTransList = p;
 cc._RF.pop();
 }, {
 "../FModel/FGlobal": "FGlobal",
@@ -5962,7 +6820,7 @@ return r > 3 && a && Object.defineProperty(e, o, a), a;
 Object.defineProperty(o, "__esModule", {
 value: !0
 });
-var r = t("../FModel/FPanelManager"), a = t("../FModel/FGlobal"), s = cc._decorator, c = s.ccclass, l = s.property, u = function(t) {
+var r = t("../FModel/FPanelManager"), a = t("../FModel/FGlobal"), s = cc._decorator, c = s.ccclass, l = s.property, d = function(t) {
 n(e, t);
 function e() {
 var e = null !== t && t.apply(this, arguments) || this;
@@ -6018,7 +6876,7 @@ i && (this.mIcon.spriteFrame = i);
 this.cb = e;
 this.type = o;
 this.mCoin.node.parent.active = n;
-FLog.normal("什么玩意啊", t);
+FLog.normal("什么玩意啊   ", t);
 this.data = t;
 this.mPP.string = "$" + this.data.amount;
 this.mCoin.string = this.data.count;
@@ -6042,7 +6900,7 @@ t.cb();
 t.cb = null;
 }
 });
-} else FSDK.showToast("Credit is not enough"); else FSDK.showToast("Sorry, your paypal email is not legal");
+} else FSDK.showToast("Diamonds is not enough"); else FSDK.showToast("Sorry, your paypal email is not legal");
 } else FSDK.showToast("Sorry, the paypal email can't be empty");
 };
 e.prototype.showTos = function() {
@@ -6063,7 +6921,7 @@ i([ l(cc.Sprite) ], e.prototype, "mTosSp", void 0);
 i([ l(cc.Sprite) ], e.prototype, "mIcon", void 0);
 return e = i([ c ], e);
 }(cc.Component);
-o.FTransPage = u;
+o.FTransPage = d;
 cc._RF.pop();
 }, {
 "../FModel/FGlobal": "FGlobal",
@@ -6289,7 +7147,7 @@ return r > 3 && a && Object.defineProperty(e, o, a), a;
 Object.defineProperty(o, "__esModule", {
 value: !0
 });
-var r = t("./FTwoCardItem"), a = t("../FModel/FGlobal"), s = t("../FNetWork/FSocketSend"), c = cc._decorator, l = c.ccclass, u = c.property, p = function(t) {
+var r = t("./FTwoCardItem"), a = t("../FModel/FGlobal"), s = t("../FNetWork/FSocketSend"), c = cc._decorator, l = c.ccclass, d = c.property, u = function(t) {
 n(e, t);
 function e() {
 var e = null !== t && t.apply(this, arguments) || this;
@@ -6326,14 +7184,14 @@ this.mCard2.setCnt(o);
 e.prototype.closePage = function() {
 this.node.parent = null;
 };
-i([ u(cc.SpriteFrame) ], e.prototype, "mTitleSp", void 0);
-i([ u(cc.SpriteFrame) ], e.prototype, "mCardSp", void 0);
-i([ u(cc.Sprite) ], e.prototype, "mTitle", void 0);
-i([ u(r.FTwoCardItem) ], e.prototype, "mCard1", void 0);
-i([ u(r.FTwoCardItem) ], e.prototype, "mCard2", void 0);
+i([ d(cc.SpriteFrame) ], e.prototype, "mTitleSp", void 0);
+i([ d(cc.SpriteFrame) ], e.prototype, "mCardSp", void 0);
+i([ d(cc.Sprite) ], e.prototype, "mTitle", void 0);
+i([ d(r.FTwoCardItem) ], e.prototype, "mCard1", void 0);
+i([ d(r.FTwoCardItem) ], e.prototype, "mCard2", void 0);
 return e = i([ l ], e);
 }(cc.Component);
-o.FTwoCard = p;
+o.FTwoCard = u;
 cc._RF.pop();
 }, {
 "../FModel/FGlobal": "FGlobal",
@@ -6777,7 +7635,7 @@ done: !0
 Object.defineProperty(o, "__esModule", {
 value: !0
 });
-var s = t("./Ball"), c = t("./Barrier"), l = t("../common/EventConstants"), u = t("../common/Events"), p = t("../common/PopupConstants"), d = t("../common/User"), f = t("../common/Utils"), h = t("../common/AudioConstands"), _ = t("../common/Actions"), g = t("./Cion"), m = cc._decorator, F = m.ccclass, y = m.property, v = function(t) {
+var s = t("./Ball"), c = t("./Barrier"), l = t("../common/EventConstants"), d = t("../common/Events"), u = t("../common/PopupConstants"), p = t("../common/User"), f = t("../common/Utils"), h = t("../common/AudioConstands"), g = t("../common/Actions"), _ = t("./Cion"), m = cc._decorator, v = m.ccclass, y = m.property, S = function(t) {
 n(e, t);
 function e() {
 var e = null !== t && t.apply(this, arguments) || this;
@@ -6813,7 +7671,7 @@ return e;
 e.prototype.onLoad = function() {
 this.node.on(cc.Node.EventType.TOUCH_START, this.onTouchStart, this);
 this.node.on(cc.Node.EventType.TOUCH_END, this.onTouchEnd, this);
-u.events.on(this.name, this.uuid, l.GameEvents.UPDATALEVEL, this.updateLevel, this);
+d.events.on(this.name, this.uuid, l.GameEvents.UPDATALEVEL, this.updateLevel, this);
 this.openPm();
 };
 e.prototype.openPm = function() {
@@ -6825,23 +7683,23 @@ var t, e;
 return a(this, function(o) {
 switch (o.label) {
 case 0:
-if (d.user.passGuide) {
-t = d.user.getLumpData().reviveNum;
-d.user.setCurrnetReviveNum(t);
+if (p.user.passGuide) {
+t = p.user.getLumpData().reviveNum;
+p.user.setCurrnetReviveNum(t);
 }
-for (e = 0; e < d.user.getRecordBarrier().length; e++) if (d.user.getRecordBarrier()[e].pos.y > 300) {
+for (e = 0; e < p.user.getRecordBarrier().length; e++) if (p.user.getRecordBarrier()[e].pos.y > 300) {
 this.restartInit();
 return [ 2 ];
 }
-if (!(d.user.getRecordBarrier().length > 0 && d.user.getRecordBall().length > 0)) return [ 3, 1 ];
+if (!(p.user.getRecordBarrier().length > 0 && p.user.getRecordBall().length > 0)) return [ 3, 1 ];
 this.guide.zIndex = 10;
 this.guide.active = !1;
 this.initRecordBarrier();
 this.initBalls();
 this.gameStatus = !0;
 this.isGameOver = !1;
-this.setBallCount(d.user.getRecordBall().length);
-this.recycleBallsCount = d.user.getRecordBall().length;
+this.setBallCount(p.user.getRecordBall().length);
+this.recycleBallsCount = p.user.getRecordBall().length;
 return [ 3, 5 ];
 
 case 1:
@@ -6854,8 +7712,8 @@ this.guide.zIndex = 10;
 this.guide.active = !1;
 this.isGameOver = !1;
 this.setBallCount(this.balls.length);
-d.user.setIsRain(!1);
-d.user.setRainProbability(d.user.getLumpData().rainProbability);
+p.user.setIsRain(!1);
+p.user.setRainProbability(p.user.getLumpData().rainProbability);
 e = 0;
 o.label = 2;
 
@@ -6900,14 +7758,14 @@ t = 0;
 o.label = 1;
 
 case 1:
-return t < d.user.getRecordBarrier().length ? [ 4, GPool.get(d.user.getRecordBarrier()[t].name) ] : [ 3, 4 ];
+return t < p.user.getRecordBarrier().length ? [ 4, GPool.get(p.user.getRecordBarrier()[t].name) ] : [ 3, 4 ];
 
 case 2:
 (e = o.sent()).parent = this.barrierParent;
-e.position = d.user.getRecordBarrier()[t].pos;
-e.angle = d.user.getRecordBarrier()[t].angle;
-e.scale = d.user.getRecordBarrier()[t].scale;
--1 != d.user.getRecordBarrier()[t].name.indexOf("polygon") ? e.getComponent(c.default).init(d.user.getRecordBarrier()[t].score, d.user.getRecordBarrier()[t].isRain) : e.getComponent(c.default).init(d.user.getRecordBarrier()[t].score);
+e.position = p.user.getRecordBarrier()[t].pos;
+e.angle = p.user.getRecordBarrier()[t].angle;
+e.scale = p.user.getRecordBarrier()[t].scale;
+-1 != p.user.getRecordBarrier()[t].name.indexOf("polygon") ? e.getComponent(c.default).init(p.user.getRecordBarrier()[t].score, p.user.getRecordBarrier()[t].isRain) : e.getComponent(c.default).init(p.user.getRecordBarrier()[t].score);
 this.barriers.push(e.getComponent(c.default));
 o.label = 3;
 
@@ -6931,14 +7789,14 @@ t = 0;
 o.label = 1;
 
 case 1:
-return t < d.user.getRecordBall().length ? [ 4, GPool.get("ball") ] : [ 3, 4 ];
+return t < p.user.getRecordBall().length ? [ 4, GPool.get("ball") ] : [ 3, 4 ];
 
 case 2:
 (e = o.sent()).parent = this.ballParent;
 e.position = cc.v2(0, 390);
-e.scale = d.user.getRecordBall()[t].scale;
+e.scale = p.user.getRecordBall()[t].scale;
 e.getComponent(cc.RigidBody).type = cc.RigidBodyType.Static;
-e.getComponent(s.default).setHurt(d.user.getRecordBall()[t].hurt);
+e.getComponent(s.default).setHurt(p.user.getRecordBall()[t].hurt);
 this.balls.push(e.getComponent(s.default));
 o.label = 3;
 
@@ -6969,7 +7827,7 @@ var e;
 return a(this, function(o) {
 switch (o.label) {
 case 0:
-u.events.emit(l.GameEvents.PLAY_SOUND_EFFECT, h.AudioName.POP);
+d.events.emit(l.GameEvents.PLAY_SOUND_EFFECT, h.AudioName.POP);
 return [ 4, GPool.get(this.prefabBall.name) ];
 
 case 1:
@@ -6987,54 +7845,54 @@ return [ 2 ];
 };
 e.prototype.addBarriers = function(t) {
 return r(this, void 0, void 0, function() {
-var e, o, n, i, r, s, p, _, g, m, F, y, v, C, b, S;
+var e, o, n, i, r, s, u, g, _, m, v, y, S, F, C, b;
 return a(this, function(a) {
 switch (a.label) {
 case 0:
 e = -300;
-d.user.setCurrentLine();
-d.user.setCurrentRenLine();
+p.user.setCurrentLine();
+p.user.setCurrentRenLine();
 o = this.getInitBarrierRandom();
 n = this.backBarrierPosX(o);
 i = 0;
 t && (e = 100 * t - 300);
-r = d.user.getAwardNumber() <= d.user.getLumpData().outOfRedAndCost[0] ? d.user.getLumpData().outOfRedAndCost[0] : d.user.getLumpData().outOfRedAndCost[1];
+r = p.user.getAwardNumber() <= p.user.getLumpData().outOfRedAndCost[0] ? p.user.getLumpData().outOfRedAndCost[0] : p.user.getLumpData().outOfRedAndCost[1];
 s = f.utils.randomInt([ 1, 10 ]);
-p = d.user.getLumpData().videoAddPoint;
-_ = d.user.getLumpData().videoBaoXiang;
-g = !1;
-d.user.getAwardNumber() >= p[p.length - 1] && (g = !1);
+u = p.user.getLumpData().videoAddPoint;
+g = p.user.getLumpData().videoBaoXiang;
+_ = !1;
+p.user.getAwardNumber() >= u[u.length - 1] && (_ = !1);
 m = !1;
-F = d.user.getCurrentLine() % d.user.getLumpData().addProp == 0;
+v = p.user.getCurrentLine() % p.user.getLumpData().addProp == 0;
 a.label = 1;
 
 case 1:
 if (!(i < o)) return [ 3, 13 ];
 y = void 0;
-v = FSDK.getCard(0);
-for (C = 0; C < p.length; C++) if (d.user.getAwardNumber() <= p[C]) {
-s <= _[C] && (g = !0);
+S = FSDK.getCard(0);
+for (F = 0; F < u.length; F++) if (p.user.getAwardNumber() <= u[F]) {
+s <= g[F] && (_ = !0);
 break;
 }
-if (!d.user.serverData.isFlag || d.user.serverData.isBlack || d.user.getIsRedAndCost() || !g || !(v.num > 0 || 0 != d.user.getCurrentRedLine() && d.user.getCurrentRedLine() % r == 0)) return [ 3, 3 ];
-d.user.setIsRedAndCost(!0);
-d.user.save();
+if (!p.user.serverData.isFlag || p.user.serverData.isBlack || p.user.getIsRedAndCost() || !_ || !(S.num > 0 || 0 != p.user.getCurrentRedLine() && p.user.getCurrentRedLine() % r == 0)) return [ 3, 3 ];
+p.user.setIsRedAndCost(!0);
+p.user.save();
 return [ 4, GPool.get("bx") ];
 
 case 2:
 y = a.sent();
-u.events.emit(l.GameEvents.PLAY_SOUND_EFFECT, h.AudioName.DINGDONG);
-d.user.setCurrentRenLine(0);
-g = !1;
+d.events.emit(l.GameEvents.PLAY_SOUND_EFFECT, h.AudioName.DINGDONG);
+p.user.setCurrentRenLine(0);
+_ = !1;
 return [ 3, 12 ];
 
 case 3:
-if (!(F && !m && (this.isAllBallBig() || this.balls.length < d.user.getLumpData().MaxBallCount) && d.user.getCurrentProp() < 2)) return [ 3, 10 ];
-b = d.user.getCurrentProp();
-b += 1;
-d.user.setCurrentProp(b);
+if (!(v && !m && (this.isAllBallBig() || this.balls.length < p.user.getLumpData().MaxBallCount) && p.user.getCurrentProp() < 2)) return [ 3, 10 ];
+C = p.user.getCurrentProp();
+C += 1;
+p.user.setCurrentProp(C);
 m = !0;
-return this.balls.length >= d.user.getLumpData().MaxBallCount ? [ 4, GPool.get("buffBigBall") ] : [ 3, 5 ];
+return this.balls.length >= p.user.getLumpData().MaxBallCount ? [ 4, GPool.get("buffBigBall") ] : [ 3, 5 ];
 
 case 4:
 y = a.sent();
@@ -7048,8 +7906,8 @@ y = a.sent();
 return [ 3, 9 ];
 
 case 7:
-S = f.utils.randomInt([ 0, 1 ]);
-return [ 4, GPool.get(this.prefabFunBarriers[S].name) ];
+b = f.utils.randomInt([ 0, 1 ]);
+return [ 4, GPool.get(this.prefabFunBarriers[b].name) ];
 
 case 8:
 y = a.sent();
@@ -7083,8 +7941,8 @@ return [ 2 ];
 });
 };
 e.prototype.bigBall = function(t) {
-u.events.emit(l.GameEvents.PLAY_SOUND_EFFECT, h.AudioName.POP);
-t.scale = d.user.getLumpData().MaxBigBall;
+d.events.emit(l.GameEvents.PLAY_SOUND_EFFECT, h.AudioName.POP);
+t.scale = p.user.getLumpData().MaxBigBall;
 t.getComponent(s.default).setHurt(2);
 };
 e.prototype.setBallCount = function(t) {
@@ -7105,7 +7963,7 @@ e.shootBall(i, t);
 e.prototype.shootBall = function(t, e) {
 t.node.getComponent(cc.RigidBody).type = cc.RigidBodyType.Dynamic;
 t.rigidBody.active = !1;
-u.events.emit(l.GameEvents.PLAY_SOUND_EFFECT, h.AudioName.CRASH);
+d.events.emit(l.GameEvents.PLAY_SOUND_EFFECT, h.AudioName.CRASH);
 t.rigidBody.active = !0;
 var o = Math.atan2(e.y, e.x) / Math.PI * 180, n = 100 * Math.cos(.017453293 * o), i = 100 * Math.sin(.017453293 * o);
 t.rigidBody.linearVelocity = cc.v2(20 * n, 20 * i);
@@ -7117,7 +7975,7 @@ if (this.isRecycleFinished()) {
 for (var t = 0; t < this.barriers.length; t++) {
 var e = this.barriers[t];
 if (0 == this.barriers[t].getScore() && "bx" === e.node.name) {
-u.events.emit(l.GameEvents.OPENVDIEO, this.barriers[t], 0);
+d.events.emit(l.GameEvents.OPENVDIEO, this.barriers[t], 0);
 return;
 }
 }
@@ -7132,14 +7990,14 @@ position: cc.v2(0, 100)
 }).call(function() {
 t.setRecordBarriers();
 if (n.node.position.y > 200) {
-d.user.IsShake && FSDK.shake(50);
+p.user.IsShake && FSDK.shake(50);
 n.node.runAction(cc.shake(1.5, 5, 5));
 }
 if (n.node.position.y >= 390) if ("buffAddBall" == n.node.name || "buffBigBall" == n.node.name) {
 t.removeBarrier(n);
-var e = d.user.getCurrentProp();
+var e = p.user.getCurrentProp();
 e -= 1;
-d.user.setCurrentProp(e);
+p.user.setCurrentProp(e);
 } else t.gameOver();
 }).start();
 }, o = this, n = 0; n < this.barriers.length; n++) e(n);
@@ -7157,14 +8015,14 @@ cc.tween(n.node).by(.1, {
 position: cc.v2(0, 100)
 }).call(function() {
 if (n.node.position.y > 200) {
-d.user.IsShake && FSDK.shake(50);
+p.user.IsShake && FSDK.shake(50);
 n.node.runAction(cc.shake(1.5, 5, 5));
 }
 if (n.node.position.y >= 390) if ("buffAddBall" == n.node.name || "buffBigBall" == n.node.name) {
 t.removeBarrier(n);
-var e = d.user.getCurrentProp();
+var e = p.user.getCurrentProp();
 e -= 1;
-d.user.setCurrentProp(e);
+p.user.setCurrentProp(e);
 } else t.gameOver();
 }).start();
 }, o = this, n = 0; n < this.barriers.length; n++) e(n);
@@ -7177,18 +8035,18 @@ l.GameConstant.isShoot = !1;
 };
 e.prototype.isBarrierPos = function() {
 for (var t = 0; t < this.barriers.length; t++) if (this.barriers[t].node.position.x < -260 && this.barriers[t].node.position.x > 260 || this.barriers[t].node.position.y < -300) {
-"bx" == this.barriers[t].node.name && d.user.setIsRedAndCost(!1);
+"bx" == this.barriers[t].node.name && p.user.setIsRedAndCost(!1);
 this.removeBarrier(this.barriers[t]);
 }
 };
 e.prototype.gameOver = function() {
 if (!this.isGameOver) {
 this.isGameOver = !0;
-u.events.emit(l.GameEvents.PLAY_SOUND_EFFECT, h.AudioName.SETTLEMENT);
+d.events.emit(l.GameEvents.PLAY_SOUND_EFFECT, h.AudioName.SETTLEMENT);
 this.gameStatus = !1;
 var t = this.score.toString();
 FLog.normal("游戏结算");
-u.events.emit(l.GameEvents.SHOW_POPUP, p.PopUpName.GAMEOVER, null, t);
+d.events.emit(l.GameEvents.SHOW_POPUP, u.PopUpName.GAMEOVER, null, t);
 }
 };
 e.prototype.isRecycleFinished = function() {
@@ -7196,28 +8054,28 @@ return this.recycleBallsCount == this.balls.length;
 };
 e.prototype.shake = function(t) {
 if (!(t.getNumberOfRunningActions() > 0)) {
-d.user.IsShake && FSDK.shake(30);
+p.user.IsShake && FSDK.shake(30);
 var e = cc.shake(.1, 5, 5);
 t.runAction(e);
 }
 };
 e.prototype.addScore = function(t) {
-t *= d.user.getLumpData().expSate;
-var e = d.user.getExp();
+t *= p.user.getLumpData().expSate;
+var e = p.user.getExp();
 e += t;
-d.user.setExp(e);
-var o = d.user.getExpDay();
+p.user.setExp(e);
+var o = p.user.getExpDay();
 o += t;
-d.user.setExpDay(o);
+p.user.setExpDay(o);
 this.updateLevel();
 };
 e.prototype.setBarrierScore = function() {
-var t = Math.floor(Math.pow(d.user.getCurrentLine(), d.user.getLumpData().levelFormula[0][0]) * d.user.getLumpData().levelFormula[0][1] + d.user.getLumpData().levelFormula[0][2]), e = Math.floor(Math.pow(d.user.getCurrentLine(), d.user.getLumpData().levelFormula[1][0]) * d.user.getLumpData().levelFormula[1][1] + d.user.getLumpData().levelFormula[1][2]);
+var t = Math.floor(Math.pow(p.user.getCurrentLine(), p.user.getLumpData().levelFormula[0][0]) * p.user.getLumpData().levelFormula[0][1] + p.user.getLumpData().levelFormula[0][2]), e = Math.floor(Math.pow(p.user.getCurrentLine(), p.user.getLumpData().levelFormula[1][0]) * p.user.getLumpData().levelFormula[1][1] + p.user.getLumpData().levelFormula[1][2]);
 return f.utils.randomInt(t, e);
 };
 e.prototype.removeBarrier = function(t, e) {
 void 0 === e && (e = !1);
-u.events.emit(l.GameEvents.PLAY_SOUND_EFFECT, h.AudioName.ELIMINATE);
+d.events.emit(l.GameEvents.PLAY_SOUND_EFFECT, h.AudioName.ELIMINATE);
 var o = this.barriers.indexOf(t);
 if ("buffAddBall" != t.node.name && "buffBigBall" != t.node.name && "bx" != t.node.name) if (t.node.getChildByName("IrisAnim").active) {
 t.node.getChildByName("IrisAnim").active = !1;
@@ -7227,32 +8085,32 @@ this.piaoBigCoin();
 FSDK.setCredit("credit", 50, "Brick");
 FSDK.showToast("Congratulations on receiving 50 gold coins");
 }
-d.user.setIsRain(!1);
-d.user.setRainProbability(d.user.getLumpData().rainProbability);
+p.user.setIsRain(!1);
+p.user.setRainProbability(p.user.getLumpData().rainProbability);
 } else e || this.getCoin(t.node.position);
 if (-1 != o) {
 GPool.put(t.node);
 this.barriers.splice(o, 1);
-d.user.setDeleteBarriersNum();
+p.user.setDeleteBarriersNum();
 this.setRecordBarriers();
 }
 };
 e.prototype.getCoin = function(t) {
 var e;
 e = FSDK.getCreditDif();
-var o = f.utils.randomInt(d.user.getLumpData().LevelCions[e]);
-if (0 !== o) if (d.user.getCollectCoins() < d.user.getLumpData().CollectCoins[0]) {
+var o = f.utils.randomInt(p.user.getLumpData().LevelCions[e]);
+if (0 !== o) if (p.user.getCollectCoins() < p.user.getLumpData().CollectCoins[0]) {
 this.animCion(o, 2, !0, t);
 FSDK.setCredit("credit", o, "Brick");
-var n = d.user.getCollectCoins();
+var n = p.user.getCollectCoins();
 n += o;
-d.user.setCollectCoins(n);
-} else if (d.user.getCollectCoins2() < d.user.getLumpData().CollectCoins[1]) {
+p.user.setCollectCoins(n);
+} else if (p.user.getCollectCoins2() < p.user.getLumpData().CollectCoins[1]) {
 this.animCion(o, 2, !0, t);
 FSDK.setCredit("credit", o, "Brick");
-n = d.user.getCollectCoins2();
+n = p.user.getCollectCoins2();
 n += o;
-d.user.setCollectCoins2(n);
+p.user.setCollectCoins2(n);
 }
 };
 e.prototype.getRandomSpace = function() {
@@ -7276,12 +8134,12 @@ this.recycleBallsCount = 10;
 this.barrierScoreRate = 0;
 this.guide.zIndex = 10;
 this.guide.active = !1;
-d.user.setCurrentProp(0);
-d.user.setIsRedAndCost(!1);
-d.user.setCurrentLine(0);
-d.user.setIsRain(!1);
-d.user.setRainProbability(d.user.getLumpData().rainProbability);
-d.user.save();
+p.user.setCurrentProp(0);
+p.user.setIsRedAndCost(!1);
+p.user.setCurrentLine(0);
+p.user.setIsRain(!1);
+p.user.setRainProbability(p.user.getLumpData().rainProbability);
+p.user.save();
 this.balls = [];
 this.ballParent.removeAllChildren();
 this.barriers = [];
@@ -7298,17 +8156,17 @@ for (var t = 0; t < this.barriers.length; t++) {
 var e = this.barriers[0];
 if (e.node.position.y >= 0) {
 if ("buffAddBall" == e.node.name || "buffBigBall" == e.node.name) {
-var o = d.user.getCurrentProp();
+var o = p.user.getCurrentProp();
 o -= 1;
-d.user.setCurrentProp(o);
-} else if ("bx" == e.node.name) d.user.setIsRedAndCost(!1); else if (e.node.getChildByName("IrisAnim").active) {
-d.user.setIsRain(!1);
-d.user.setRainProbability(d.user.getLumpData().rainProbability);
+p.user.setCurrentProp(o);
+} else if ("bx" == e.node.name) p.user.setIsRedAndCost(!1); else if (e.node.getChildByName("IrisAnim").active) {
+p.user.setIsRain(!1);
+p.user.setRainProbability(p.user.getLumpData().rainProbability);
 }
 this.removeBarrier(e, !0);
 }
 }
-d.user.save();
+p.user.save();
 this.guide.zIndex = 10;
 this.guide.active = !1;
 this.guideShow();
@@ -7338,8 +8196,8 @@ isRain: !1
 -1 != o.node.name.indexOf("polygon") && (n.isRain = o.node.getChildByName("IrisAnim").active);
 t.push(n);
 }
-d.user.setRecordBarrier(t);
-d.user.save();
+p.user.setRecordBarrier(t);
+p.user.save();
 };
 e.prototype.setRecordBalls = function() {
 for (var t = [], e = 0; e < this.balls.length; e++) {
@@ -7349,14 +8207,14 @@ scale: o.node.scale
 };
 t.push(n);
 }
-d.user.setRecordBall(t);
-d.user.save();
+p.user.setRecordBall(t);
+p.user.save();
 };
 e.prototype.getInitBarrierRandom = function() {
-return f.utils.randomInt(d.user.getLumpData().initBarrierlArr);
+return f.utils.randomInt(p.user.getLumpData().initBarrierlArr);
 };
 e.prototype.backBarrierPosX = function(t) {
-for (var e = d.user.getLumpData().barrierlArrPosX.concat(), o = [], n = 0; n < t; n++) {
+for (var e = p.user.getLumpData().barrierlArrPosX.concat(), o = [], n = 0; n < t; n++) {
 var i = f.utils.randomInt(0, e.length - 1);
 o.push(e[i]);
 e.splice(i, 1);
@@ -7375,39 +8233,39 @@ i = this.mCionsNode.children[e];
 2 == e && (r = "credit");
 if (!r) return [ 2 ];
 s = function() {
-u.events.emit(l.GameEvents.PLAY_SOUND_EFFECT, h.AudioName.CION);
+d.events.emit(l.GameEvents.PLAY_SOUND_EFFECT, h.AudioName.CION);
 };
-if (2 == e && o) for (c = 0; c < t; c++) _.actions.addCionMove(this.mAnimCions, r, cc.v2(), i.position.add(i.getChildByName(r).position), s, t - c == 1); else for (c = 0; c < 10; c++) _.actions.addCionMove(this.mAnimCions, r, n, i.position.add(i.getChildByName(r).position), s, 10 - c == 1);
+if (2 == e && o) for (c = 0; c < t; c++) g.actions.addCionMove(this.mAnimCions, r, cc.v2(), i.position.add(i.getChildByName(r).position), s, t - c == 1); else for (c = 0; c < 10; c++) g.actions.addCionMove(this.mAnimCions, r, n, i.position.add(i.getChildByName(r).position), s, 10 - c == 1);
 return [ 2 ];
 });
 });
 };
 e.prototype.hurtState = function() {
 var t = 1;
-t != d.user.getLumpData().expDayCount && (t = d.user.getLumpData().hurt);
+t != p.user.getLumpData().expDayCount && (t = p.user.getLumpData().hurt);
 return t;
 };
 e.prototype.updateLevel = function() {
-var t = d.user.getLevel(), e = d.user.getLumpData().exp[t - 1];
+var t = p.user.getLevel(), e = p.user.getLumpData().exp[t - 1];
 this._upgradeExp = e.exp;
-var o = d.user.getExp();
+var o = p.user.getExp();
 if (o >= this._upgradeExp) {
 t++;
-d.user.setLevel(t);
+p.user.setLevel(t);
 "new" == FSDK.getUserType() && FSDK.umengEvent("GAME_LV_NEW", "" + t);
 FSDK.umengEvent("GAME_LV_ALL", "" + t);
 o -= this._upgradeExp;
-d.user.setExp(o);
-d.user.save();
+p.user.setExp(o);
+p.user.save();
 }
 this.levelBar();
-this.levelLabel.string = "" + d.user.getLevel();
-this.nextLevelLabel.string = "" + (d.user.getLevel() + 1);
+this.levelLabel.string = "" + p.user.getLevel();
+this.nextLevelLabel.string = "" + (p.user.getLevel() + 1);
 };
 e.prototype.levelBar = function() {
 this.numTw && this.numTw.stop();
 this.numTw = cc.tween(this).to(.2, {
-levellab: Number(d.user.getExp() / this._upgradeExp)
+levellab: Number(p.user.getExp() / this._upgradeExp)
 }).start();
 };
 Object.defineProperty(e.prototype, "levellab", {
@@ -7427,7 +8285,7 @@ var e;
 return a(this, function(o) {
 switch (o.label) {
 case 0:
-u.events.emit(l.GameEvents.PLAY_SOUND_EFFECT, h.AudioName.DINGDONG);
+d.events.emit(l.GameEvents.PLAY_SOUND_EFFECT, h.AudioName.DINGDONG);
 return [ 4, GPool.get("synthetic") ];
 
 case 1:
@@ -7453,9 +8311,9 @@ return a(this, function(r) {
 switch (r.label) {
 case 0:
 o = 100;
-u.events.emit(l.GameEvents.PLAY_SOUND_EFFECT, h.AudioName.BIGWINGOLD);
+d.events.emit(l.GameEvents.PLAY_SOUND_EFFECT, h.AudioName.BIGWINGOLD);
 t && (o = t);
-d.user.IsShake && FSDK.shake(100);
+p.user.IsShake && FSDK.shake(100);
 n = 0;
 r.label = 1;
 
@@ -7467,7 +8325,7 @@ case 2:
 i.scale = .5;
 e ? i.position = e : i.setPosition(0, 0);
 i.rotation = 360 * Math.random();
-i.getComponent(g.default).coinBigJump();
+i.getComponent(_.default).coinBigJump();
 r.label = 3;
 
 case 3:
@@ -7481,28 +8339,28 @@ return [ 2 ];
 });
 };
 e.prototype.isAddRaindow = function(t) {
-if (d.user.getRainAwardNum() <= d.user.getLumpData().rainAwardMax && !d.user.getIsRain()) {
-var e = d.user.getCurrentLine(), o = !1, n = [];
+if (p.user.getRainAwardNum() <= p.user.getLumpData().rainAwardMax && !p.user.getIsRain()) {
+var e = p.user.getCurrentLine(), o = !1, n = [];
 if (3 == e) {
 for (var i = 0; i < this.barriers.length; i++) -1 != this.barriers[i].node.name.indexOf("polygon") && this.barriers[i].node.position.y == t && n.push(this.barriers[i].score);
 for (var r = Math.max.apply(this, n), a = 0; a < this.barriers.length; a++) if (-1 != this.barriers[a].node.name.indexOf("polygon") && this.barriers[a].node.position.y == t && this.barriers[a].score == r) {
 this.rainAnim(this.barriers[a].node);
-d.user.setIsRain(!0);
-d.user.setRainProbability(d.user.getLumpData().rainProbability);
+p.user.setIsRain(!0);
+p.user.setRainProbability(p.user.getLumpData().rainProbability);
 break;
 }
 } else if (e > 2) {
-var s = d.user.getRainProbability();
+var s = p.user.getRainProbability();
 if (Math.random() <= s) o = !0; else {
 s += .1;
-d.user.setRainProbability(s);
+p.user.setRainProbability(s);
 }
 if (o) {
 for (i = 0; i < this.barriers.length; i++) -1 != this.barriers[i].node.name.indexOf("polygon") && n.push(this.barriers[i].score);
 for (r = Math.max.apply(this, n), a = 0; a < this.barriers.length; a++) if (-1 != this.barriers[a].node.name.indexOf("polygon") && this.barriers[a].score == r) {
 this.rainAnim(this.barriers[a].node);
-d.user.setIsRain(!0);
-d.user.setRainProbability(d.user.getLumpData().rainProbability);
+p.user.setIsRain(!0);
+p.user.setRainProbability(p.user.getLumpData().rainProbability);
 break;
 }
 }
@@ -7527,9 +8385,9 @@ i([ y(cc.Node) ], e.prototype, "mStarUiNode", void 0);
 i([ y(cc.Label) ], e.prototype, "levelLabel", void 0);
 i([ y(cc.Label) ], e.prototype, "nextLevelLabel", void 0);
 i([ y(cc.ProgressBar) ], e.prototype, "levelProgressBar", void 0);
-return e = i([ F ], e);
+return e = i([ v ], e);
 }(cc.Component);
-o.default = v;
+o.default = S;
 cc._RF.pop();
 }, {
 "../common/Actions": "Actions",
@@ -7571,7 +8429,7 @@ return r > 3 && a && Object.defineProperty(e, o, a), a;
 Object.defineProperty(o, "__esModule", {
 value: !0
 });
-var r = t("../common/Actions"), a = t("../common/User"), s = t("../common/Events"), c = t("../common/EventConstants"), l = t("../common/AudioConstands"), u = cc._decorator, p = u.ccclass, d = u.property, f = function(t) {
+var r = t("../common/Actions"), a = t("../common/User"), s = t("../common/Events"), c = t("../common/EventConstants"), l = t("../common/AudioConstands"), d = cc._decorator, u = d.ccclass, p = d.property, f = function(t) {
 n(e, t);
 function e() {
 var e = null !== t && t.apply(this, arguments) || this;
@@ -7617,9 +8475,9 @@ var t = a.user.getLumpData().reviveNum;
 a.user.setCurrnetReviveNum(t);
 }
 };
-i([ d(cc.Node) ], e.prototype, "resurgenceNode", void 0);
-i([ d(cc.Node) ], e.prototype, "restartNode", void 0);
-return e = i([ p ], e);
+i([ p(cc.Node) ], e.prototype, "resurgenceNode", void 0);
+i([ p(cc.Node) ], e.prototype, "restartNode", void 0);
+return e = i([ u ], e);
 }(cc.Component);
 o.default = f;
 cc._RF.pop();
@@ -7769,7 +8627,7 @@ done: !0
 Object.defineProperty(o, "__esModule", {
 value: !0
 });
-var s = t("../common/Events"), c = t("../common/EventConstants"), l = t("../common/AudioConstands"), u = t("../common/User"), p = cc._decorator, d = p.ccclass, f = p.property, h = function(t) {
+var s = t("../common/Events"), c = t("../common/EventConstants"), l = t("../common/AudioConstands"), d = t("../common/User"), u = cc._decorator, p = u.ccclass, f = u.property, h = function(t) {
 n(e, t);
 function e() {
 var e = null !== t && t.apply(this, arguments) || this;
@@ -7820,10 +8678,10 @@ this.btnNode[1].active = !0;
 this.creditTips.active = !0;
 }
 if ("Brick" == this._data[2]) {
-u.user.setIsRedAndCost(!1);
-var t = u.user.getAwardNumber();
+d.user.setIsRedAndCost(!1);
+var t = d.user.getAwardNumber();
 t += 1;
-u.user.setAwardNumber(t);
+d.user.setAwardNumber(t);
 }
 if (!this._data[3]) {
 this.btnNode[0].getComponent(cc.Sprite).spriteFrame = this.noVideo;
@@ -7834,12 +8692,12 @@ this.countNode.getComponent(cc.Label).string = "$" + this._awardNum.toFixed(2);
 };
 e.prototype.gpFun = function() {
 this._name = "gp";
-u.user.firstGold < 100 ? this.tipsLabel.string = "Collect " + (100 - u.user.firstGold).toFixed(2) + " more gift card to exchange $100" : this.tipsLabel.node.active = !1;
+d.user.firstGold < 100 ? this.tipsLabel.string = "Collect " + (100 - d.user.firstGold).toFixed(2) + " more gift card to exchange $100" : this.tipsLabel.node.active = !1;
 cc.sys.os == cc.sys.OS_IOS ? this.cardNode.getComponent(cc.Sprite).spriteFrame = this.cardIcon[1] : this.cardNode.getComponent(cc.Sprite).spriteFrame = this.cardIcon[0];
 };
 e.prototype.ppFun = function() {
 this._name = "pp";
-u.user.secondGold < 100 ? this.tipsLabel.string = "Collect " + (100 - u.user.secondGold).toFixed(2) + " more gift card to exchange $100" : this.tipsLabel.node.active = !1;
+d.user.secondGold < 100 ? this.tipsLabel.string = "Collect " + (100 - d.user.secondGold).toFixed(2) + " more gift card to exchange $100" : this.tipsLabel.node.active = !1;
 this.cardNode.getComponent(cc.Sprite).spriteFrame = this.cardIcon[2];
 };
 e.prototype.creditFun = function() {
@@ -7863,7 +8721,7 @@ c.GameConstant.game.animCion(t._awardNum, e);
 FSDK.setCredit(t._data[0], t._awardNum, t._data[2]);
 s.events.emit(c.GameEvents.HIDE_POPUP);
 };
-this._data[3] && cc.sys.isNative && !u.user.getLumpData().isDebug ? FSDK.openVideo(this._data[2], function() {
+this._data[3] && cc.sys.isNative && !d.user.getLumpData().isDebug ? FSDK.openVideo(this._data[2], function() {
 return r(t, void 0, void 0, function() {
 return a(this, function(t) {
 o();
@@ -7890,7 +8748,7 @@ c.GameConstant.game.isVideoAddBarriers();
 c.GameConstant.isAward && (c.GameConstant.isAward = !1);
 s.events.emit(c.GameEvents.HIDE_POPUP);
 };
-cc.sys.isNative && !u.user.getLumpData().isDebug ? FSDK.openInters(function() {
+cc.sys.isNative && !d.user.getLumpData().isDebug ? FSDK.openInters(function() {
 e();
 }, this) : e();
 }
@@ -7925,7 +8783,7 @@ return [ 2 ];
 });
 });
 };
-cc.sys.isNative && !u.user.getLumpData().isDebug ? FSDK.openVideo(this._data[2], function() {
+cc.sys.isNative && !d.user.getLumpData().isDebug ? FSDK.openVideo(this._data[2], function() {
 e();
 }, this) : e();
 };
@@ -7937,7 +8795,7 @@ i([ f(cc.Label) ], e.prototype, "tipsLabel", void 0);
 i([ f(cc.Node) ], e.prototype, "btnNode", void 0);
 i([ f(cc.Node) ], e.prototype, "creditTips", void 0);
 i([ f(cc.SpriteFrame) ], e.prototype, "noVideo", void 0);
-return e = i([ d ], e);
+return e = i([ p ], e);
 }(cc.Component);
 o.default = h;
 cc._RF.pop();
@@ -8164,7 +9022,7 @@ done: !0
 Object.defineProperty(o, "__esModule", {
 value: !0
 });
-var s = t("../common/EventConstants"), c = t("../game/GameController"), l = t("../common/User"), u = t("../common/Actions"), p = t("../FSidebar"), d = t("../FHideNode"), f = t("../common/Events"), h = t("../common/AudioConstands"), _ = cc._decorator, g = _.ccclass, m = _.property, F = function(t) {
+var s = t("../common/EventConstants"), c = t("../game/GameController"), l = t("../common/User"), d = t("../common/Actions"), u = t("../FSidebar"), p = t("../FHideNode"), f = t("../common/Events"), h = t("../common/AudioConstands"), g = cc._decorator, _ = g.ccclass, m = g.property, v = function(t) {
 n(e, t);
 function e() {
 var e = null !== t && t.apply(this, arguments) || this;
@@ -8184,7 +9042,14 @@ return e;
 e.prototype.onLoad = function() {
 FLog.normal(this.node.parent.getComponentsInChildren(cc.Label));
 s.GameConstant.game = this.game.getComponent(c.default);
-u.actions.breatheEff(this.logoNode);
+d.actions.breatheEff(this.logoNode);
+};
+e.prototype.start = function() {
+try {
+FSDK.initSZSDK();
+} catch (t) {
+console.log(t);
+}
 };
 e.prototype.update = function() {
 if (this._updateTotal < 3) {
@@ -8194,8 +9059,8 @@ this._updateTotal++;
 if (this.progressBar.progress >= 1 && this._isReady) try {
 this._isReady = !1;
 this.node.active = !1;
-this.node.getComponent(p.default).init();
-this.isBreakNode.getComponent(d.default).init();
+this.node.getComponent(u.default).init();
+this.isBreakNode.getComponent(p.default).init();
 if (l.user.getIsLoading() && 1 == l.user.serverData.login_days && 1 == l.user.serverData.login_cnt) {
 l.user.setIsLoading();
 this.game.active = !0;
@@ -8230,19 +9095,24 @@ e.prototype.initSDK = function() {
 var t = this;
 return new Promise(function(e, o) {
 var n = {
-ip_release: "wss://ausball.cc:20212/",
-ip_debug: "wss://test.wps168.com:20212/?pg=ausball",
-pg: "com.yehappy.ball",
+ip_release: "wss://iusball.cc:20212/",
+ip_debug: "wss://test.wps168.com:20212/?pg=iusball",
+pg: "com.super.iuspinball",
 isDebug: !1,
-test_aid: "ggdfgsfsefsfsdfsfesf",
-code: "ausball",
+test_aid: "xvxcvsdfsfsefsf",
+code: "iusball",
 tos_img: t.icon
 };
-cc.sys.os == cc.sys.OS_ANDROID && (n.ip_release = "wss://ausball.cc:20212/", n.ip_debug = "wss://test.wps168.com:20212/?pg=ausball", 
-n.pg = "com.yehappy.ball", n.code = "ausball");
+if (!cc.sys.isNative || cc.sys.os == cc.sys.OS_ANDROID) {
+n.ip_release = "wss://ausballpro.cc:20212/";
+n.ip_debug = "wss://test.wps168.com:20212/?pg=ausballpro";
+n.pg = "com.super.auspinball";
+n.code = "ausballpro";
+}
 cc.sys.isNative && (t.verLabel.string = "release v" + FSDK.getVerInfo().ver);
 FSDK.init(n, function(t) {
 l.user.serverData = t;
+l.user.serverData.isFlag = !0;
 FLog.normal("数据", t);
 e();
 }, t);
@@ -8333,9 +9203,9 @@ i([ m(cc.ProgressBar) ], e.prototype, "progressBar", void 0);
 i([ m(cc.Label) ], e.prototype, "verLabel", void 0);
 i([ m(cc.SpriteFrame) ], e.prototype, "icon", void 0);
 i([ m(cc.Node) ], e.prototype, "isBreakNode", void 0);
-return e = i([ g ], e);
+return e = i([ _ ], e);
 }(cc.Component);
-o.default = F;
+o.default = v;
 cc._RF.pop();
 }, {
 "../FHideNode": "FHideNode",
@@ -8375,7 +9245,7 @@ return r > 3 && a && Object.defineProperty(e, o, a), a;
 Object.defineProperty(o, "__esModule", {
 value: !0
 });
-var r = t("../common/User"), a = t("../common/Actions"), s = t("../common/EventConstants"), c = t("../common/Events"), l = t("../common/AudioConstands"), u = t("../common/PopupConstants"), p = cc._decorator, d = p.ccclass, f = p.property, h = function(t) {
+var r = t("../common/User"), a = t("../common/Actions"), s = t("../common/EventConstants"), c = t("../common/Events"), l = t("../common/AudioConstands"), d = t("../common/PopupConstants"), u = cc._decorator, p = u.ccclass, f = u.property, h = function(t) {
 n(e, t);
 function e() {
 var e = null !== t && t.apply(this, arguments) || this;
@@ -8401,7 +9271,7 @@ e.prototype.playGameHandle = function() {
 c.events.emit(s.GameEvents.PLAY_SOUND_EFFECT, l.AudioName.BUTTON);
 if (r.user.getRecordBarrier().length > 0) {
 var t = [ this.mGameNode, this.node ];
-c.events.emit(s.GameEvents.SHOW_POPUP, u.PopUpName.READ, null, t);
+c.events.emit(s.GameEvents.SHOW_POPUP, d.PopUpName.READ, null, t);
 } else {
 this.mGameNode.active = !0;
 this.node.active = !1;
@@ -8416,7 +9286,7 @@ i([ f(cc.Node) ], e.prototype, "mtitle", void 0);
 i([ f(cc.Node) ], e.prototype, "mGameNode", void 0);
 i([ f(cc.Node) ], e.prototype, "mPaomaNode", void 0);
 i([ f(cc.Node) ], e.prototype, "mGameOpenNode", void 0);
-return e = i([ d ], e);
+return e = i([ p ], e);
 }(cc.Component);
 o.default = h;
 cc._RF.pop();
@@ -8567,7 +9437,7 @@ done: !0
 Object.defineProperty(o, "__esModule", {
 value: !0
 });
-var s = t("./Events"), c = t("./EventConstants"), l = t("./Actions"), u = cc._decorator, p = u.ccclass, d = u.property, f = function(t) {
+var s = t("./Events"), c = t("./EventConstants"), l = t("./Actions"), d = cc._decorator, u = d.ccclass, p = d.property, f = function(t) {
 n(e, t);
 function e() {
 var e = null !== t && t.apply(this, arguments) || this;
@@ -8677,8 +9547,8 @@ t.find(function(t) {
 return "sprite_mask" === t.name;
 }).zIndex = 9 * this.list.length;
 };
-i([ d(cc.Node) ], e.prototype, "nodeMask", void 0);
-return e = i([ p ], e);
+i([ p(cc.Node) ], e.prototype, "nodeMask", void 0);
+return e = i([ u ], e);
 }(cc.Component);
 o.default = f;
 cc._RF.pop();
@@ -8733,7 +9603,7 @@ return r > 3 && a && Object.defineProperty(e, o, a), a;
 Object.defineProperty(o, "__esModule", {
 value: !0
 });
-var r = t("../common/Events"), a = t("../common/EventConstants"), s = t("../common/AudioConstands"), c = cc._decorator, l = c.ccclass, u = (c.property, 
+var r = t("../common/Events"), a = t("../common/EventConstants"), s = t("../common/AudioConstands"), c = cc._decorator, l = c.ccclass, d = (c.property, 
 function(t) {
 n(e, t);
 function e() {
@@ -8767,7 +9637,7 @@ r.events.emit(a.GameEvents.HIDE_ALL_POPUP);
 };
 return e = i([ l ], e);
 }(cc.Component));
-o.default = u;
+o.default = d;
 cc._RF.pop();
 }, {
 "../common/AudioConstands": "AudioConstands",
@@ -8830,6 +9700,1041 @@ return e;
 cc.shake = function(t, e, o) {
 return new r(t, e, o);
 };
+cc._RF.pop();
+}, {} ],
+SimpleAd: [ function(t, e, o) {
+"use strict";
+cc._RF.push(e, "4ed77QIA0xEN44lp0xr0q9+", "SimpleAd");
+var n = this && this.__extends || function() {
+var t = function(e, o) {
+return (t = Object.setPrototypeOf || {
+__proto__: []
+} instanceof Array && function(t, e) {
+t.__proto__ = e;
+} || function(t, e) {
+for (var o in e) e.hasOwnProperty(o) && (t[o] = e[o]);
+})(e, o);
+};
+return function(e, o) {
+t(e, o);
+function n() {
+this.constructor = e;
+}
+e.prototype = null === o ? Object.create(o) : (n.prototype = o.prototype, new n());
+};
+}(), i = this && this.__decorate || function(t, e, o, n) {
+var i, r = arguments.length, a = r < 3 ? e : null === n ? n = Object.getOwnPropertyDescriptor(e, o) : n;
+if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) a = Reflect.decorate(t, e, o, n); else for (var s = t.length - 1; s >= 0; s--) (i = t[s]) && (a = (r < 3 ? i(a) : r > 3 ? i(e, o, a) : i(e, o)) || a);
+return r > 3 && a && Object.defineProperty(e, o, a), a;
+};
+Object.defineProperty(o, "__esModule", {
+value: !0
+});
+var r = t("./SimpleUtils"), a = t("./SimpleSDK"), s = t("./SimpleSDKEvent"), c = cc._decorator, l = c.ccclass, d = (c.property, 
+function(t) {
+n(e, t);
+function e() {
+var e = null !== t && t.apply(this, arguments) || this;
+e.hasInit = !1;
+e.lastTryLoadAllTs = -1;
+e.ATJSSDK = null;
+e.ATRewardedVideoJSSDK = null;
+e.ATInterstitialJSSDK = null;
+e.ATBannerJSSDK = null;
+e.rewardId = null;
+e.rewardLoadingStatus = o.STATUS_INIT;
+e.rewardListener = null;
+e.atRewardedVideoListener = {
+adEntry: "",
+setEntry: function(t) {
+this.adEntry = t;
+},
+onRewardedVideoAdLoaded: function(t) {
+r.default.log("onRewardedVideoAdLoaded(" + t + ")");
+a.default.ad_instance().rewardLoad();
+a.default.analytics_instance().sendLog(s.default.AD_LOAD, s.default.buildAdLoad(s.default.AD_TYPE_REWARD, t));
+},
+onRewardedVideoAdFailed: function(t, e) {
+r.default.log("onRewardedVideoAdFailed(" + t + ", " + e + ")");
+a.default.ad_instance().rewardLoadFail();
+a.default.analytics_instance().sendLog(s.default.AD_LOAD_FAIL, s.default.buildAdLoadFail(s.default.AD_TYPE_REWARD, t, e));
+},
+onRewardedVideoAdPlayStart: function(t, e) {
+var o = JSON.parse(e);
+r.default.log("onRewardedVideoAdPlayStart(" + t + ", " + e + ")");
+a.default.analytics_instance().sendLog(s.default.AD_SHOW, s.default.buildMapWithCallback(s.default.AD_TYPE_REWARD, t, o));
+var n = a.default.ad_instance();
+null != n.rewardListener && n.rewardListener.onRewardedVideoAdPlayStart(this.adEntry, o);
+},
+onRewardedVideoAdPlayEnd: function(t, e) {
+r.default.log("onRewardedVideoAdPlayEnd(" + t + ", " + e + ")");
+},
+onRewardedVideoAdPlayFailed: function(t, e, o) {
+var n = JSON.parse(o);
+r.default.log("onRewardedVideoAdPlayFailed(" + t + ", " + e + ", " + o + ")");
+var i = a.default.ad_instance();
+null != i.rewardListener && i.rewardListener.onRewardedVideoAdPlayFailed(this.adEntry, e, n);
+},
+onRewardedVideoAdClosed: function(t, e) {
+var o = JSON.parse(e);
+r.default.log("onRewardedVideoAdClosed(" + t + ", " + e + ")");
+var n = a.default.ad_instance();
+n.rewardClose();
+null != n.rewardListener && n.rewardListener.onRewardedVideoAdClosed(this.adEntry, o);
+},
+onRewardedVideoAdPlayClicked: function(t, e) {
+var o = JSON.parse(e);
+r.default.log("onRewardedVideoAdPlayClicked(" + t + ", " + e + ")");
+a.default.analytics_instance().sendLog(s.default.AD_CLICK, s.default.buildMapWithCallback(s.default.AD_TYPE_REWARD, t, o));
+var n = a.default.ad_instance();
+null != n.rewardListener && n.rewardListener.onRewardedVideoAdPlayClicked(this.adEntry, o);
+},
+onReward: function(t, e) {
+r.default.log("onReward(" + t + ", " + e + ")");
+}
+};
+e.interId = null;
+e.interLoadingStatus = o.STATUS_INIT;
+e.interListener = null;
+e.atInterstitialListener = {
+adEntry: "",
+setEntry: function(t) {
+this.adEntry = t;
+},
+onInterstitialAdLoaded: function(t) {
+a.default.ad_instance().interLoad();
+a.default.analytics_instance().sendLog(s.default.AD_LOAD, s.default.buildAdLoad(s.default.AD_TYPE_INTERSTITIAL, t));
+r.default.log("onInterstitialAdLoaded(" + t + ")");
+},
+onInterstitialAdLoadFail: function(t, e) {
+a.default.ad_instance().interLoadFail();
+a.default.analytics_instance().sendLog(s.default.AD_LOAD_FAIL, s.default.buildAdLoadFail(s.default.AD_TYPE_INTERSTITIAL, t, e));
+r.default.log("onInterstitialAdLoadFail(" + t + ", " + e + ")");
+},
+onInterstitialAdShow: function(t, e) {
+var o = JSON.parse(e);
+a.default.analytics_instance().sendLog(s.default.AD_SHOW, s.default.buildMapWithCallback(s.default.AD_TYPE_INTERSTITIAL, t, o));
+r.default.log("onInterstitialAdShow(" + t + ", " + e + ")");
+var n = a.default.ad_instance();
+null != n.interListener && n.interListener.onInterstitialAdShow(this.adEntry, o);
+},
+onInterstitialAdStartPlayingVideo: function(t, e) {
+r.default.log("onInterstitialAdStartPlayingVideo(" + t + ", " + e + ")");
+},
+onInterstitialAdEndPlayingVideo: function(t, e) {
+r.default.log("onInterstitialAdEndPlayingVideo(" + t + ", " + e + ")");
+},
+onInterstitialAdFailedToPlayVideo: function(t, e) {
+r.default.log("onInterstitialAdFailedToPlayVideo(" + t + ", " + e + ")");
+},
+onInterstitialAdFailedToShow: function(t) {
+r.default.log("onInterstitialAdFailedToShow(" + t + ")");
+},
+onInterstitialAdClose: function(t, e) {
+var o = JSON.parse(e);
+r.default.log("onInterstitialAdClose(" + t + ", " + e + ")");
+var n = a.default.ad_instance();
+n.interClose();
+null != n.interListener && n.interListener.onInterstitialAdClose(this.adEntry, o);
+},
+onInterstitialAdClick: function(t, e) {
+var o = JSON.parse(e);
+a.default.analytics_instance().sendLog(s.default.AD_CLICK, s.default.buildMapWithCallback(s.default.AD_TYPE_INTERSTITIAL, t, JSON.parse(e)));
+r.default.log("onInterstitialAdClick(" + t + ", " + e + ")");
+var n = a.default.ad_instance();
+null != n.interListener && n.interListener.onInterstitialAdClick(this.adEntry, o);
+}
+};
+e.bannerId = null;
+e.bannerLoadingStatus = o.STATUS_INIT;
+e.bannerWidth = -1;
+e.bannerHeight = -1;
+e.bannerHasShow = !1;
+e.bannerListener = null;
+e.atBannerListener = {
+onBannerAdLoaded: function(t) {
+a.default.ad_instance().bannerLoad();
+a.default.analytics_instance().sendLog(s.default.AD_LOAD, s.default.buildAdLoad(s.default.AD_TYPE_BANNER, t));
+r.default.log("onBannerAdLoaded(" + t + ")");
+},
+onBannerAdLoadFail: function(t, e) {
+a.default.ad_instance().bannerLoadFail();
+a.default.analytics_instance().sendLog(s.default.AD_LOAD_FAIL, s.default.buildAdLoadFail(s.default.AD_TYPE_BANNER, t, e));
+r.default.log("onBannerAdLoadFail(" + t + ", " + e + ")");
+},
+onBannerAdShow: function(t, e) {
+var o = JSON.parse(e);
+a.default.analytics_instance().sendLog(s.default.AD_SHOW, s.default.buildMapWithCallback(s.default.AD_TYPE_BANNER, t, o));
+r.default.log("onBannerAdShow(" + t + ", " + e + ")");
+var n = a.default.ad_instance();
+null != n.bannerListener && n.bannerListener.onBannerAdShow(t, o);
+},
+onBannerAdClick: function(t, e) {
+var o = JSON.parse(e);
+a.default.analytics_instance().sendLog(s.default.AD_CLICK, s.default.buildMapWithCallback(s.default.AD_TYPE_BANNER, t, o));
+r.default.log("onBannerAdClick(" + t + ", " + e + ")");
+var n = a.default.ad_instance();
+null != n.bannerListener && n.bannerListener.onBannerAdClick(t, o);
+},
+onBannerAdAutoRefresh: function(t, e) {
+r.default.log("onBannerAdAutoRefresh(" + t + ", " + e + ")");
+},
+onBannerAdAutoRefreshFail: function(t, e) {
+r.default.log("onBannerAdAutoRefreshFail(" + t + ", " + e + ")");
+},
+onBannerAdCloseButtonTapped: function(t, e) {
+r.default.log("onBannerAdCloseButtonTapped(" + t + ", " + e + ")");
+}
+};
+return e;
+}
+o = e;
+e.prototype.init = function(t) {
+this.ATJSSDK = window.ATJSSDK;
+this.ATRewardedVideoJSSDK = window.ATRewardedVideoJSSDK;
+this.ATInterstitialJSSDK = window.ATInterstitialJSSDK;
+this.ATBannerJSSDK = window.ATBannerJSSDK;
+if (r.default.isEditor()) cc.log("skip init at sdk"); else {
+t.debug && this.ATJSSDK.setLogDebug(!0);
+this.rewardId = t.rewardPlacementId;
+this.interId = t.interstitialPlacementId;
+this.bannerId = t.bannePlacementId;
+this.bannerWidth = cc.view.getFrameSize().width - 10;
+t.bannerWidth > 0 && (this.bannerWidth = t.bannerWidth);
+this.bannerHeight = this.bannerWidth / 6.4;
+t.bannerHeight > 0 && (this.bannerHeight = t.bannerHeight);
+this.ATRewardedVideoJSSDK.setAdListener(this.atRewardedVideoListener);
+this.ATInterstitialJSSDK.setAdListener(this.atInterstitialListener);
+this.ATBannerJSSDK.setAdListener(this.atBannerListener);
+r.default.log("start anythink sdk with " + t.toponAppid);
+this.ATJSSDK.setGDPRLevel(this.ATJSSDK.PERSONALIZED);
+this.ATJSSDK.initSDK(t.toponAppid, t.toponKey);
+this.tryLoadAll();
+this.hasInit = !0;
+}
+};
+e.prototype.update = function(t) {
+if (this.hasInit) {
+var e = r.default.getTimestamp();
+this.lastTryLoadAllTs + o.TRT_LOAD_ALL_INTERVAL < e && this.tryLoadAll();
+}
+};
+e.prototype.tryLoadAll = function() {
+r.default.log("try to load all ad");
+var t = r.default.getTimestamp();
+this.lastTryLoadAllTs = t;
+this.hasReward() ? r.default.log("skip load reward because reward has ad") : this.tryLoadReward();
+this.hasInter() ? r.default.log("skip load inter because inter has ad") : this.tryLoadInter();
+this.hasBanner() ? r.default.log("skip load inter because banner has ad") : this.tryLoadBanner();
+};
+e.prototype.tryLoadReward = function() {
+if (a.default.instance().isNetworkOk()) if (null != this.rewardId && this.rewardId.length > 0) if (this.rewardLoadingStatus == o.STATUS_LOADING) r.default.log("reward is loading and skip"); else {
+r.default.log("try to load reward");
+this.rewardLoadingStatus = o.STATUS_LOADING;
+this.loadReward();
+} else r.default.log("reward id is null and skip");
+};
+e.prototype.loadReward = function() {
+this.ATRewardedVideoJSSDK.loadRewardedVideo(this.rewardId, {});
+};
+e.prototype.setRewardListener = function(t) {
+this.rewardListener = t;
+};
+e.prototype.hasReward = function() {
+return null != this.rewardId && this.rewardId.length > 0 && this.ATRewardedVideoJSSDK.hasAdReady(this.rewardId);
+};
+e.prototype.showReward = function(t) {
+this.atRewardedVideoListener.setEntry(t);
+this.ATRewardedVideoJSSDK.showAd(this.rewardId);
+};
+e.prototype.rewardLoad = function() {
+this.rewardLoadingStatus = o.STATUS_SUCCESS;
+};
+e.prototype.rewardLoadFail = function() {
+this.rewardLoadingStatus = o.STATUS_FAILED;
+};
+e.prototype.rewardClose = function() {
+this.loadReward();
+};
+e.prototype.tryLoadInter = function() {
+if (a.default.instance().isNetworkOk()) if (null != this.interId && this.interId.length > 0) if (this.interLoadingStatus == o.STATUS_LOADING) r.default.log("inter is loading and skip"); else {
+r.default.log("try to load inter");
+this.interLoadingStatus = o.STATUS_LOADING;
+this.loadInter();
+} else r.default.log("inter id is null and skip");
+};
+e.prototype.loadInter = function() {
+this.ATInterstitialJSSDK.loadInterstitial(this.interId);
+};
+e.prototype.setInterListener = function(t) {
+this.interListener = t;
+};
+e.prototype.hasInter = function() {
+return null != this.interId && this.interId.length > 0 && this.ATInterstitialJSSDK.hasAdReady(this.interId);
+};
+e.prototype.showInter = function(t) {
+this.atInterstitialListener.setEntry(t);
+this.ATInterstitialJSSDK.showAd(this.interId);
+this.tryLoadInter();
+};
+e.prototype.interLoad = function() {
+this.interLoadingStatus = o.STATUS_SUCCESS;
+};
+e.prototype.interLoadFail = function() {
+this.interLoadingStatus = o.STATUS_FAILED;
+};
+e.prototype.interClose = function() {
+this.loadInter();
+};
+e.prototype.tryLoadBanner = function() {
+if (a.default.instance().isNetworkOk()) if (null != this.bannerId && this.bannerId.length > 0) if (this.bannerLoadingStatus == o.STATUS_LOADING) r.default.log("banner is loading and skip"); else {
+r.default.log("try to load banner");
+this.bannerLoadingStatus = o.STATUS_LOADING;
+this.loadBanner();
+} else r.default.log("banner id is null and skip");
+};
+e.prototype.loadBanner = function() {
+this.ATBannerJSSDK.loadBanner(this.bannerId, this.ATBannerJSSDK.createLoadAdSize(this.bannerWidth, this.bannerHeight));
+};
+e.prototype.hasBanner = function() {
+return null != this.bannerId && this.bannerId.length > 0 && this.ATBannerJSSDK.hasAdReady(this.bannerId);
+};
+e.prototype.setBannerListener = function(t) {
+this.bannerListener = t;
+};
+e.prototype.showOrReShowBanner = function(t) {
+if (this.bannerHasShow) this.ATBannerJSSDK.reShowAd(this.bannerId); else if (this.ATBannerJSSDK.hasAdReady(this.bannerId)) {
+this.bannerHasShow = !0;
+var e = "";
+e = t == o.BANNER_TOP ? this.ATBannerJSSDK.kATBannerAdShowingPisitionTop : this.ATBannerJSSDK.kATBannerAdShowingPisitionBottom;
+this.ATBannerJSSDK.showAdInPosistion(this.bannerId, e);
+}
+};
+e.prototype.hideBanner = function() {
+this.ATBannerJSSDK.hideAd(this.bannerId);
+};
+e.prototype.removeBanner = function() {
+this.ATBannerJSSDK.rewoveAd(this.bannerId);
+this.bannerHasShow = !1;
+this.tryLoadBanner();
+};
+e.prototype.bannerLoad = function() {
+this.bannerLoadingStatus = o.STATUS_SUCCESS;
+};
+e.prototype.bannerLoadFail = function() {
+this.bannerLoadingStatus = o.STATUS_FAILED;
+};
+e.prototype.getAdStatus = function() {
+return {
+reward: this.rewardLoadingStatus,
+inter: this.interLoadingStatus,
+banner: this.bannerLoadingStatus
+};
+};
+var o;
+e.TRT_LOAD_ALL_INTERVAL = 60;
+e.STATUS_INIT = 0;
+e.STATUS_LOADING = 1;
+e.STATUS_SUCCESS = 2;
+e.STATUS_FAILED = 3;
+e.BANNER_TOP = 0;
+e.BANNER_BOTTOM = 1;
+return e = o = i([ l ], e);
+}(cc.Component));
+o.default = d;
+cc._RF.pop();
+}, {
+"./SimpleSDK": "SimpleSDK",
+"./SimpleSDKEvent": "SimpleSDKEvent",
+"./SimpleUtils": "SimpleUtils"
+} ],
+SimpleAnalytics: [ function(t, e, o) {
+"use strict";
+cc._RF.push(e, "ad668zigsBJtalLPP6Rogr3", "SimpleAnalytics");
+Object.defineProperty(o, "__esModule", {
+value: !0
+});
+var n = t("./SimpleUtils"), i = t("./SimpleSDKEvent"), r = cc._decorator, a = (r.ccclass, 
+r.property, function() {
+function t(t) {
+this.times = 5;
+var e = {
+__logs__: t
+};
+this.bodyJson = JSON.stringify(e);
+this.times = 3;
+}
+t.prototype.sendLog = function() {
+this.times--;
+var t = new XMLHttpRequest(), e = this;
+t.onreadystatechange = function() {
+4 == t.readyState && (t.status >= 200 && t.status < 400 ? n.default.log("send log success") : e.times > 0 && setTimeout(function() {
+e.sendLog();
+}, 5e3));
+};
+t.open("POST", s.POST_URL, !0);
+t.setRequestHeader("x-log-apiversion", "0.6.0");
+t.setRequestHeader("x-log-bodyrawsize", this.bodyJson.length.toString());
+t.setRequestHeader("Content-Type", "application/json;charset=utf-8");
+t.send(this.bodyJson);
+n.default.log("ready to send log " + this.times + " " + s.POST_URL + " " + this.bodyJson);
+};
+return t;
+}()), s = function() {
+function t() {
+this.staticsInfo = null;
+this.logIndex = 0;
+this.logs = [];
+this.lastSendTs = -1;
+this.totalTime = 0;
+this.nextInterval = 5;
+this.interval = 10;
+this.maxInterval = 300;
+}
+t.prototype.init = function(t) {
+this.staticsInfo = t;
+};
+t.prototype.update = function(e) {
+this.totalTime += e;
+if (this.totalTime > this.nextInterval) {
+this.sendLog(i.default.HEARTBEAT, {
+passTime: Math.floor(this.totalTime)
+});
+this.nextInterval += this.interval;
+this.interval *= 2;
+this.interval >= this.maxInterval && (this.interval = this.maxInterval);
+}
+if (this.logs.length > 0) {
+var o = n.default.getTimestamp();
+if (this.logs.length > t.BATCH_SIZE || this.lastSendTs + t.SEND_INTERVAL < o) {
+this.sendAll();
+this.lastSendTs = o;
+}
+}
+};
+t.prototype.sendAll = function() {
+new a(this.logs).sendLog();
+this.logs = [];
+};
+t.prototype.buildJson = function(t, e) {
+var o = this.logIndex;
+this.logIndex++;
+return {
+gameName: this.staticsInfo.gameName,
+deviceId: this.staticsInfo.deviceId,
+package: this.staticsInfo.pn,
+platform: this.staticsInfo.platform,
+idfa: this.staticsInfo.idfa,
+uid: this.staticsInfo.uid,
+idfv: this.staticsInfo.idfv,
+androidId: this.staticsInfo.android_id,
+sessionId: this.staticsInfo.sessionId,
+ev: t,
+logIndex: o.toString(),
+clientTs: n.default.getTimestamp().toString(),
+value: JSON.stringify(e)
+};
+};
+t.prototype.sendLog = function(t, e) {
+if (null != this.staticsInfo) {
+var o = this.buildJson(t, e);
+this.logs.push(o);
+return !0;
+}
+return !1;
+};
+t.POST_URL = "https://bepicdata.ap-southeast-1.log.aliyuncs.com/logstores/sdklog/track";
+t.SEND_INTERVAL = 5;
+t.BATCH_SIZE = 20;
+return t;
+}();
+o.default = s;
+cc._RF.pop();
+}, {
+"./SimpleSDKEvent": "SimpleSDKEvent",
+"./SimpleUtils": "SimpleUtils"
+} ],
+SimpleAndroid: [ function(t, e, o) {
+"use strict";
+cc._RF.push(e, "47353arnNZK6K04ILSYXBBG", "SimpleAndroid");
+var n = this && this.__extends || function() {
+var t = function(e, o) {
+return (t = Object.setPrototypeOf || {
+__proto__: []
+} instanceof Array && function(t, e) {
+t.__proto__ = e;
+} || function(t, e) {
+for (var o in e) e.hasOwnProperty(o) && (t[o] = e[o]);
+})(e, o);
+};
+return function(e, o) {
+t(e, o);
+function n() {
+this.constructor = e;
+}
+e.prototype = null === o ? Object.create(o) : (n.prototype = o.prototype, new n());
+};
+}(), i = this && this.__decorate || function(t, e, o, n) {
+var i, r = arguments.length, a = r < 3 ? e : null === n ? n = Object.getOwnPropertyDescriptor(e, o) : n;
+if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) a = Reflect.decorate(t, e, o, n); else for (var s = t.length - 1; s >= 0; s--) (i = t[s]) && (a = (r < 3 ? i(a) : r > 3 ? i(e, o, a) : i(e, o)) || a);
+return r > 3 && a && Object.defineProperty(e, o, a), a;
+};
+Object.defineProperty(o, "__esModule", {
+value: !0
+});
+var r = t("./SimpleInterface"), a = cc._decorator, s = a.ccclass, c = (a.property, 
+function(t) {
+n(e, t);
+function e() {
+return null !== t && t.apply(this, arguments) || this;
+}
+e.prototype.initWithAdjust = function(t, e) {
+jsb.reflection.callStaticMethod("com/bepic/simpleafsdk/SimpleAJSDK", "initWithAdjust", "(Ljava/lang/String;Z)V", t, e);
+};
+e.prototype.initWithAppsflyer = function(t, e, o) {
+jsb.reflection.callStaticMethod("com/bepic/simpleafsdk/SimpleAFSDK", "initWithAppsflyer", "(Ljava/lang/String;Z)V", t, o);
+};
+e.prototype.getNetworkStatus = function() {
+return jsb.reflection.callStaticMethod("com/bepic/simplesdk/SimpleSDKBase", "getNetworkStatus", "()I");
+};
+return e = i([ s ], e);
+}(r.SimpleInterface));
+o.default = c;
+cc._RF.pop();
+}, {
+"./SimpleInterface": "SimpleInterface"
+} ],
+SimpleCallback: [ function(t, e, o) {
+"use strict";
+cc._RF.push(e, "171068Vll5E34So+RJoWi48", "SimpleCallback");
+var n = this && this.__extends || function() {
+var t = function(e, o) {
+return (t = Object.setPrototypeOf || {
+__proto__: []
+} instanceof Array && function(t, e) {
+t.__proto__ = e;
+} || function(t, e) {
+for (var o in e) e.hasOwnProperty(o) && (t[o] = e[o]);
+})(e, o);
+};
+return function(e, o) {
+t(e, o);
+function n() {
+this.constructor = e;
+}
+e.prototype = null === o ? Object.create(o) : (n.prototype = o.prototype, new n());
+};
+}(), i = this && this.__decorate || function(t, e, o, n) {
+var i, r = arguments.length, a = r < 3 ? e : null === n ? n = Object.getOwnPropertyDescriptor(e, o) : n;
+if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) a = Reflect.decorate(t, e, o, n); else for (var s = t.length - 1; s >= 0; s--) (i = t[s]) && (a = (r < 3 ? i(a) : r > 3 ? i(e, o, a) : i(e, o)) || a);
+return r > 3 && a && Object.defineProperty(e, o, a), a;
+};
+Object.defineProperty(o, "__esModule", {
+value: !0
+});
+var r = t("./SimpleSDK"), a = cc._decorator, s = a.ccclass, c = (a.property, function(t) {
+n(e, t);
+function e() {
+return null !== t && t.apply(this, arguments) || this;
+}
+e.instance = function() {
+return get_simple_callback();
+};
+e.prototype.sdkInitSuccess = function(t) {
+cc.log(r.default.instance());
+var e = JSON.parse(t);
+r.default.instance().initSuccess(e);
+};
+e.prototype.sdkInitFailed = function(t) {
+var e = JSON.parse(t);
+r.default.instance().initFailed(e);
+};
+e.prototype.getAttributionInfo = function(t) {
+var e = JSON.parse(t);
+r.default.instance().innerAttributionInfoCallback(e);
+};
+return e = i([ s ], e);
+}(cc.Component));
+o.default = c;
+cc._RF.pop();
+}, {
+"./SimpleSDK": "SimpleSDK"
+} ],
+SimpleEditor: [ function(t, e, o) {
+"use strict";
+cc._RF.push(e, "01ca5SDvO5BE5GvVhl5Eu85", "SimpleEditor");
+var n = this && this.__extends || function() {
+var t = function(e, o) {
+return (t = Object.setPrototypeOf || {
+__proto__: []
+} instanceof Array && function(t, e) {
+t.__proto__ = e;
+} || function(t, e) {
+for (var o in e) e.hasOwnProperty(o) && (t[o] = e[o]);
+})(e, o);
+};
+return function(e, o) {
+t(e, o);
+function n() {
+this.constructor = e;
+}
+e.prototype = null === o ? Object.create(o) : (n.prototype = o.prototype, new n());
+};
+}(), i = this && this.__decorate || function(t, e, o, n) {
+var i, r = arguments.length, a = r < 3 ? e : null === n ? n = Object.getOwnPropertyDescriptor(e, o) : n;
+if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) a = Reflect.decorate(t, e, o, n); else for (var s = t.length - 1; s >= 0; s--) (i = t[s]) && (a = (r < 3 ? i(a) : r > 3 ? i(e, o, a) : i(e, o)) || a);
+return r > 3 && a && Object.defineProperty(e, o, a), a;
+};
+Object.defineProperty(o, "__esModule", {
+value: !0
+});
+var r = t("./SimpleInterface"), a = t("./SimpleCallback"), s = cc._decorator, c = s.ccclass, l = (s.property, 
+function(t) {
+n(e, t);
+function e() {
+return null !== t && t.apply(this, arguments) || this;
+}
+e.prototype.initWithAdjust = function(t, e) {
+this.init();
+};
+e.prototype.initWithAppsflyer = function(t, e, o) {
+this.init();
+};
+e.prototype.init = function() {
+var t = JSON.stringify({
+package: "com.a.b",
+appVersion: "15",
+deviceId: "test deviceid",
+idfa: "idfa_str",
+android_id: "android_id_str",
+idfv: "idfv_str",
+band: "band_str",
+model: "model_str",
+deviceName: "device_str",
+systemVersion: "systemversion",
+network: 0
+});
+a.default.instance().sdkInitSuccess(t);
+var e = JSON.stringify({
+network: "Organic",
+campaign: "",
+adgroup: "",
+createive: ""
+});
+a.default.instance().getAttributionInfo(e);
+};
+e.prototype.getNetworkStatus = function() {
+return 0;
+};
+return e = i([ c ], e);
+}(r.SimpleInterface));
+o.default = l;
+cc._RF.pop();
+}, {
+"./SimpleCallback": "SimpleCallback",
+"./SimpleInterface": "SimpleInterface"
+} ],
+SimpleIOS: [ function(t, e, o) {
+"use strict";
+cc._RF.push(e, "8ade2PUZqVOmasUpuPIf1jR", "SimpleIOS");
+var n = this && this.__extends || function() {
+var t = function(e, o) {
+return (t = Object.setPrototypeOf || {
+__proto__: []
+} instanceof Array && function(t, e) {
+t.__proto__ = e;
+} || function(t, e) {
+for (var o in e) e.hasOwnProperty(o) && (t[o] = e[o]);
+})(e, o);
+};
+return function(e, o) {
+t(e, o);
+function n() {
+this.constructor = e;
+}
+e.prototype = null === o ? Object.create(o) : (n.prototype = o.prototype, new n());
+};
+}(), i = this && this.__decorate || function(t, e, o, n) {
+var i, r = arguments.length, a = r < 3 ? e : null === n ? n = Object.getOwnPropertyDescriptor(e, o) : n;
+if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) a = Reflect.decorate(t, e, o, n); else for (var s = t.length - 1; s >= 0; s--) (i = t[s]) && (a = (r < 3 ? i(a) : r > 3 ? i(e, o, a) : i(e, o)) || a);
+return r > 3 && a && Object.defineProperty(e, o, a), a;
+};
+Object.defineProperty(o, "__esModule", {
+value: !0
+});
+var r = t("./SimpleInterface"), a = cc._decorator, s = a.ccclass, c = (a.property, 
+function(t) {
+n(e, t);
+function e() {
+return null !== t && t.apply(this, arguments) || this;
+}
+o = e;
+e.prototype.initWithAdjust = function(t, e) {
+jsb.reflection.callStaticMethod(o.bridgeName, "SDKInitWithAdjustKey:withDebug:", t, e);
+};
+e.prototype.initWithAppsflyer = function(t, e, n) {
+jsb.reflection.callStaticMethod(o.bridgeName, "SDKInitWithAppsflyerKey:withAppleid:withDebug:", t, e, n);
+};
+e.prototype.getNetworkStatus = function() {
+return jsb.reflection.callStaticMethod(o.bridgeName, "getNetworkStatus");
+};
+var o;
+e.bridgeName = "SimpleBridge";
+return e = o = i([ s ], e);
+}(r.SimpleInterface));
+o.default = c;
+cc._RF.pop();
+}, {
+"./SimpleInterface": "SimpleInterface"
+} ],
+SimpleInterface: [ function(t, e, o) {
+"use strict";
+cc._RF.push(e, "da468frYlFKVYBtrhp1un8i", "SimpleInterface");
+Object.defineProperty(o, "__esModule", {
+value: !0
+});
+var n = function() {
+return function() {};
+}();
+o.SimpleInterface = n;
+cc._RF.pop();
+}, {} ],
+SimpleSDKEvent: [ function(t, e, o) {
+"use strict";
+cc._RF.push(e, "c0651BbgEZB0JuOR+5Y+1zx", "SimpleSDKEvent");
+Object.defineProperty(o, "__esModule", {
+value: !0
+});
+var n = function() {
+function t() {}
+t.buildAdLoad = function(t, e) {
+return {
+adtype: t,
+unitId: e
+};
+};
+t.buildAdLoadFail = function(t, e, o) {
+return {
+adtype: t,
+unitId: e,
+errorInfo: o
+};
+};
+t.buildMapWithCallback = function(e, o, n) {
+return {
+network_firm_id: t.getOrDefault(n, "network_firm_id", ""),
+adsource_id: t.getOrDefault(n, "adsource_id", ""),
+adsource_index: t.getOrDefault(n, "adsource_index", ""),
+adsource_price: t.getOrDefault(n, "adsource_price", ""),
+adsource_isheaderbidding: t.getOrDefault(n, "adsource_isheaderbidding", "false"),
+publisher_revenue: t.getOrDefault(n, "publisher_revenue", "publisher_revenue"),
+network_type: t.getOrDefault(n, "network_type", ""),
+network_placement_id: t.getOrDefault(n, "network_placement_id", ""),
+adtype: e,
+unitId: o
+};
+};
+t.getOrDefault = function(t, e, o) {
+if (void 0 != t && null != t && e in t) {
+var n = t[e];
+return void 0 != n && null != n ? n.toString() : o;
+}
+return o;
+};
+t.GAME_START = "game_start";
+t.HEARTBEAT = "heartbeat";
+t.AD_LOAD = "ad_load";
+t.AD_LOAD_FAIL = "ad_load_fail";
+t.AD_SHOW = "ad_show";
+t.AD_SHOW_FAIL = "ad_show_fail";
+t.AD_CLICK = "ad_click";
+t.AD_TYPE_REWARD = "reward";
+t.AD_TYPE_INTERSTITIAL = "interstitial";
+t.AD_TYPE_BANNER = "banner";
+return t;
+}();
+o.default = n;
+cc._RF.pop();
+}, {} ],
+SimpleSDK: [ function(t, e, o) {
+"use strict";
+cc._RF.push(e, "3fc30LNUulHUK+UGUaUOo/M", "SimpleSDK");
+var n = this && this.__extends || function() {
+var t = function(e, o) {
+return (t = Object.setPrototypeOf || {
+__proto__: []
+} instanceof Array && function(t, e) {
+t.__proto__ = e;
+} || function(t, e) {
+for (var o in e) e.hasOwnProperty(o) && (t[o] = e[o]);
+})(e, o);
+};
+return function(e, o) {
+t(e, o);
+function n() {
+this.constructor = e;
+}
+e.prototype = null === o ? Object.create(o) : (n.prototype = o.prototype, new n());
+};
+}(), i = this && this.__decorate || function(t, e, o, n) {
+var i, r = arguments.length, a = r < 3 ? e : null === n ? n = Object.getOwnPropertyDescriptor(e, o) : n;
+if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) a = Reflect.decorate(t, e, o, n); else for (var s = t.length - 1; s >= 0; s--) (i = t[s]) && (a = (r < 3 ? i(a) : r > 3 ? i(e, o, a) : i(e, o)) || a);
+return r > 3 && a && Object.defineProperty(e, o, a), a;
+};
+Object.defineProperty(o, "__esModule", {
+value: !0
+});
+var r = t("./SimpleIOS"), a = t("./SimpleAndroid"), s = t("./SimpleEditor"), c = t("./SimpleCallback"), l = t("./SimpleUtils"), d = t("./SimpleAnalytics"), u = t("./SimpleSDKEvent"), p = t("./SimpleAd"), f = cc._decorator, h = f.ccclass, g = (f.property, 
+function(t) {
+n(e, t);
+function e() {
+var e = null !== t && t.apply(this, arguments) || this;
+e.adapter = null;
+e.staticInfo = null;
+e.startConfig = null;
+e.simpleAnalytics = new d.default();
+e.simpleAd = new p.default();
+e.attributionInfo = null;
+return e;
+}
+o = e;
+e.instance = function() {
+return get_simple_manager();
+};
+e.ad_instance = function() {
+return get_simple_ad();
+};
+e.analytics_instance = function() {
+return get_simple_analytics();
+};
+e.prototype.onLoad = function() {
+cc.game.addPersistRootNode(this.node);
+cc.sys.os === cc.sys.OS_IOS ? this.adapter = new r.default() : cc.sys.os === cc.sys.OS_ANDROID ? this.adapter = new a.default() : this.adapter = new s.default();
+set_simple_manager(this);
+set_simple_callback(new c.default());
+l.default.log("sdk setup finish");
+this.startLoadConfig();
+};
+e.prototype.start = function() {
+l.default.log("init start node");
+};
+e.prototype.update = function(t) {
+null != this.simpleAnalytics && this.simpleAnalytics.update(t);
+null != this.simpleAd && this.simpleAd.update(t);
+};
+e.prototype.startLoadConfig = function() {
+cc.loader.loadRes(o.CONFIG_FILE_NAME, cc.JsonAsset, function(t, e) {
+null != t && l.default.log(JSON.stringify(t));
+o.instance().loadConfigSuccess(e);
+});
+};
+e.prototype.parseConfig = function(t) {
+if (cc.sys.os === cc.sys.OS_IOS) {
+(e = {
+gameName: l.default.getDictOrDefault(t, "gameName", ""),
+appsflyerkey: l.default.getDictOrDefault(t, "iosAppsflyerkey", ""),
+appleid: l.default.getDictOrDefault(t, "iosAppleid", ""),
+adjustAppkey: l.default.getDictOrDefault(t, "iosAdjustAppkey", ""),
+toponAppid: l.default.getDictOrDefault(t, "iosTopOnAppid", ""),
+toponKey: l.default.getDictOrDefault(t, "iosTopOnKey", ""),
+rewardPlacementId: l.default.getDictOrDefault(t, "iosToponRewardPlacementId", ""),
+interstitialPlacementId: l.default.getDictOrDefault(t, "iosToponInterstitialPlacementId", ""),
+bannePlacementId: l.default.getDictOrDefault(t, "iosToponBannePlacementId", ""),
+bannerWidth: l.default.getDictOrDefault(t, "bannerWidth", -1),
+bannerHeight: l.default.getDictOrDefault(t, "bannerHeight", -1),
+debug: l.default.getDictOrDefault(t, "debug", !1)
+}).appsflyerkey.length > 0 && e.appleid.length > 0 && 0 == e.adjustAppkey.length ? cc.log("ready to start appsflyer sdk") : 0 == e.appsflyerkey.length && e.adjustAppkey.length > 0 && cc.log("ready to start adjust sdk");
+return e;
+}
+if (cc.sys.os === cc.sys.OS_ANDROID) {
+(e = {
+gameName: l.default.getDictOrDefault(t, "gameName", ""),
+appsflyerkey: l.default.getDictOrDefault(t, "androidAppsflyerkey", ""),
+appleid: "",
+adjustAppkey: l.default.getDictOrDefault(t, "androidAdjustAppkey", ""),
+toponAppid: l.default.getDictOrDefault(t, "androidTopOnAppid", ""),
+toponKey: l.default.getDictOrDefault(t, "androidTopOnKey", ""),
+rewardPlacementId: l.default.getDictOrDefault(t, "androidToponRewardPlacementId", ""),
+interstitialPlacementId: l.default.getDictOrDefault(t, "androidToponInterstitialPlacementId", ""),
+bannePlacementId: l.default.getDictOrDefault(t, "androidToponBannePlacementId", ""),
+bannerWidth: l.default.getDictOrDefault(t, "bannerWidth", -1),
+bannerHeight: l.default.getDictOrDefault(t, "bannerHeight", -1),
+debug: l.default.getDictOrDefault(t, "debug", !1)
+}).appsflyerkey.length > 0 && 0 == e.adjustAppkey.length ? cc.log("ready to start appsflyer sdk") : 0 == e.appsflyerkey.length && e.adjustAppkey.length > 0 && cc.log("ready to start adjust sdk");
+return e;
+}
+var e;
+return e = {
+gameName: l.default.getDictOrDefault(t, "gameName", "demo"),
+appsflyerkey: "",
+appleid: "",
+adjustAppkey: "",
+toponAppid: "",
+toponKey: "",
+rewardPlacementId: "",
+interstitialPlacementId: "",
+bannePlacementId: "",
+bannerWidth: -1,
+bannerHeight: -1,
+debug: !0
+};
+};
+e.prototype.loadConfigSuccess = function(t) {
+try {
+if (null != t && "json" in t) {
+var e = this.parseConfig(t.json);
+this.init(e);
+} else l.default.log("fail to load json from resources/SimpleSDKConfig.json");
+} catch (t) {
+l.default.log("config load fail" + t.toString());
+}
+};
+e.prototype.init = function(t) {
+this.startConfig = t;
+l.default.setDebug(this.startConfig.debug);
+t.appsflyerkey.length > 0 ? this.adapter.initWithAppsflyer(t.appsflyerkey, t.appleid, t.debug) : this.adapter.initWithAdjust(t.adjustAppkey, t.debug);
+};
+e.prototype.initSuccess = function(t) {
+var e = "editor";
+cc.sys.os === cc.sys.OS_IOS ? e = "ios" : cc.sys.os === cc.sys.OS_ANDROID && (e = "android");
+var o = t.deviceId + "_" + l.default.getTimestamp() + "_" + l.default.getRandomInt(100), n = "none";
+switch (t.network) {
+case 0:
+n = "none";
+break;
+
+case 1:
+n = "wifi";
+break;
+
+case 2:
+n = "4g";
+break;
+
+default:
+n = "none";
+}
+this.staticInfo = {
+gameName: this.startConfig.gameName,
+pn: t.package,
+deviceId: t.deviceId,
+platform: e,
+idfa: t.idfa,
+uid: "",
+sessionId: o,
+idfv: t.idfv,
+android_id: t.android_id,
+band: t.band,
+model: t.model,
+deviceName: t.deviceName,
+systemVersion: t.systemVersion,
+network: n
+};
+l.default.log("init succ: " + JSON.stringify(this.staticInfo));
+this.simpleAnalytics.init(this.staticInfo);
+this.simpleAnalytics.sendLog(u.default.GAME_START, {
+model: this.staticInfo.model,
+band: this.staticInfo.band
+});
+this.simpleAd.init(this.startConfig);
+};
+e.prototype.initFailed = function(t) {
+l.default.log("call fail");
+};
+e.prototype.getStaticInfo = function() {
+return this.staticInfo;
+};
+e.prototype.innerAttributionInfoCallback = function(t) {
+this.attributionInfo = t;
+null != this.attributionInfoCallback && this.attributionInfoCallback(this.attributionInfo);
+};
+e.prototype.setAttributionInfoCallback = function(t) {
+this.attributionInfoCallback = t;
+null != this.attributionInfo && this.attributionInfoCallback(this.attributionInfo);
+};
+e.prototype.getAttributionInfo = function() {
+return this.attributionInfo;
+};
+e.prototype.getNetworkStatus = function() {
+return this.adapter.getNetworkStatus();
+};
+e.prototype.isNetworkOk = function() {
+var t = this.getNetworkStatus();
+return void 0 != t && null != t && t > 0;
+};
+var o;
+e.CONFIG_FILE_NAME = "SimpleSDKConfig";
+return e = o = i([ h ], e);
+}(cc.Component));
+o.default = g;
+cc._RF.pop();
+}, {
+"./SimpleAd": "SimpleAd",
+"./SimpleAnalytics": "SimpleAnalytics",
+"./SimpleAndroid": "SimpleAndroid",
+"./SimpleCallback": "SimpleCallback",
+"./SimpleEditor": "SimpleEditor",
+"./SimpleIOS": "SimpleIOS",
+"./SimpleSDKEvent": "SimpleSDKEvent",
+"./SimpleUtils": "SimpleUtils"
+} ],
+SimpleUtils: [ function(t, e, o) {
+"use strict";
+cc._RF.push(e, "cce7d7GIXRNdYHQKq/hNR1b", "SimpleUtils");
+var n = this && this.__extends || function() {
+var t = function(e, o) {
+return (t = Object.setPrototypeOf || {
+__proto__: []
+} instanceof Array && function(t, e) {
+t.__proto__ = e;
+} || function(t, e) {
+for (var o in e) e.hasOwnProperty(o) && (t[o] = e[o]);
+})(e, o);
+};
+return function(e, o) {
+t(e, o);
+function n() {
+this.constructor = e;
+}
+e.prototype = null === o ? Object.create(o) : (n.prototype = o.prototype, new n());
+};
+}(), i = this && this.__decorate || function(t, e, o, n) {
+var i, r = arguments.length, a = r < 3 ? e : null === n ? n = Object.getOwnPropertyDescriptor(e, o) : n;
+if ("object" == typeof Reflect && "function" == typeof Reflect.decorate) a = Reflect.decorate(t, e, o, n); else for (var s = t.length - 1; s >= 0; s--) (i = t[s]) && (a = (r < 3 ? i(a) : r > 3 ? i(e, o, a) : i(e, o)) || a);
+return r > 3 && a && Object.defineProperty(e, o, a), a;
+};
+Object.defineProperty(o, "__esModule", {
+value: !0
+});
+var r = cc._decorator, a = r.ccclass, s = (r.property, function(t) {
+n(e, t);
+function e() {
+return null !== t && t.apply(this, arguments) || this;
+}
+o = e;
+e.getTimestamp = function() {
+return Math.round(new Date().getTime() / 1e3);
+};
+e.getRandomInt = function(t) {
+return Math.floor(Math.random() * Math.floor(t));
+};
+e.setDebug = function(t) {
+this.debug = t;
+};
+e.log = function(t) {
+o.debug && cc.log("simple:" + t);
+};
+e.isEditor = function() {
+return !(cc.sys.os === cc.sys.OS_IOS || cc.sys.os === cc.sys.OS_ANDROID);
+};
+e.getDictOrDefault = function(t, e, o) {
+return e in t ? t[e] : o;
+};
+var o;
+e.debug = !0;
+return e = o = i([ a ], e);
+}(cc.Component));
+o.default = s;
 cc._RF.pop();
 }, {} ],
 StarEnd: [ function(t, e, o) {
@@ -8971,7 +10876,7 @@ return r > 3 && a && Object.defineProperty(e, o, a), a;
 Object.defineProperty(o, "__esModule", {
 value: !0
 });
-var r = t("./Events"), a = t("./EventConstants"), s = cc._decorator, c = s.ccclass, l = s.property, u = function(t) {
+var r = t("./Events"), a = t("./EventConstants"), s = cc._decorator, c = s.ccclass, l = s.property, d = function(t) {
 n(e, t);
 function e() {
 var e = null !== t && t.apply(this, arguments) || this;
@@ -9003,7 +10908,7 @@ i([ l(cc.Node) ], e.prototype, "nodeTips", void 0);
 i([ l(cc.Label) ], e.prototype, "labelTips", void 0);
 return e = i([ c ], e);
 }(cc.Component);
-o.default = u;
+o.default = d;
 cc._RF.pop();
 }, {
 "./EventConstants": "EventConstants",
@@ -9148,7 +11053,7 @@ done: !0
 Object.defineProperty(o, "__esModule", {
 value: !0
 });
-var s = t("../common/Utils"), c = t("../common/User"), l = t("../common/Events"), u = t("../common/EventConstants"), p = t("../common/PopupConstants"), d = t("../common/AudioConstands"), f = cc._decorator, h = f.ccclass, _ = f.property, g = function(t) {
+var s = t("../common/Utils"), c = t("../common/User"), l = t("../common/Events"), d = t("../common/EventConstants"), u = t("../common/PopupConstants"), p = t("../common/AudioConstands"), f = cc._decorator, h = f.ccclass, g = f.property, _ = function(t) {
 n(e, t);
 function e() {
 var e = null !== t && t.apply(this, arguments) || this;
@@ -9179,7 +11084,7 @@ e.prototype.getAwardFun = function() {
 var t = this;
 this.closeNode.active = !1;
 this.isStart = !0;
-l.events.emit(u.GameEvents.PLAY_SOUND_EFFECT, d.AudioName.LUCK);
+l.events.emit(d.GameEvents.PLAY_SOUND_EFFECT, p.AudioName.LUCK);
 var e = c.user.getSpinCount();
 e += 1;
 c.user.setSpinCount(e);
@@ -9210,12 +11115,12 @@ case 1:
 t.sent().parent = cc.find("Canvas");
 FSDK.setCredit("credit", this._awardArr[i].award, "spin");
 FSDK.showToast("Congratulations on receiving " + this._awardArr[i].award + " gold coins");
-l.events.emit(u.GameEvents.HIDE_POPUP);
+l.events.emit(d.GameEvents.HIDE_POPUP);
 return [ 2 ];
 
 case 2:
-l.events.emit(u.GameEvents.SHOW_POPUP, p.PopUpName.SUPERPRIZE, null, n);
-l.events.emit(u.GameEvents.HIDE_POPUP);
+l.events.emit(d.GameEvents.SHOW_POPUP, u.PopUpName.SUPERPRIZE, null, n);
+l.events.emit(d.GameEvents.HIDE_POPUP);
 return [ 2 ];
 }
 });
@@ -9224,20 +11129,20 @@ return [ 2 ];
 };
 e.prototype.closeHandle = function() {
 if (this.isStart) FSDK.showToast("The spin is starting"); else if (cc.sys.isNative && !c.user.getLumpData().isDebug) {
-l.events.emit(u.GameEvents.PLAY_SOUND_EFFECT, d.AudioName.BUTTON);
-l.events.emit(u.GameEvents.HIDE_POPUP);
+l.events.emit(d.GameEvents.PLAY_SOUND_EFFECT, p.AudioName.BUTTON);
+l.events.emit(d.GameEvents.HIDE_POPUP);
 } else {
-l.events.emit(u.GameEvents.PLAY_SOUND_EFFECT, d.AudioName.BUTTON);
-l.events.emit(u.GameEvents.HIDE_POPUP);
+l.events.emit(d.GameEvents.PLAY_SOUND_EFFECT, p.AudioName.BUTTON);
+l.events.emit(d.GameEvents.HIDE_POPUP);
 }
 };
-i([ _(cc.SpriteFrame) ], e.prototype, "iconSpriteFrame", void 0);
-i([ _(cc.Node) ], e.prototype, "iconNode", void 0);
-i([ _(cc.Node) ], e.prototype, "spinNode", void 0);
-i([ _(cc.Node) ], e.prototype, "closeNode", void 0);
+i([ g(cc.SpriteFrame) ], e.prototype, "iconSpriteFrame", void 0);
+i([ g(cc.Node) ], e.prototype, "iconNode", void 0);
+i([ g(cc.Node) ], e.prototype, "spinNode", void 0);
+i([ g(cc.Node) ], e.prototype, "closeNode", void 0);
 return e = i([ h ], e);
 }(cc.Component);
-o.default = g;
+o.default = _;
 cc._RF.pop();
 }, {
 "../common/AudioConstands": "AudioConstands",
@@ -9275,7 +11180,7 @@ return r > 3 && a && Object.defineProperty(e, o, a), a;
 Object.defineProperty(o, "__esModule", {
 value: !0
 });
-var r = t("../common/User"), a = t("../common/Events"), s = t("../common/EventConstants"), c = t("../common/PopupConstants"), l = t("../common/AudioConstands"), u = cc._decorator, p = u.ccclass, d = u.property, f = function(t) {
+var r = t("../common/User"), a = t("../common/Events"), s = t("../common/EventConstants"), c = t("../common/PopupConstants"), l = t("../common/AudioConstands"), d = cc._decorator, u = d.ccclass, p = d.property, f = function(t) {
 n(e, t);
 function e() {
 var e = null !== t && t.apply(this, arguments) || this;
@@ -9330,12 +11235,12 @@ r.user.serverData.isBlack || FSDK.showTwoCard(0, this.FSDKNode);
 e.prototype.getCreditHandle = function() {
 r.user.serverData.isBlack || FSDK.showTransList(this.FSDKNode, 1);
 };
-i([ d(cc.Label) ], e.prototype, "first_Label", void 0);
-i([ d(cc.Label) ], e.prototype, "second_Label", void 0);
-i([ d(cc.Label) ], e.prototype, "coin_Label", void 0);
-i([ d(cc.Node) ], e.prototype, "wxLoginAndSetting", void 0);
-i([ d(cc.Node) ], e.prototype, "FSDKNode", void 0);
-return e = i([ p ], e);
+i([ p(cc.Label) ], e.prototype, "first_Label", void 0);
+i([ p(cc.Label) ], e.prototype, "second_Label", void 0);
+i([ p(cc.Label) ], e.prototype, "coin_Label", void 0);
+i([ p(cc.Node) ], e.prototype, "wxLoginAndSetting", void 0);
+i([ p(cc.Node) ], e.prototype, "FSDKNode", void 0);
+return e = i([ u ], e);
 }(cc.Component);
 o.default = f;
 cc._RF.pop();
@@ -10137,7 +12042,7 @@ return r > 3 && a && Object.defineProperty(e, o, a), a;
 Object.defineProperty(o, "__esModule", {
 value: !0
 });
-var r = t("../common/Events"), a = t("../common/EventConstants"), s = t("../common/User"), c = t("../common/PopupConstants"), l = t("../common/AudioConstands"), u = cc._decorator, p = u.ccclass, d = u.property, f = function(t) {
+var r = t("../common/Events"), a = t("../common/EventConstants"), s = t("../common/User"), c = t("../common/PopupConstants"), l = t("../common/AudioConstands"), d = cc._decorator, u = d.ccclass, p = d.property, f = function(t) {
 n(e, t);
 function e() {
 var e = null !== t && t.apply(this, arguments) || this;
@@ -10162,8 +12067,8 @@ e.prototype.turntableHandle = function() {
 r.events.emit(a.GameEvents.PLAY_SOUND_EFFECT, l.AudioName.BUTTON);
 a.GameConstant.isShoot ? FSDK.showToast("The current state can not be opened") : s.user.getSpinCount() >= 15 ? FSDK.showToast("Spin limit reached today") : r.events.emit(a.GameEvents.SHOW_POPUP, c.PopUpName.TURNTABLE);
 };
-i([ d(cc.Node) ], e.prototype, "bubbleTips", void 0);
-return e = i([ p ], e);
+i([ p(cc.Node) ], e.prototype, "bubbleTips", void 0);
+return e = i([ u ], e);
 }(cc.Component);
 o.default = f;
 cc._RF.pop();
@@ -10262,4 +12167,4 @@ cc._RF.push(e, "e2ad7a8TzlKIZXScTCcCe02", "use_reversed_rotateBy");
 cc.RotateBy._reverse = !0;
 cc._RF.pop();
 }, {} ]
-}, {}, [ "FLanguageCtrl", "FLoadingCtrl", "FConfig", "FEventID", "FGlobal", "FLanguageConfig", "FLog", "FNative", "FPanelManager", "FSDK", "FSDKModel", "FToLoad", "FLogic", "FNetWork", "FNetWorkConfig", "FNetWorkCtrl", "FProtocolCode", "FSocketSend", "FCardPage", "FCreditRecord", "FGrade", "FInvityPage", "FInvityTaskItem", "FLeft", "FMarquee", "FSignPage", "FTaskItem", "FTaskPage", "FTransInfo", "FTransItem", "FTransList", "FTransPage", "FTwoCard", "FTwoCardItem", "FUpdate", "Base64", "ByteArray", "use_reversed_rotateBy", "FHideNode", "FSidebar", "UIManager", "Actions", "AnimationControl", "AudioComponent", "AudioConstands", "Cache", "EventConstants", "Events", "GPool", "IPXWidgetComponent", "PopupComponent", "PopupConstants", "TipsCompoent", "User", "Utils", "paomaGame", "Ball", "Barrier", "Cion", "FCionEvent", "GameController", "Shake", "StarEnd", "TakeAim", "UpdateGA", "gameStart", "Loading", "Main", "GameOver", "GetPacket", "Read", "TurnTable" ]);
+}, {}, [ "FLanguageCtrl", "FLoadingCtrl", "FConfig", "FEventID", "FGlobal", "FLanguageConfig", "FLog", "FNative", "FPanelManager", "FSDK", "FSDKModel", "FToLoad", "FLogic", "FNetWork", "FNetWorkConfig", "FNetWorkCtrl", "FProtocolCode", "FSocketSend", "FCardPage", "FCreditRecord", "FGrade", "FInvityPage", "FInvityTaskItem", "FLeft", "FMarquee", "FSignPage", "FTaskItem", "FTaskPage", "FTransInfo", "FTransItem", "FTransList", "FTransPage", "FTwoCard", "FTwoCardItem", "FUpdate", "Base64", "ByteArray", "use_reversed_rotateBy", "ATBannerJSSDK", "ATInterstitialJSSDK", "ATJSSDK", "ATNativeJSSDK", "ATRewardedVideoJSSDK", "ATAndroidBannerJS", "ATAndroidInterstitialJS", "ATAndroidJS", "ATAndroidNativeJS", "ATAndroidRewardedVideoJS", "ATiOSBannerJS", "ATiOSInterstitialJS", "ATiOSJS", "ATiOSNativeJS", "ATiOSRewardedVideoJS", "SimpleAd", "SimpleAnalytics", "SimpleAndroid", "SimpleCallback", "SimpleEditor", "SimpleIOS", "SimpleInterface", "SimpleSDK", "SimpleSDKEvent", "SimpleUtils", "FHideNode", "FSidebar", "UIManager", "Actions", "AnimationControl", "AudioComponent", "AudioConstands", "Cache", "EventConstants", "Events", "GPool", "IPXWidgetComponent", "PopupComponent", "PopupConstants", "TipsCompoent", "User", "Utils", "paomaGame", "Ball", "Barrier", "Cion", "FCionEvent", "GameController", "Shake", "StarEnd", "TakeAim", "UpdateGA", "gameStart", "Loading", "Main", "GameOver", "GetPacket", "Read", "TurnTable" ]);

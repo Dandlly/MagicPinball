@@ -655,7 +655,7 @@
     "relativePath": "music\\coin.mp3"
   },
   "39772029-3baa-432d-bead-fad67a5a0fd7": {
-    "asset": 1595582203241,
+    "asset": 1595582629508,
     "meta": 1593760570488,
     "relativePath": "resources"
   },
@@ -934,11 +934,6 @@
     "meta": 1593760578350,
     "relativePath": "script\\common\\TipsCompoent.ts"
   },
-  "83bb6669-5730-4b85-87e8-870772e51507": {
-    "asset": 1595055820889,
-    "meta": 1595060818053,
-    "relativePath": "script\\FHideNode.ts"
-  },
   "57f6813d-2876-4eb8-8075-3e4eaac6ebb0": {
     "asset": 1595582203313,
     "meta": 1589450960924,
@@ -1005,7 +1000,7 @@
     "relativePath": "texture\\AutoAtlas.pac"
   },
   "5715d248-e7b2-4225-8d0c-f420d9f2468f": {
-    "asset": 1595582203377,
+    "asset": 1595582522282,
     "meta": 1589462576647,
     "relativePath": "texture\\common"
   },
@@ -2619,11 +2614,6 @@
     "meta": 1595582629508,
     "relativePath": "resources\\FSDK_RES"
   },
-  "5d84e778-3a61-4c51-bb9a-9f61b5ba38de": {
-    "asset": 1595582629496,
-    "meta": 1595582629521,
-    "relativePath": "resources\\SimpleSDKConfig.json"
-  },
   "0967f1ac-74b9-47e3-892a-cfca80f1d6e6": {
     "asset": 1595582629502,
     "meta": 1595582629527,
@@ -2849,14 +2839,24 @@
     "meta": 1595583241624,
     "relativePath": "SDK\\script\\SimpleGlobal.js"
   },
-  "9d770172-8581-4fed-9045-c061cce185c7": {
-    "asset": 1595583190504,
-    "meta": 1595583193590,
-    "relativePath": "script\\loading\\Loading.ts"
-  },
   "3fc302cd-52e9-4750-af94-1946943a8fcc": {
     "asset": 1595583285019,
     "meta": 1595583291682,
     "relativePath": "SDK\\script\\SimpleSDK.ts"
+  },
+  "83bb6669-5730-4b85-87e8-870772e51507": {
+    "asset": 1595585174930,
+    "meta": 1595585205140,
+    "relativePath": "script\\FHideNode.ts"
+  },
+  "9d770172-8581-4fed-9045-c061cce185c7": {
+    "asset": 1595585402986,
+    "meta": 1595585502811,
+    "relativePath": "script\\loading\\Loading.ts"
+  },
+  "5d84e778-3a61-4c51-bb9a-9f61b5ba38de": {
+    "asset": 1595585835682,
+    "meta": 1595585835697,
+    "relativePath": "resources\\SimpleSDKConfig.json"
   }
 }

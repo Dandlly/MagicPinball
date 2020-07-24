@@ -48,32 +48,24 @@ var FHideNode = /** @class */ (function (_super) {
         }, this);
     };
     FHideNode.prototype.init = function () {
+        this.inviteNode[0].active = false;
+        this.inviteNode[1].active = false;
         this.ui.getChildByName("coin_3").active = true;
-        if (User_1.user.serverData.isBlack) {
-            this.inviteNode[0].active = false;
-            this.inviteNode[1].active = false;
+        if (cc.sys.os == cc.sys.OS_IOS) {
+            this.turnTableNode.active = true;
+            // 显示
+            this.ui.getChildByName("coin_1").getChildByName("gp").getComponent(cc.Sprite).spriteFrame = this.icon[1];
+            this.ui.getChildByName("coin_1").active = true;
+            this.ui.getChildByName("coin_2").active = true;
         }
         else {
-            if (cc.sys.os == cc.sys.OS_IOS) {
-                this.inviteNode[0].active = false;
-                this.inviteNode[1].active = false;
-                this.turnTableNode.active = true;
+            // 显示邀请
+            if (User_1.user.serverData.isFlag) {
+                this.ui.getChildByName("coin_1").getChildByName("gp").getComponent(cc.Sprite).spriteFrame = this.icon[0];
                 // 显示
-                this.ui.getChildByName("coin_1").getChildByName("gp").getComponent(cc.Sprite).spriteFrame = this.icon[1];
                 this.ui.getChildByName("coin_1").active = true;
                 this.ui.getChildByName("coin_2").active = true;
-            }
-            else {
-                // 显示邀请
-                this.inviteNode[0].active = true;
-                this.inviteNode[1].active = true;
-                if (User_1.user.serverData.isFlag) {
-                    this.ui.getChildByName("coin_1").getChildByName("gp").getComponent(cc.Sprite).spriteFrame = this.icon[0];
-                    // 显示
-                    this.ui.getChildByName("coin_1").active = true;
-                    this.ui.getChildByName("coin_2").active = true;
-                    this.turnTableNode.active = true;
-                }
+                this.turnTableNode.active = true;
             }
         }
         this.ui.active = true;

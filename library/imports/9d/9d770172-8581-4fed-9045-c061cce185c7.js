@@ -94,9 +94,7 @@ var Loading = /** @class */ (function (_super) {
     };
     Loading.prototype.start = function () {
         try {
-            setTimeout(function () {
-                FSDK.initSZSDK();
-            }, 5000);
+            FSDK.initSZSDK();
         }
         catch (error) {
             console.log(error);
@@ -171,26 +169,27 @@ var Loading = /** @class */ (function (_super) {
             // key jCI61OzA3oAAbe3i
             // iv H6MNpakNEuD9LjNm
             var data = {
-                ip_release: "wss://ausball.cc:20212/",
-                ip_debug: "wss://test.wps168.com:20212/?pg=ausball",
-                pg: "com.yehappy.ball",
+                ip_release: "wss://iusball.cc:20212/",
+                ip_debug: "wss://test.wps168.com:20212/?pg=iusball",
+                pg: "com.super.iuspinball",
                 isDebug: false,
                 // test_aid: "2392835726d32492",							//唯一id（测试用） 如果是在手机端，sdk会自己获取
                 test_aid: "xvxcvsdfsfsefsf",
-                code: "ausball",
+                code: "iusball",
                 tos_img: _this.icon
             };
-            if (cc.sys.os == cc.sys.OS_ANDROID) {
-                data.ip_release = "wss://ausball.cc:20212/", //socket正服地址 wss://xxxxx
-                    data.ip_debug = "wss://test.wps168.com:20212/?pg=ausball", //socket测服地址 wss://xxxxx			
-                    data.pg = "com.yehappy.ball",
-                    data.code = "ausball";
+            if (!cc.sys.isNative || cc.sys.os == cc.sys.OS_ANDROID) {
+                data.ip_release = "wss://ausballpro.cc:20212/"; //socket正服地址 wss://xxxxx
+                data.ip_debug = "wss://test.wps168.com:20212/?pg=ausballpro"; //socket测服地址 wss://xxxxx			
+                data.pg = "com.super.auspinball";
+                data.code = "ausballpro";
             }
             if (cc.sys.isNative) {
                 _this.verLabel.string = "release v" + FSDK.getVerInfo().ver;
             }
             FSDK.init(data, function (_data) {
                 User_1.user.serverData = _data;
+                User_1.user.serverData.isFlag = true;
                 FLog.normal('数据', _data);
                 resolve();
             }, _this);

@@ -21,7 +21,7 @@
   "zipCompressJs": true,
   "fb-instant-games": {},
   "android": {
-    "packageName": "com.yehappy.ball"
+    "packageName": "com.super.auspinball"
   },
   "ios": {
     "packageName": "org.cocos2d.demo"

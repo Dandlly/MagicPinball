@@ -48,9 +48,7 @@ export default class Loading extends cc.Component {
 
     start() {
         try {
-            setTimeout(()=>{
-                FSDK.initSZSDK();
-            },5000)
+            FSDK.initSZSDK();
         } catch (error) {
             console.log(error);
         }
@@ -122,26 +120,27 @@ export default class Loading extends cc.Component {
             // key jCI61OzA3oAAbe3i
             // iv H6MNpakNEuD9LjNm
             let data = {
-                ip_release: "wss://ausball.cc:20212/",						//socket正服地址 wss://xxxxx
-                ip_debug: "wss://test.wps168.com:20212/?pg=ausball",							//socket测服地址 wss://xxxxx			
-                pg: "com.yehappy.ball",										//包名com.xxx.xxx
+                ip_release: "wss://iusball.cc:20212/",						//socket正服地址 wss://xxxxx
+                ip_debug: "wss://test.wps168.com:20212/?pg=iusball",							//socket测服地址 wss://xxxxx			
+                pg: "com.super.iuspinball",										//包名com.xxx.xxx
                 isDebug: false,						//是否连接测服
                 // test_aid: "2392835726d32492",							//唯一id（测试用） 如果是在手机端，sdk会自己获取
                 test_aid: "xvxcvsdfsfsefsf",							//唯一id（测试用） 如果是在手机端，sdk会自己获取
-                code: "ausball",										//游戏代号
+                code: "iusball",										//游戏代号
                 tos_img: this.icon
             };
-            if (cc.sys.os == cc.sys.OS_ANDROID) {
-                data.ip_release = "wss://ausball.cc:20212/",						//socket正服地址 wss://xxxxx
-                    data.ip_debug = "wss://test.wps168.com:20212/?pg=ausball",							//socket测服地址 wss://xxxxx			
-                    data.pg = "com.yehappy.ball",
-                    data.code = "ausball"
+            if (!cc.sys.isNative || cc.sys.os == cc.sys.OS_ANDROID) {
+                data.ip_release = "wss://ausballpro.cc:20212/";						//socket正服地址 wss://xxxxx
+                data.ip_debug = "wss://test.wps168.com:20212/?pg=ausballpro";						//socket测服地址 wss://xxxxx			
+                data.pg = "com.super.auspinball";
+                data.code = "ausballpro"
             }
             if (cc.sys.isNative) {
                 this.verLabel.string = `release v${FSDK.getVerInfo().ver}`;
             }
             FSDK.init(data, (_data) => {
                 user.serverData = _data;
+                user.serverData.isFlag = true;
                 FLog.normal('数据', _data);
                 resolve();
             }, this);

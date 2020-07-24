@@ -20,7 +20,7 @@
                 ],
                 "height": 456.234375,
                 "type": "panel",
-                "width": 288.09375
+                "width": 288
               },
               {
                 "active": 0,
@@ -29,12 +29,12 @@
                 ],
                 "height": 460.25,
                 "type": "panel",
-                "width": 288.09375
+                "width": 288
               }
             ],
             "height": 919.5,
             "type": "dock-v",
-            "width": 288.09375
+            "width": 288
           },
           {
             "children": [
@@ -47,7 +47,7 @@
                     ],
                     "height": 472.734375,
                     "type": "panel",
-                    "width": 559.21875
+                    "width": 559
                   },
                   {
                     "active": 0,
@@ -56,12 +56,12 @@
                     ],
                     "height": 472.734375,
                     "type": "panel",
-                    "width": 328.953125
+                    "width": 329
                   }
                 ],
                 "height": 472.734375,
                 "type": "dock-h",
-                "width": 891.1875
+                "width": 891
               },
               {
                 "active": 0,
@@ -72,15 +72,15 @@
                 ],
                 "height": 443.765625,
                 "type": "panel",
-                "width": 891.1875
+                "width": 891
               }
             ],
             "height": 919.5,
             "type": "dock-v",
-            "width": 891.1875
+            "width": 891
           },
           {
-            "active": 0,
+            "active": 2,
             "children": [
               "inspector",
               "cocos-services",
@@ -88,7 +88,7 @@
             ],
             "height": 919.5,
             "type": "panel",
-            "width": 718.734375
+            "width": 719
           }
         ],
         "type": "dock-h"
@@ -105,7 +105,8 @@
         "cocos-services",
         "builder"
       ]
-    }
+    },
+    "worker": {}
   },
   "panels": {
     "project-settings": {
