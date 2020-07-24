@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "03_Congratulations_bnt",
+    "texture": "4eff2a71-cbfd-42b1-b12c-f974a2bec992",
+    "atlas": "",
+    "rect": [
+      6,
+      5,
+      238,
+      96
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      250,
+      106
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

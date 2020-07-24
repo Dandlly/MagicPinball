@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "bloacks_3",
+    "texture": "5eb7b240-6a4e-42b8-8abf-1c5d031ec47d",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      19,
+      103
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      19,
+      103
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

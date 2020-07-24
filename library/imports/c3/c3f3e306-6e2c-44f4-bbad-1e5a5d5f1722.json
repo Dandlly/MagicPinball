@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "tan",
+    "texture": "a2474471-3aa5-4637-94fb-bcd3f16fd19e",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      96,
+      55
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      96,
+      55
+    ],
+    "capInsets": [
+      32,
+      0,
+      0,
+      0
+    ]
+  }
+}

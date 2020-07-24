@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "che_bao_tex",
+    "texture": "cb069f37-adf0-4079-90d6-cf6306937bca",
+    "atlas": "",
+    "rect": [
+      1,
+      1,
+      470,
+      237
+    ],
+    "offset": [
+      -20,
+      8.5
+    ],
+    "originalSize": [
+      512,
+      256
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

@@ -1,0 +1,91 @@
+{
+    "frameRate": 24,
+    "name": "jb_xuanzhuan",
+    "version": "5.5",
+    "compatibleVersion": "5.5",
+    "armature": [
+        {
+            "type": "Armature",
+            "frameRate": 24,
+            "name": "jb_xuanzhuan",
+            "aabb": {
+                "x": -54.5,
+                "y": -54.5,
+                "width": 109,
+                "height": 109
+            },
+            "bone": [
+                {
+                    "name": "root"
+                },
+                {
+                    "name": "金币_1",
+                    "parent": "root"
+                }
+            ],
+            "slot": [
+                {
+                    "name": "金币_1",
+                    "parent": "金币_1"
+                }
+            ],
+            "skin": [
+                {
+                    "slot": [
+                        {
+                            "name": "金币_1",
+                            "display": [
+                                {
+                                    "name": "金币_1"
+                                },
+                                {
+                                    "name": "金币_2"
+                                },
+                                {
+                                    "name": "金币_3"
+                                },
+                                {
+                                    "name": "金币_4"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "animation": [
+                {
+                    "duration": 8,
+                    "playTimes": 0,
+                    "name": "jb_xuanzhuan",
+                    "slot": [
+                        {
+                            "name": "金币_1",
+                            "displayFrame": [
+                                {
+                                    "duration": 2
+                                },
+                                {
+                                    "duration": 2,
+                                    "value": 1
+                                },
+                                {
+                                    "duration": 2,
+                                    "value": 2
+                                },
+                                {
+                                    "duration": 0,
+                                    "value": 3
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "defaultActions": [
+                {
+                    "gotoAndPlay": "jb_xuanzhuan"
+                }
+            ]
+        }
+    ]
+}

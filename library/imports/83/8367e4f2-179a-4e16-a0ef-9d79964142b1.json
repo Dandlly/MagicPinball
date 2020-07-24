@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "04_cbl_hb",
+    "texture": "327ff173-4821-4de8-9c64-846b2e1c8691",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      91,
+      91
+    ],
+    "offset": [
+      -0.5,
+      0
+    ],
+    "originalSize": [
+      92,
+      91
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

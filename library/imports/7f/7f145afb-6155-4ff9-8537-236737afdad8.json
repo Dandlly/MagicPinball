@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "tx_30_hdt",
+    "texture": "0ac013b7-bea1-4571-8d70-17d14900f6b6",
+    "atlas": "",
+    "rect": [
+      3,
+      2,
+      507,
+      49
+    ],
+    "offset": [
+      0.5,
+      0.5
+    ],
+    "originalSize": [
+      512,
+      54
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

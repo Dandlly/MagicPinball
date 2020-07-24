@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "skel_colorbar",
+    "texture": "c4abd325-7994-47c4-ad8f-90e345dac342",
+    "atlas": "",
+    "rect": [
+      2,
+      2,
+      61,
+      78
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      65,
+      82
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

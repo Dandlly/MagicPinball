@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "polygon1",
+    "texture": "e6851db6-5ae9-43d0-9169-e666095ea4a2",
+    "atlas": "",
+    "rect": [
+      11,
+      1,
+      149,
+      157
+    ],
+    "offset": [
+      5.5,
+      -0.5
+    ],
+    "originalSize": [
+      160,
+      158
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

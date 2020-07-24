@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "01_Congratulations_1",
+    "texture": "649916e9-0fdb-409c-a0c2-840d6c9b4e15",
+    "atlas": "",
+    "rect": [
+      5,
+      6,
+      375,
+      104
+    ],
+    "offset": [
+      -1,
+      0.5
+    ],
+    "originalSize": [
+      387,
+      117
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

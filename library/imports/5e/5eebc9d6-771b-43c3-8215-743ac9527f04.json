@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "05_cbl_yq",
+    "texture": "14fa0bc3-e088-471e-b6b0-b45b1f476873",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      91,
+      91
+    ],
+    "offset": [
+      -0.5,
+      0
+    ],
+    "originalSize": [
+      92,
+      91
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

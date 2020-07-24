@@ -1,0 +1,7 @@
+{
+  "__type__": "dragonBones.DragonBonesAsset",
+  "_name": "feidie_ske",
+  "_objFlags": 0,
+  "_native": "",
+  "_dragonBonesJson": "{\"frameRate\":24,\"name\":\"feidie\",\"version\":\"5.5\",\"compatibleVersion\":\"5.5\",\"armature\":[{\"type\":\"Sheet\",\"frameRate\":6,\"name\":\"Sprite\",\"aabb\":{\"x\":-80.75,\"y\":-46.5,\"width\":161.5,\"height\":93},\"bone\":[{\"name\":\"root\"}],\"slot\":[{\"displayIndex\":1,\"name\":\"sheetSlot\",\"parent\":\"root\"}],\"skin\":[{\"slot\":[{\"name\":\"sheetSlot\",\"display\":[{\"name\":\"1\"},{\"name\":\"2\"},{\"name\":\"3\"},{\"name\":\"4\"},{\"name\":\"5\"},{\"name\":\"6\"}]}]}],\"animation\":[{\"duration\":6,\"playTimes\":0,\"name\":\"Sprite\",\"slot\":[{\"name\":\"sheetSlot\",\"displayFrame\":[{},{\"value\":1},{\"value\":2},{\"value\":3},{\"value\":4},{\"value\":5}]}]}],\"defaultActions\":[{\"gotoAndPlay\":\"Sprite\"}],\"canvas\":{\"width\":161.5,\"height\":93}}]}"
+}

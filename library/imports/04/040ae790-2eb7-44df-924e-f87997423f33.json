@@ -1,0 +1,14 @@
+{
+  "__type__": "dragonBones.DragonBonesAtlasAsset",
+  "_name": "feidie_tex",
+  "_objFlags": 0,
+  "_native": "",
+  "_atlasJson": "{\"SubTexture\":[{\"frameX\":-1,\"frameHeight\":93,\"y\":96,\"frameY\":0,\"frameWidth\":162,\"width\":161,\"height\":93,\"name\":\"5\",\"x\":164},{\"frameX\":-1,\"frameHeight\":93,\"y\":96,\"frameY\":0,\"frameWidth\":162,\"width\":161,\"height\":93,\"name\":\"2\",\"x\":327},{\"frameX\":-1,\"frameHeight\":93,\"y\":96,\"frameY\":0,\"frameWidth\":162,\"width\":161,\"height\":93,\"name\":\"4\",\"x\":1},{\"frameX\":-1,\"frameHeight\":93,\"y\":1,\"frameY\":0,\"frameWidth\":162,\"width\":161,\"height\":93,\"name\":\"1\",\"x\":329},{\"frameX\":0,\"frameHeight\":93,\"y\":1,\"frameY\":0,\"frameWidth\":162,\"width\":162,\"height\":93,\"name\":\"6\",\"x\":165},{\"frameX\":0,\"frameHeight\":93,\"y\":1,\"frameY\":0,\"frameWidth\":162,\"width\":162,\"height\":93,\"name\":\"3\",\"x\":1}],\"width\":512,\"imagePath\":\"feidie_tex.png\",\"height\":512,\"name\":\"feidie\"}",
+  "_texture": {
+    "__uuid__": "1fa666b9-a204-4cfa-bb1e-914a4a5dec63"
+  },
+  "texture": {
+    "__uuid__": "1fa666b9-a204-4cfa-bb1e-914a4a5dec63"
+  },
+  "_textureAtlasData": null
+}

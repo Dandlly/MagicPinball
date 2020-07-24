@@ -1,0 +1,2127 @@
+{
+  "projectPath": "D:\\project\\LookPhysicalPinball",
+  "mtimes": {
+    "bdb316ac-82e2-494d-9b64-742949188da6": {
+      "assetMtime": 1593406588968,
+      "metaMtime": 1593760578839
+    },
+    "06c3060d-8be9-4097-a7ce-6934358e633b": {
+      "assetMtime": 1589956225429,
+      "metaMtime": 1593760579039
+    },
+    "241f2b21-656e-4e73-87ed-20ac2a0fc539": {
+      "assetMtime": 1589956225429,
+      "metaMtime": 1593760579039
+    },
+    "109a277e-5e9c-4638-9403-12e1cc0f86e7": {
+      "assetMtime": 1592801314909,
+      "metaMtime": 1593760578974
+    },
+    "ffa07f40-2fd7-41de-85b3-b27b4daec8a5": {
+      "assetMtime": 1592801314909,
+      "metaMtime": 1593760578974
+    },
+    "11c85a1b-fc78-4de3-b9be-d79d9e3e5a61": {
+      "assetMtime": 1589956248923,
+      "metaMtime": 1593760579068
+    },
+    "5508f40c-057e-4676-928f-7548cdd98f71": {
+      "assetMtime": 1589956248923,
+      "metaMtime": 1593760579068
+    },
+    "18ce4ccc-d017-4e35-af94-cd169a42fa76": {
+      "assetMtime": 1592980668683,
+      "metaMtime": 1593760578851
+    },
+    "2a8e9ef4-b6bd-4ea5-88e6-b5fa5b4e170b": {
+      "assetMtime": 1592980668683,
+      "metaMtime": 1593760578851
+    },
+    "18e16ae2-caec-4371-a066-8d9bbe32ee4d": {
+      "assetMtime": 1589780003763,
+      "metaMtime": 1593760579304
+    },
+    "d7ac2b8e-e614-4fb1-935a-d3fb40b80f1a": {
+      "assetMtime": 1589780003763,
+      "metaMtime": 1593760579304
+    },
+    "18ef5635-36db-42f9-aa27-2116051e6789": {
+      "assetMtime": 1589956225429,
+      "metaMtime": 1593760579049
+    },
+    "d35073f4-8807-4439-865a-2f7a021d0f36": {
+      "assetMtime": 1589956225429,
+      "metaMtime": 1593760579049
+    },
+    "1de30651-6404-436b-8d9e-be3c48626177": {
+      "assetMtime": 1589956273950,
+      "metaMtime": 1593760579056
+    },
+    "6a9b0b04-7974-4ff6-8d7d-576a3f45bed9": {
+      "assetMtime": 1589956273950,
+      "metaMtime": 1593760579056
+    },
+    "1f7be745-42b4-4c97-a092-1b317d156668": {
+      "assetMtime": 1592820507144,
+      "metaMtime": 1593760579225
+    },
+    "2b54bea0-15e4-4f13-a01b-4d5671d3f1be": {
+      "assetMtime": 1592820507144,
+      "metaMtime": 1593760579225
+    },
+    "26a4c57c-4713-4bc7-acbd-d47baf93afe2": {
+      "assetMtime": 1592558677359,
+      "metaMtime": 1593760578897
+    },
+    "3815af7c-824b-4e46-b8d7-eddf69d46b66": {
+      "assetMtime": 1592558677359,
+      "metaMtime": 1593760578897
+    },
+    "280d2860-ca31-4905-9953-e4201d413bb3": {
+      "assetMtime": 1592563429636,
+      "metaMtime": 1593760578850
+    },
+    "c9792ed7-87b1-474c-b9b4-17a898e591d1": {
+      "assetMtime": 1592563429636,
+      "metaMtime": 1593760578850
+    },
+    "281b01da-97ab-41f0-8c59-5d383ee858fc": {
+      "assetMtime": 1592820507143,
+      "metaMtime": 1593760579250
+    },
+    "31d8715e-5c20-4911-8060-49c9e5019072": {
+      "assetMtime": 1592820507143,
+      "metaMtime": 1593760579250
+    },
+    "2e6cc850-f5b0-44f8-acb8-16ecdab57082": {
+      "assetMtime": 1594116445254,
+      "metaMtime": 1594116445269
+    },
+    "93b833d5-5770-46fc-8a76-7f87a1bb5780": {
+      "assetMtime": 1594116445254,
+      "metaMtime": 1594116445269
+    },
+    "2fbcdd1d-52f5-470c-b534-335a57953352": {
+      "assetMtime": 1589950333312,
+      "metaMtime": 1593760579019
+    },
+    "f4e5b79c-5760-4aa6-a2e0-24731bacb5b3": {
+      "assetMtime": 1589950333312,
+      "metaMtime": 1593760579019
+    },
+    "31bb24ea-c819-4e5a-9430-ba0724e88465": {
+      "assetMtime": 1592801314909,
+      "metaMtime": 1593760578984
+    },
+    "93fc9cb4-69b4-4ac3-804b-fd5fca1c30d9": {
+      "assetMtime": 1592801314909,
+      "metaMtime": 1593760578984
+    },
+    "388a1c1c-c245-403a-81d4-e9e0efb4b476": {
+      "assetMtime": 1589956248923,
+      "metaMtime": 1593760579066
+    },
+    "86572d08-76a5-484f-867e-b082267807c0": {
+      "assetMtime": 1589956248923,
+      "metaMtime": 1593760579066
+    },
+    "3de281aa-8352-4329-84d6-a0f82c3be6ed": {
+      "assetMtime": 1590505565322,
+      "metaMtime": 1593760579078
+    },
+    "2ab19f61-4109-4f8e-b68d-f7a861132229": {
+      "assetMtime": 1590505565322,
+      "metaMtime": 1593760579078
+    },
+    "3ee12a65-f921-4e20-a16a-5f5276f5928f": {
+      "assetMtime": 1592820507143,
+      "metaMtime": 1593760579261
+    },
+    "aa987714-35a4-4a14-ab90-0155fdb37ba5": {
+      "assetMtime": 1592820507143,
+      "metaMtime": 1593760579261
+    },
+    "43fbeb09-ab5e-4b58-9561-80cf3d346248": {
+      "assetMtime": 1592820507143,
+      "metaMtime": 1593760579272
+    },
+    "ac02188e-7bde-4952-a2c7-9091c0f31601": {
+      "assetMtime": 1592820507143,
+      "metaMtime": 1593760579272
+    },
+    "48ae8a05-335f-4f1a-8d7c-308228da6747": {
+      "assetMtime": 1592820507144,
+      "metaMtime": 1593760579235
+    },
+    "597a9422-b0b1-49db-8913-5657c561b419": {
+      "assetMtime": 1592820507144,
+      "metaMtime": 1593760579235
+    },
+    "4d7e348e-b3cc-4ee2-9fa3-a07013377546": {
+      "assetMtime": 1593780755938,
+      "metaMtime": 1593780755960
+    },
+    "55a7c141-5118-442a-8b1b-9947b2c769f3": {
+      "assetMtime": 1593780755938,
+      "metaMtime": 1593780755960
+    },
+    "559aceb0-247c-48f9-a6f2-a41237cba701": {
+      "assetMtime": 1589955120804,
+      "metaMtime": 1593760579029
+    },
+    "dffc7eaf-fbb2-491d-b97a-d4bf26aa4609": {
+      "assetMtime": 1589955120804,
+      "metaMtime": 1593760579029
+    },
+    "5684533e-22e9-4e1f-9117-59ae596a7e04": {
+      "assetMtime": 1593335432775,
+      "metaMtime": 1593760579193
+    },
+    "9929e5d0-3c52-4e2e-ab4c-f67b8519d63d": {
+      "assetMtime": 1593335432775,
+      "metaMtime": 1593760579193
+    },
+    "56a0afd5-a086-4fe5-a415-bfbfeea5b2e1": {
+      "assetMtime": 1589956248923,
+      "metaMtime": 1593760579077
+    },
+    "6ef299e3-efbd-4153-9c91-0d8785bcd9dd": {
+      "assetMtime": 1589956248923,
+      "metaMtime": 1593760579077
+    },
+    "612d93a2-2745-450f-871c-db9011d2fb51": {
+      "assetMtime": 1593334516925,
+      "metaMtime": 1593760579145
+    },
+    "5df9dc1e-58ee-4916-a28e-bc34440dd449": {
+      "assetMtime": 1593334516925,
+      "metaMtime": 1593760579145
+    },
+    "631d6b79-2abf-4a7c-a497-35846921b4f5": {
+      "assetMtime": 1589783878844,
+      "metaMtime": 1593760579155
+    },
+    "2a7714a5-7f73-43bf-9e55-c1c488aaa956": {
+      "assetMtime": 1589783878844,
+      "metaMtime": 1593760579155
+    },
+    "6324f69f-c20f-4b60-8d07-1c0936082f94": {
+      "assetMtime": 1592975132433,
+      "metaMtime": 1593760579180
+    },
+    "14456b5b-6a93-421f-b119-6f308df41b00": {
+      "assetMtime": 1592975132433,
+      "metaMtime": 1593760579180
+    },
+    "64650ee1-ab48-469b-bf87-f91c650e6c84": {
+      "assetMtime": 1589781130467,
+      "metaMtime": 1593760578925
+    },
+    "009facd0-34d7-46d6-9973-c2bb60ff66d9": {
+      "assetMtime": 1589781130467,
+      "metaMtime": 1593760578925
+    },
+    "661b34fd-e382-4390-81c8-7c7df4d7458e": {
+      "assetMtime": 1594049974601,
+      "metaMtime": 1594049974635
+    },
+    "93c978cf-3474-4341-8dde-78f78a410529": {
+      "assetMtime": 1594049974601,
+      "metaMtime": 1594049974635
+    },
+    "7104d103-5599-4ec8-a4d4-5107d59c0eb5": {
+      "assetMtime": 1589535669584,
+      "metaMtime": 1593760579010
+    },
+    "8a569a2e-dcdb-4aae-b8e7-fae291566636": {
+      "assetMtime": 1589535669584,
+      "metaMtime": 1593760579010
+    },
+    "76762d57-1f75-45e6-bbd9-c4c4fe166421": {
+      "assetMtime": 1589956225429,
+      "metaMtime": 1593760579038
+    },
+    "f48d0745-7e02-4e3d-81f0-22a8169d0f52": {
+      "assetMtime": 1589956225429,
+      "metaMtime": 1593760579038
+    },
+    "7b774f3c-b5f7-429a-afd5-db6f7c63eed5": {
+      "assetMtime": 1592640837663,
+      "metaMtime": 1593760578909
+    },
+    "68442e55-a1fc-4ae6-9b74-010a4133d633": {
+      "assetMtime": 1592640837663,
+      "metaMtime": 1593760578909
+    },
+    "81c818b7-3902-437c-a297-e61f267b3553": {
+      "assetMtime": 1592802450538,
+      "metaMtime": 1593760579205
+    },
+    "20e1aa06-4f11-4711-a624-8568a02f8a0b": {
+      "assetMtime": 1592802450538,
+      "metaMtime": 1593760579205
+    },
+    "8306ed17-8b1c-4524-8488-c373521f744c": {
+      "assetMtime": 1592558099314,
+      "metaMtime": 1593760579208
+    },
+    "1e87d334-a7ba-40e6-a4d9-a5b98c0a0cf8": {
+      "assetMtime": 1592558099314,
+      "metaMtime": 1593760579208
+    },
+    "8bdb63e0-6cb6-4ad0-807a-e9f62e87a1b1": {
+      "assetMtime": 1594048669739,
+      "metaMtime": 1594048669764
+    },
+    "5798c4da-901b-4915-9d00-17bd682a905f": {
+      "assetMtime": 1594048669739,
+      "metaMtime": 1594048669764
+    },
+    "91f7cf74-4a74-4b90-98e2-af536a1185f1": {
+      "assetMtime": 1592820507143,
+      "metaMtime": 1593760579252
+    },
+    "60fb701c-cdb1-40f5-b792-1f0c47604478": {
+      "assetMtime": 1592820507143,
+      "metaMtime": 1593760579252
+    },
+    "92767a7a-7bf0-47f3-be9f-28281424fff3": {
+      "assetMtime": 1592820507143,
+      "metaMtime": 1593760579244
+    },
+    "9b0cae8f-e5d0-4025-97ef-85d7b326b1d4": {
+      "assetMtime": 1592820507143,
+      "metaMtime": 1593760579244
+    },
+    "9867c8b6-daa5-41b5-a33b-732d14405abb": {
+      "assetMtime": 1592801359025,
+      "metaMtime": 1593760578935
+    },
+    "9a780805-e2d4-4030-9807-5ce4622e5b3c": {
+      "assetMtime": 1592801359025,
+      "metaMtime": 1593760578935
+    },
+    "9ffb2add-bb36-4e06-8038-33eec6fc3162": {
+      "assetMtime": 1593003896947,
+      "metaMtime": 1593760578986
+    },
+    "fc54f30e-fe9a-455f-80e8-64cad57d8e74": {
+      "assetMtime": 1593003896947,
+      "metaMtime": 1593760578986
+    },
+    "a0483142-6ee7-4213-be77-ad3f14d4f515": {
+      "assetMtime": 1589521361335,
+      "metaMtime": 1593760578998
+    },
+    "d50b426f-a389-4399-9559-40b16ea7fdc4": {
+      "assetMtime": 1589521361335,
+      "metaMtime": 1593760578998
+    },
+    "a99e7dca-53f3-41c5-a0f1-6f554ae9e9b2": {
+      "assetMtime": 1592374974819,
+      "metaMtime": 1593760579168
+    },
+    "2bd48f30-1c87-48cb-8a81-aaadc375eaa1": {
+      "assetMtime": 1592374974819,
+      "metaMtime": 1593760579168
+    },
+    "af626782-f173-4101-a4b9-e1fa602a2817": {
+      "assetMtime": 1593330138086,
+      "metaMtime": 1593760578870
+    },
+    "8ea9470f-0486-4b09-b085-294809456bd3": {
+      "assetMtime": 1593330138086,
+      "metaMtime": 1593760578870
+    },
+    "b8982d03-ff27-4ccb-afd3-c58f94fee926": {
+      "assetMtime": 1592820507143,
+      "metaMtime": 1593760579262
+    },
+    "f7191586-7fd2-4c2d-ad69-f9a99b7b4594": {
+      "assetMtime": 1592820507143,
+      "metaMtime": 1593760579262
+    },
+    "bdb76c0a-faa8-482c-9c8a-6e0efa350911": {
+      "assetMtime": 1589956273950,
+      "metaMtime": 1593760579047
+    },
+    "2960fa21-03ac-47c5-a534-d393504b51be": {
+      "assetMtime": 1589956273950,
+      "metaMtime": 1593760579047
+    },
+    "bfc0d3ca-63b3-4ada-80aa-dca08e0cbfdc": {
+      "assetMtime": 1589783878844,
+      "metaMtime": 1593760579147
+    },
+    "cf06ca99-d833-4ba8-bc66-ea10351b4cd8": {
+      "assetMtime": 1589783878844,
+      "metaMtime": 1593760579147
+    },
+    "bff53f26-8e3c-431b-ae65-3dd97675d05a": {
+      "assetMtime": 1589463169364,
+      "metaMtime": 1593760578934
+    },
+    "7d426a15-6628-458d-9a39-7e10ba005ff6": {
+      "assetMtime": 1589463169364,
+      "metaMtime": 1593760578934
+    },
+    "c45c0f48-c1fd-4485-9198-b99a29d44529": {
+      "assetMtime": 1593335432775,
+      "metaMtime": 1593760579191
+    },
+    "c9e309b1-fc5e-4bf3-8811-b6e4368d6d1e": {
+      "assetMtime": 1593335432775,
+      "metaMtime": 1593760579191
+    },
+    "c48588ca-7544-4a16-9a4a-8ec30294e690": {
+      "assetMtime": 1589535669584,
+      "metaMtime": 1593760579090
+    },
+    "e060cac2-442c-4d44-8dea-65e727054ea8": {
+      "assetMtime": 1589535669584,
+      "metaMtime": 1593760579090
+    },
+    "cd9be11d-57d8-444e-b522-a71f98bd67b5": {
+      "assetMtime": 1590756879568,
+      "metaMtime": 1593760579123
+    },
+    "ca3bbaad-b786-49d6-9d9e-071d9b6d1825": {
+      "assetMtime": 1590756879568,
+      "metaMtime": 1593760579123
+    },
+    "cf8c78b8-73e6-4245-b354-cd963e9167fc": {
+      "assetMtime": 1592813566528,
+      "metaMtime": 1593760578964
+    },
+    "63f5f263-ab55-4149-a73a-b9b70f8149a7": {
+      "assetMtime": 1592813566528,
+      "metaMtime": 1593760578964
+    },
+    "d283dbe5-b739-47e2-8e62-593301b380a0": {
+      "assetMtime": 1589950333313,
+      "metaMtime": 1593760579008
+    },
+    "c80e6495-ecac-43f5-8ec5-70c37266b62b": {
+      "assetMtime": 1589950333313,
+      "metaMtime": 1593760579008
+    },
+    "d71f4478-fcc4-4dc0-9ae1-67f7cb2dc6ad": {
+      "assetMtime": 1590756879568,
+      "metaMtime": 1593760579105
+    },
+    "801914b7-3a7a-46fc-9c97-ec35483a549a": {
+      "assetMtime": 1590756879568,
+      "metaMtime": 1593760579105
+    },
+    "e0a6909e-2d6e-4965-9478-f8e88bc0053d": {
+      "assetMtime": 1592209742401,
+      "metaMtime": 1593760578953
+    },
+    "2d0ff73c-9d45-4da1-90c9-6d7bcfdeb2e8": {
+      "assetMtime": 1592209742401,
+      "metaMtime": 1593760578953
+    },
+    "e29a5a43-ab79-45a5-bc0b-5e6549e323b2": {
+      "assetMtime": 1595576426248,
+      "metaMtime": 1595576426269
+    },
+    "aaeacad4-cdc5-4002-80e2-12286418ef0f": {
+      "assetMtime": 1595576426248,
+      "metaMtime": 1595576426269
+    },
+    "e428e780-7f92-4080-9eb6-b3a33e37592f": {
+      "assetMtime": 1592558677359,
+      "metaMtime": 1593760578883
+    },
+    "b01e3b8d-d41f-463e-ae7e-c3cd3d35d935": {
+      "assetMtime": 1592558677359,
+      "metaMtime": 1593760578883
+    },
+    "e963cc23-6f88-4c6c-b9c5-2c7696f51cc8": {
+      "assetMtime": 1592820507143,
+      "metaMtime": 1593760579240
+    },
+    "7c5b842e-6244-43ef-96d4-846a1ebe8e27": {
+      "assetMtime": 1592820507143,
+      "metaMtime": 1593760579240
+    },
+    "e96e5cd9-b970-4654-b13f-2adb9eac50bf": {
+      "assetMtime": 1589955120804,
+      "metaMtime": 1593760579020
+    },
+    "834412ff-9290-4dd3-94e2-2fca52e0e46e": {
+      "assetMtime": 1589955120804,
+      "metaMtime": 1593760579020
+    },
+    "eb6f94f8-4703-4741-8c71-f52a8a58521d": {
+      "assetMtime": 1594048669739,
+      "metaMtime": 1594048669765
+    },
+    "fea9bc49-adff-4333-a61c-a6bf0c4213b0": {
+      "assetMtime": 1594048669739,
+      "metaMtime": 1594048669765
+    },
+    "ec2189c3-c9c7-4e39-9991-090a48f831bd": {
+      "assetMtime": 1589956273950,
+      "metaMtime": 1593760579058
+    },
+    "5eb7b240-6a4e-42b8-8abf-1c5d031ec47d": {
+      "assetMtime": 1589956273950,
+      "metaMtime": 1593760579058
+    },
+    "f03282ef-568d-469c-be5b-e7061ca5d06c": {
+      "assetMtime": 1592558099314,
+      "metaMtime": 1593760579219
+    },
+    "301d7fb5-b82a-4934-a78a-611288fb87cb": {
+      "assetMtime": 1592558099314,
+      "metaMtime": 1593760579219
+    },
+    "f2bd1d9b-2438-4b2b-b8ef-75ebae74fae1": {
+      "assetMtime": 1590505593319,
+      "metaMtime": 1593760579091
+    },
+    "d631c1d9-f745-47ea-b4e1-da68f19bb2cf": {
+      "assetMtime": 1590505593319,
+      "metaMtime": 1593760579091
+    },
+    "f3d31191-18e6-4fe2-9390-06bc832cdcb0": {
+      "assetMtime": 1593780755938,
+      "metaMtime": 1593780755959
+    },
+    "6e5c5cbe-efec-46c8-980d-7e8ae45bcc76": {
+      "assetMtime": 1593780755938,
+      "metaMtime": 1593780755959
+    },
+    "fa7a738e-7350-4b71-b2e4-06d74083f50a": {
+      "assetMtime": 1592374974819,
+      "metaMtime": 1593760579157
+    },
+    "b0ab6bf8-0653-4e9d-863b-26f8dce5dd24": {
+      "assetMtime": 1592374974819,
+      "metaMtime": 1593760579157
+    },
+    "fb98990f-faa2-4e27-8921-d173e834bd97": {
+      "assetMtime": 1589955120804,
+      "metaMtime": 1593760579030
+    },
+    "fb94afbd-923a-4fe1-844e-528b07b9956e": {
+      "assetMtime": 1589955120804,
+      "metaMtime": 1593760579030
+    },
+    "fdeeb024-af54-4f9a-9657-9e3d1a58cd40": {
+      "assetMtime": 1593670270928,
+      "metaMtime": 1593760578872
+    },
+    "7ba02ca4-83af-4fb8-a2e7-92e2f2fdd692": {
+      "assetMtime": 1593670270928,
+      "metaMtime": 1593760578872
+    },
+    "ff491f6a-3875-4761-92ea-7817fde526ee": {
+      "assetMtime": 1590509835365,
+      "metaMtime": 1593760578954
+    },
+    "215e31b0-5d84-412f-a0c0-b1d50df02c71": {
+      "assetMtime": 1590509835365,
+      "metaMtime": 1593760578954
+    }
+  },
+  "result": {
+    "name": "AutoAtlas-4",
+    "width": 500,
+    "height": 500,
+    "ver": "1.2.0",
+    "uuid": "bdb316ac-82e2-494d-9b64-742949188da6",
+    "maxWidth": 1024,
+    "maxHeight": 1024,
+    "padding": 2,
+    "allowRotation": true,
+    "forceSquared": false,
+    "powerOfTwo": false,
+    "algorithm": "MaxRects",
+    "format": "png",
+    "quality": 80,
+    "contourBleed": true,
+    "paddingBleed": true,
+    "filterUnused": false,
+    "packable": false,
+    "premultiplyAlpha": false,
+    "filterMode": "bilinear",
+    "platformSettings": {},
+    "subMetas": {},
+    "bleed": 1,
+    "atlases": [
+      {
+        "files": [
+          {
+            "name": "wall_2",
+            "uuid": "cd9be11d-57d8-444e-b522-a71f98bd67b5",
+            "textureUuid": "ca3bbaad-b786-49d6-9d9e-071d9b6d1825",
+            "path": "D:\\project\\LookPhysicalPinball\\temp\\trimImages\\spritesheet_js_1595576525346_image_47.png",
+            "trim": {
+              "x": 3,
+              "y": 3,
+              "width": 664,
+              "height": 773,
+              "rotatedWidth": 664,
+              "rotatedHeight": 773
+            },
+            "rawWidth": 664,
+            "rawHeight": 773,
+            "width": 670,
+            "height": 779,
+            "originalPath": "D:/project/LookPhysicalPinball/library/imports/ca/ca3bbaad-b786-49d6-9d9e-071d9b6d1825.png",
+            "x": 0,
+            "y": 0,
+            "rotatedWidth": 670,
+            "rotatedHeight": 779
+          },
+          {
+            "name": "ap_2_2",
+            "uuid": "8306ed17-8b1c-4524-8488-c373521f744c",
+            "textureUuid": "1e87d334-a7ba-40e6-a4d9-a5b98c0a0cf8",
+            "path": "D:\\project\\LookPhysicalPinball\\temp\\trimImages\\spritesheet_js_1595576525344_image_32.png",
+            "trim": {
+              "x": 3,
+              "y": 782,
+              "width": 237,
+              "height": 150,
+              "rotatedWidth": 150,
+              "rotatedHeight": 237
+            },
+            "rawWidth": 237,
+            "rawHeight": 150,
+            "width": 243,
+            "height": 156,
+            "originalPath": "D:/project/LookPhysicalPinball/library/imports/1e/1e87d334-a7ba-40e6-a4d9-a5b98c0a0cf8.png",
+            "x": 0,
+            "y": 779,
+            "rotated": true,
+            "rotatedWidth": 156,
+            "rotatedHeight": 243
+          },
+          {
+            "name": "hand",
+            "uuid": "3de281aa-8352-4329-84d6-a0f82c3be6ed",
+            "textureUuid": "2ab19f61-4109-4f8e-b68d-f7a861132229",
+            "path": "D:\\project\\LookPhysicalPinball\\temp\\trimImages\\spritesheet_js_1595576525342_image_15.png",
+            "trim": {
+              "x": 159,
+              "y": 782,
+              "width": 186,
+              "height": 232,
+              "rotatedWidth": 186,
+              "rotatedHeight": 232
+            },
+            "rawWidth": 256,
+            "rawHeight": 256,
+            "width": 192,
+            "height": 238,
+            "originalPath": "D:/project/LookPhysicalPinball/library/imports/2a/2ab19f61-4109-4f8e-b68d-f7a861132229.png",
+            "x": 156,
+            "y": 779,
+            "rotatedWidth": 192,
+            "rotatedHeight": 238
+          },
+          {
+            "name": "11_zy_bg",
+            "uuid": "9ffb2add-bb36-4e06-8038-33eec6fc3162",
+            "textureUuid": "fc54f30e-fe9a-455f-80e8-64cad57d8e74",
+            "path": "D:\\project\\LookPhysicalPinball\\temp\\trimImages\\spritesheet_js_1595576525345_image_37.png",
+            "trim": {
+              "x": 673,
+              "y": 3,
+              "width": 341,
+              "height": 61,
+              "rotatedWidth": 341,
+              "rotatedHeight": 61
+            },
+            "rawWidth": 346,
+            "rawHeight": 68,
+            "width": 347,
+            "height": 67,
+            "originalPath": "D:/project/LookPhysicalPinball/library/imports/fc/fc54f30e-fe9a-455f-80e8-64cad57d8e74.png",
+            "x": 670,
+            "y": 0,
+            "rotatedWidth": 347,
+            "rotatedHeight": 67
+          },
+          {
+            "name": "01_bnt_1",
+            "uuid": "4d7e348e-b3cc-4ee2-9fa3-a07013377546",
+            "textureUuid": "55a7c141-5118-442a-8b1b-9947b2c769f3",
+            "path": "D:\\project\\LookPhysicalPinball\\temp\\trimImages\\spritesheet_js_1595576525342_image_19.png",
+            "trim": {
+              "x": 351,
+              "y": 782,
+              "width": 231,
+              "height": 78,
+              "rotatedWidth": 78,
+              "rotatedHeight": 231
+            },
+            "rawWidth": 232,
+            "rawHeight": 79,
+            "width": 237,
+            "height": 84,
+            "originalPath": "D:/project/LookPhysicalPinball/library/imports/55/55a7c141-5118-442a-8b1b-9947b2c769f3.png",
+            "x": 348,
+            "y": 779,
+            "rotated": true,
+            "rotatedWidth": 84,
+            "rotatedHeight": 237
+          },
+          {
+            "name": "02_bnt_2",
+            "uuid": "f3d31191-18e6-4fe2-9390-06bc832cdcb0",
+            "textureUuid": "6e5c5cbe-efec-46c8-980d-7e8ae45bcc76",
+            "path": "D:\\project\\LookPhysicalPinball\\temp\\trimImages\\spritesheet_js_1595576525347_image_60.png",
+            "trim": {
+              "x": 435,
+              "y": 782,
+              "width": 231,
+              "height": 78,
+              "rotatedWidth": 78,
+              "rotatedHeight": 231
+            },
+            "rawWidth": 232,
+            "rawHeight": 79,
+            "width": 237,
+            "height": 84,
+            "originalPath": "D:/project/LookPhysicalPinball/library/imports/6e/6e5c5cbe-efec-46c8-980d-7e8ae45bcc76.png",
+            "x": 432,
+            "y": 779,
+            "rotated": true,
+            "rotatedWidth": 84,
+            "rotatedHeight": 237
+          },
+          {
+            "name": "line",
+            "uuid": "f2bd1d9b-2438-4b2b-b8ef-75ebae74fae1",
+            "textureUuid": "d631c1d9-f745-47ea-b4e1-da68f19bb2cf",
+            "path": "D:\\project\\LookPhysicalPinball\\temp\\trimImages\\spritesheet_js_1595576525347_image_59.png",
+            "trim": {
+              "x": 519,
+              "y": 782,
+              "width": 3,
+              "height": 495,
+              "rotatedWidth": 495,
+              "rotatedHeight": 3
+            },
+            "rawWidth": 3,
+            "rawHeight": 495,
+            "width": 9,
+            "height": 501,
+            "originalPath": "D:/project/LookPhysicalPinball/library/imports/d6/d631c1d9-f745-47ea-b4e1-da68f19bb2cf.png",
+            "x": 516,
+            "y": 779,
+            "rotated": true,
+            "rotatedWidth": 501,
+            "rotatedHeight": 9
+          },
+          {
+            "name": "05_logo_05",
+            "uuid": "fdeeb024-af54-4f9a-9657-9e3d1a58cd40",
+            "textureUuid": "7ba02ca4-83af-4fb8-a2e7-92e2f2fdd692",
+            "path": "D:\\project\\LookPhysicalPinball\\temp\\trimImages\\spritesheet_js_1595576525347_image_63.png",
+            "trim": {
+              "x": 673,
+              "y": 70,
+              "width": 486,
+              "height": 339,
+              "rotatedWidth": 339,
+              "rotatedHeight": 486
+            },
+            "rawWidth": 486,
+            "rawHeight": 339,
+            "width": 492,
+            "height": 345,
+            "originalPath": "D:/project/LookPhysicalPinball/library/imports/7b/7ba02ca4-83af-4fb8-a2e7-92e2f2fdd692.png",
+            "x": 670,
+            "y": 67,
+            "rotated": true,
+            "rotatedWidth": 345,
+            "rotatedHeight": 492
+          },
+          {
+            "name": "12_zy_bg",
+            "uuid": "31bb24ea-c819-4e5a-9430-ba0724e88465",
+            "textureUuid": "93fc9cb4-69b4-4ac3-804b-fd5fca1c30d9",
+            "path": "D:\\project\\LookPhysicalPinball\\temp\\trimImages\\spritesheet_js_1595576525342_image_13.png",
+            "trim": {
+              "x": 673,
+              "y": 562,
+              "width": 333,
+              "height": 53,
+              "rotatedWidth": 333,
+              "rotatedHeight": 53
+            },
+            "rawWidth": 346,
+            "rawHeight": 67,
+            "width": 339,
+            "height": 59,
+            "originalPath": "D:/project/LookPhysicalPinball/library/imports/93/93fc9cb4-69b4-4ac3-804b-fd5fca1c30d9.png",
+            "x": 670,
+            "y": 559,
+            "rotatedWidth": 339,
+            "rotatedHeight": 59
+          },
+          {
+            "name": "gg_3_3",
+            "uuid": "81c818b7-3902-437c-a297-e61f267b3553",
+            "textureUuid": "20e1aa06-4f11-4711-a624-8568a02f8a0b",
+            "path": "D:\\project\\LookPhysicalPinball\\temp\\trimImages\\spritesheet_js_1595576525344_image_31.png",
+            "trim": {
+              "x": 673,
+              "y": 621,
+              "width": 242,
+              "height": 151,
+              "rotatedWidth": 242,
+              "rotatedHeight": 151
+            },
+            "rawWidth": 245,
+            "rawHeight": 155,
+            "width": 248,
+            "height": 157,
+            "originalPath": "D:/project/LookPhysicalPinball/library/imports/20/20e1aa06-4f11-4711-a624-8568a02f8a0b.png",
+            "x": 670,
+            "y": 618,
+            "rotatedWidth": 248,
+            "rotatedHeight": 157
+          },
+          {
+            "name": "96",
+            "uuid": "ff491f6a-3875-4761-92ea-7817fde526ee",
+            "textureUuid": "215e31b0-5d84-412f-a0c0-b1d50df02c71",
+            "path": "D:\\project\\LookPhysicalPinball\\temp\\trimImages\\spritesheet_js_1595576525347_image_64.png",
+            "trim": {
+              "x": 921,
+              "y": 621,
+              "width": 96,
+              "height": 96,
+              "rotatedWidth": 96,
+              "rotatedHeight": 96
+            },
+            "rawWidth": 96,
+            "rawHeight": 96,
+            "width": 102,
+            "height": 102,
+            "originalPath": "D:/project/LookPhysicalPinball/library/imports/21/215e31b0-5d84-412f-a0c0-b1d50df02c71.png",
+            "x": 918,
+            "y": 618,
+            "rotatedWidth": 102,
+            "rotatedHeight": 102
+          },
+          {
+            "name": "09_spin_bnt",
+            "uuid": "b8982d03-ff27-4ccb-afd3-c58f94fee926",
+            "textureUuid": "f7191586-7fd2-4c2d-ad69-f9a99b7b4594",
+            "path": "D:\\project\\LookPhysicalPinball\\temp\\trimImages\\spritesheet_js_1595576525345_image_41.png",
+            "trim": {
+              "x": 921,
+              "y": 723,
+              "width": 76,
+              "height": 52,
+              "rotatedWidth": 76,
+              "rotatedHeight": 52
+            },
+            "rawWidth": 80,
+            "rawHeight": 56,
+            "width": 82,
+            "height": 58,
+            "originalPath": "D:/project/LookPhysicalPinball/library/imports/f7/f7191586-7fd2-4c2d-ad69-f9a99b7b4594.png",
+            "x": 918,
+            "y": 720,
+            "rotatedWidth": 82,
+            "rotatedHeight": 58
+          },
+          {
+            "name": "10_zy_2bg",
+            "uuid": "8bdb63e0-6cb6-4ad0-807a-e9f62e87a1b1",
+            "textureUuid": "5798c4da-901b-4915-9d00-17bd682a905f",
+            "path": "D:\\project\\LookPhysicalPinball\\temp\\trimImages\\spritesheet_js_1595576525344_image_33.png",
+            "trim": {
+              "x": 1003,
+              "y": 723,
+              "width": 13,
+              "height": 29,
+              "rotatedWidth": 13,
+              "rotatedHeight": 29
+            },
+            "rawWidth": 13,
+            "rawHeight": 29,
+            "width": 19,
+            "height": 35,
+            "originalPath": "D:/project/LookPhysicalPinball/library/imports/57/5798c4da-901b-4915-9d00-17bd682a905f.png",
+            "x": 1000,
+            "y": 720,
+            "rotatedWidth": 19,
+            "rotatedHeight": 35
+          },
+          {
+            "name": "01_rk_1",
+            "uuid": "fa7a738e-7350-4b71-b2e4-06d74083f50a",
+            "textureUuid": "b0ab6bf8-0653-4e9d-863b-26f8dce5dd24",
+            "path": "D:\\project\\LookPhysicalPinball\\temp\\trimImages\\spritesheet_js_1595576525347_image_61.png",
+            "trim": {
+              "x": 519,
+              "y": 791,
+              "width": 481,
+              "height": 193,
+              "rotatedWidth": 481,
+              "rotatedHeight": 193
+            },
+            "rawWidth": 486,
+            "rawHeight": 198,
+            "width": 487,
+            "height": 199,
+            "originalPath": "D:/project/LookPhysicalPinball/library/imports/b0/b0ab6bf8-0653-4e9d-863b-26f8dce5dd24.png",
+            "x": 516,
+            "y": 788,
+            "rotatedWidth": 487,
+            "rotatedHeight": 199
+          },
+          {
+            "name": "06_zy_pp",
+            "uuid": "26a4c57c-4713-4bc7-acbd-d47baf93afe2",
+            "textureUuid": "3815af7c-824b-4e46-b8d7-eddf69d46b66",
+            "path": "D:\\project\\LookPhysicalPinball\\temp\\trimImages\\spritesheet_js_1595576525341_image_8.png",
+            "trim": {
+              "x": 519,
+              "y": 990,
+              "width": 31,
+              "height": 39,
+              "rotatedWidth": 39,
+              "rotatedHeight": 31
+            },
+            "rawWidth": 31,
+            "rawHeight": 42,
+            "width": 37,
+            "height": 45,
+            "originalPath": "D:/project/LookPhysicalPinball/library/imports/38/3815af7c-824b-4e46-b8d7-eddf69d46b66.png",
+            "x": 516,
+            "y": 987,
+            "rotated": true,
+            "rotatedWidth": 45,
+            "rotatedHeight": 37
+          },
+          {
+            "name": "18",
+            "uuid": "a0483142-6ee7-4213-be77-ad3f14d4f515",
+            "textureUuid": "d50b426f-a389-4399-9559-40b16ea7fdc4",
+            "path": "D:\\project\\LookPhysicalPinball\\temp\\trimImages\\spritesheet_js_1595576525345_image_38.png",
+            "trim": {
+              "x": 564,
+              "y": 990,
+              "width": 31,
+              "height": 31,
+              "rotatedWidth": 31,
+              "rotatedHeight": 31
+            },
+            "rawWidth": 31,
+            "rawHeight": 31,
+            "width": 37,
+            "height": 37,
+            "originalPath": "D:/project/LookPhysicalPinball/library/imports/d5/d50b426f-a389-4399-9559-40b16ea7fdc4.png",
+            "x": 561,
+            "y": 987,
+            "rotatedWidth": 37,
+            "rotatedHeight": 37
+          },
+          {
+            "name": "arrow",
+            "uuid": "7104d103-5599-4ec8-a4d4-5107d59c0eb5",
+            "textureUuid": "8a569a2e-dcdb-4aae-b8e7-fae291566636",
+            "path": "D:\\project\\LookPhysicalPinball\\temp\\trimImages\\spritesheet_js_1595576525343_image_28.png",
+            "trim": {
+              "x": 601,
+              "y": 990,
+              "width": 29,
+              "height": 33,
+              "rotatedWidth": 33,
+              "rotatedHeight": 29
+            },
+            "rawWidth": 29,
+            "rawHeight": 33,
+            "width": 35,
+            "height": 39,
+            "originalPath": "D:/project/LookPhysicalPinball/library/imports/8a/8a569a2e-dcdb-4aae-b8e7-fae291566636.png",
+            "x": 598,
+            "y": 987,
+            "rotated": true,
+            "rotatedWidth": 39,
+            "rotatedHeight": 35
+          },
+          {
+            "name": "bloacks_3",
+            "uuid": "ec2189c3-c9c7-4e39-9991-090a48f831bd",
+            "textureUuid": "5eb7b240-6a4e-42b8-8abf-1c5d031ec47d",
+            "path": "D:\\project\\LookPhysicalPinball\\temp\\trimImages\\spritesheet_js_1595576525347_image_57.png",
+            "trim": {
+              "x": 640,
+              "y": 990,
+              "width": 19,
+              "height": 103,
+              "rotatedWidth": 103,
+              "rotatedHeight": 19
+            },
+            "rawWidth": 19,
+            "rawHeight": 103,
+            "width": 25,
+            "height": 109,
+            "originalPath": "D:/project/LookPhysicalPinball/library/imports/5e/5eb7b240-6a4e-42b8-8abf-1c5d031ec47d.png",
+            "x": 637,
+            "y": 987,
+            "rotated": true,
+            "rotatedWidth": 109,
+            "rotatedHeight": 25
+          }
+        ],
+        "width": 1020,
+        "height": 1024,
+        "name": "AutoAtlas-1",
+        "imagePath": "D:\\project\\LookPhysicalPinball\\temp\\TexturePacker\\build\\raw-assets\\texture\\AutoAtlas.pac\\AutoAtlas-1.png",
+        "compressd": {
+          "suffix": [
+            ".png"
+          ],
+          "imagePathNoExt": "D:\\project\\LookPhysicalPinball\\temp\\TexturePacker\\build\\raw-assets\\texture\\AutoAtlas.pac\\compressed\\AutoAtlas-1"
+        }
+      },
+      {
+        "files": [
+          {
+            "name": "wall_1",
+            "uuid": "d71f4478-fcc4-4dc0-9ae1-67f7cb2dc6ad",
+            "textureUuid": "801914b7-3a7a-46fc-9c97-ec35483a549a",
+            "path": "D:\\project\\LookPhysicalPinball\\temp\\trimImages\\spritesheet_js_1595576525346_image_50.png",
+            "trim": {
+              "x": 3,
+              "y": 3,
+              "width": 720,
+              "height": 73,
+              "rotatedWidth": 720,
+              "rotatedHeight": 73
+            },
+            "rawWidth": 720,
+            "rawHeight": 73,
+            "width": 726,
+            "height": 79,
+            "originalPath": "D:/project/LookPhysicalPinball/library/imports/80/801914b7-3a7a-46fc-9c97-ec35483a549a.png",
+            "x": 0,
+            "y": 0,
+            "rotatedWidth": 726,
+            "rotatedHeight": 79
+          },
+          {
+            "name": "05_spin_zt",
+            "uuid": "281b01da-97ab-41f0-8c59-5d383ee858fc",
+            "textureUuid": "31d8715e-5c20-4911-8060-49c9e5019072",
+            "path": "D:\\project\\LookPhysicalPinball\\temp\\trimImages\\spritesheet_js_1595576525341_image_10.png",
+            "trim": {
+              "x": 729,
+              "y": 3,
+              "width": 263,
+              "height": 103,
+              "rotatedWidth": 263,
+              "rotatedHeight": 103
+            },
+            "rawWidth": 273,
+            "rawHeight": 117,
+            "width": 269,
+            "height": 109,
+            "originalPath": "D:/project/LookPhysicalPinball/library/imports/31/31d8715e-5c20-4911-8060-49c9e5019072.png",
+            "x": 726,
+            "y": 0,
+            "rotatedWidth": 269,
+            "rotatedHeight": 109
+          },
+          {
+            "name": "2",
+            "uuid": "631d6b79-2abf-4a7c-a497-35846921b4f5",
+            "textureUuid": "2a7714a5-7f73-43bf-9e55-c1c488aaa956",
+            "path": "D:\\project\\LookPhysicalPinball\\temp\\trimImages\\spritesheet_js_1595576525342_image_24.png",
+            "trim": {
+              "x": 998,
+              "y": 3,
+              "width": 472,
+              "height": 18,
+              "rotatedWidth": 18,
+              "rotatedHeight": 472
+            },
+            "rawWidth": 472,
+            "rawHeight": 18,
+            "width": 478,
+            "height": 24,
+            "originalPath": "D:/project/LookPhysicalPinball/library/imports/2a/2a7714a5-7f73-43bf-9e55-c1c488aaa956.png",
+            "x": 995,
+            "y": 0,
+            "rotated": true,
+            "rotatedWidth": 24,
+            "rotatedHeight": 478
+          },
+          {
+            "name": "01_ZT",
+            "uuid": "1f7be745-42b4-4c97-a092-1b317d156668",
+            "textureUuid": "2b54bea0-15e4-4f13-a01b-4d5671d3f1be",
+            "path": "D:\\project\\LookPhysicalPinball\\temp\\trimImages\\spritesheet_js_1595576525341_image_7.png",
+            "trim": {
+              "x": 3,
+              "y": 481,
+              "width": 540,
+              "height": 540,
+              "rotatedWidth": 540,
+              "rotatedHeight": 540
+            },
+            "rawWidth": 541,
+            "rawHeight": 541,
+            "width": 546,
+            "height": 546,
+            "originalPath": "D:/project/LookPhysicalPinball/library/imports/2b/2b54bea0-15e4-4f13-a01b-4d5671d3f1be.png",
+            "x": 0,
+            "y": 478,
+            "rotatedWidth": 546,
+            "rotatedHeight": 546
+          },
+          {
+            "name": "1",
+            "uuid": "bfc0d3ca-63b3-4ada-80aa-dca08e0cbfdc",
+            "textureUuid": "cf06ca99-d833-4ba8-bc66-ea10351b4cd8",
+            "path": "D:\\project\\LookPhysicalPinball\\temp\\trimImages\\spritesheet_js_1595576525345_image_43.png",
+            "trim": {
+              "x": 549,
+              "y": 481,
+              "width": 472,
+              "height": 18,
+              "rotatedWidth": 472,
+              "rotatedHeight": 18
+            },
+            "rawWidth": 472,
+            "rawHeight": 18,
+            "width": 478,
+            "height": 24,
+            "originalPath": "D:/project/LookPhysicalPinball/library/imports/cf/cf06ca99-d833-4ba8-bc66-ea10351b4cd8.png",
+            "x": 546,
+            "y": 478,
+            "rotatedWidth": 478,
+            "rotatedHeight": 24
+          },
+          {
+            "name": "01_lb_bnt",
+            "uuid": "18ce4ccc-d017-4e35-af94-cd169a42fa76",
+            "textureUuid": "2a8e9ef4-b6bd-4ea5-88e6-b5fa5b4e170b",
+            "path": "D:\\project\\LookPhysicalPinball\\temp\\trimImages\\spritesheet_js_1595576525341_image_3.png",
+            "trim": {
+              "x": 3,
+              "y": 112,
+              "width": 358,
+              "height": 105,
+              "rotatedWidth": 105,
+              "rotatedHeight": 358
+            },
+            "rawWidth": 358,
+            "rawHeight": 105,
+            "width": 364,
+            "height": 111,
+            "originalPath": "D:/project/LookPhysicalPinball/library/imports/2a/2a8e9ef4-b6bd-4ea5-88e6-b5fa5b4e170b.png",
+            "x": 0,
+            "y": 109,
+            "rotated": true,
+            "rotatedWidth": 111,
+            "rotatedHeight": 364
+          },
+          {
+            "name": "02_lb_lb",
+            "uuid": "6324f69f-c20f-4b60-8d07-1c0936082f94",
+            "textureUuid": "14456b5b-6a93-421f-b119-6f308df41b00",
+            "path": "D:\\project\\LookPhysicalPinball\\temp\\trimImages\\spritesheet_js_1595576525343_image_25.png",
+            "trim": {
+              "x": 114,
+              "y": 82,
+              "width": 381,
+              "height": 254,
+              "rotatedWidth": 254,
+              "rotatedHeight": 381
+            },
+            "rawWidth": 381,
+            "rawHeight": 254,
+            "width": 387,
+            "height": 260,
+            "originalPath": "D:/project/LookPhysicalPinball/library/imports/14/14456b5b-6a93-421f-b119-6f308df41b00.png",
+            "x": 111,
+            "y": 79,
+            "rotated": true,
+            "rotatedWidth": 260,
+            "rotatedHeight": 387
+          },
+          {
+            "name": "43b5eb0971dec2cf6f69bc38ab261db",
+            "uuid": "2e6cc850-f5b0-44f8-acb8-16ecdab57082",
+            "textureUuid": "93b833d5-5770-46fc-8a76-7f87a1bb5780",
+            "path": "D:\\project\\LookPhysicalPinball\\temp\\trimImages\\spritesheet_js_1595576525341_image_11.png",
+            "trim": {
+              "x": 374,
+              "y": 82,
+              "width": 374,
+              "height": 161,
+              "rotatedWidth": 161,
+              "rotatedHeight": 374
+            },
+            "rawWidth": 379,
+            "rawHeight": 166,
+            "width": 380,
+            "height": 167,
+            "originalPath": "D:/project/LookPhysicalPinball/library/imports/93/93b833d5-5770-46fc-8a76-7f87a1bb5780.png",
+            "x": 371,
+            "y": 79,
+            "rotated": true,
+            "rotatedWidth": 167,
+            "rotatedHeight": 380
+          },
+          {
+            "name": "04_ZT",
+            "uuid": "92767a7a-7bf0-47f3-be9f-28281424fff3",
+            "textureUuid": "9b0cae8f-e5d0-4025-97ef-85d7b326b1d4",
+            "path": "D:\\project\\LookPhysicalPinball\\temp\\trimImages\\spritesheet_js_1595576525345_image_35.png",
+            "trim": {
+              "x": 541,
+              "y": 82,
+              "width": 178,
+              "height": 191,
+              "rotatedWidth": 178,
+              "rotatedHeight": 191
+            },
+            "rawWidth": 183,
+            "rawHeight": 199,
+            "width": 184,
+            "height": 197,
+            "originalPath": "D:/project/LookPhysicalPinball/library/imports/9b/9b0cae8f-e5d0-4025-97ef-85d7b326b1d4.png",
+            "x": 538,
+            "y": 79,
+            "rotatedWidth": 184,
+            "rotatedHeight": 197
+          },
+          {
+            "name": "15_hb_hd",
+            "uuid": "bff53f26-8e3c-431b-ae65-3dd97675d05a",
+            "textureUuid": "7d426a15-6628-458d-9a39-7e10ba005ff6",
+            "path": "D:\\project\\LookPhysicalPinball\\temp\\trimImages\\spritesheet_js_1595576525345_image_44.png",
+            "trim": {
+              "x": 541,
+              "y": 279,
+              "width": 184,
+              "height": 40,
+              "rotatedWidth": 40,
+              "rotatedHeight": 184
+            },
+            "rawWidth": 184,
+            "rawHeight": 40,
+            "width": 190,
+            "height": 46,
+            "originalPath": "D:/project/LookPhysicalPinball/library/imports/7d/7d426a15-6628-458d-9a39-7e10ba005ff6.png",
+            "x": 538,
+            "y": 276,
+            "rotated": true,
+            "rotatedWidth": 46,
+            "rotatedHeight": 190
+          },
+          {
+            "name": "pp_4_4",
+            "uuid": "f03282ef-568d-469c-be5b-e7061ca5d06c",
+            "textureUuid": "301d7fb5-b82a-4934-a78a-611288fb87cb",
+            "path": "D:\\project\\LookPhysicalPinball\\temp\\trimImages\\spritesheet_js_1595576525347_image_58.png",
+            "trim": {
+              "x": 725,
+              "y": 112,
+              "width": 242,
+              "height": 151,
+              "rotatedWidth": 242,
+              "rotatedHeight": 151
+            },
+            "rawWidth": 245,
+            "rawHeight": 155,
+            "width": 248,
+            "height": 157,
+            "originalPath": "D:/project/LookPhysicalPinball/library/imports/30/301d7fb5-b82a-4934-a78a-611288fb87cb.png",
+            "x": 722,
+            "y": 109,
+            "rotatedWidth": 248,
+            "rotatedHeight": 157
+          },
+          {
+            "name": "02_score_bnt",
+            "uuid": "c45c0f48-c1fd-4485-9198-b99a29d44529",
+            "textureUuid": "c9e309b1-fc5e-4bf3-8811-b6e4368d6d1e",
+            "path": "D:\\project\\LookPhysicalPinball\\temp\\trimImages\\spritesheet_js_1595576525345_image_45.png",
+            "trim": {
+              "x": 587,
+              "y": 279,
+              "width": 374,
+              "height": 161,
+              "rotatedWidth": 374,
+              "rotatedHeight": 161
+            },
+            "rawWidth": 379,
+            "rawHeight": 166,
+            "width": 380,
+            "height": 167,
+            "originalPath": "D:/project/LookPhysicalPinball/library/imports/c9/c9e309b1-fc5e-4bf3-8811-b6e4368d6d1e.png",
+            "x": 584,
+            "y": 276,
+            "rotatedWidth": 380,
+            "rotatedHeight": 167
+          },
+          {
+            "name": "05_zt_bmt",
+            "uuid": "661b34fd-e382-4390-81c8-7c7df4d7458e",
+            "textureUuid": "93c978cf-3474-4341-8dde-78f78a410529",
+            "path": "D:\\project\\LookPhysicalPinball\\temp\\trimImages\\spritesheet_js_1595576525343_image_27.png",
+            "trim": {
+              "x": 549,
+              "y": 505,
+              "width": 406,
+              "height": 405,
+              "rotatedWidth": 406,
+              "rotatedHeight": 405
+            },
+            "rawWidth": 406,
+            "rawHeight": 405,
+            "width": 412,
+            "height": 411,
+            "originalPath": "D:/project/LookPhysicalPinball/library/imports/93/93c978cf-3474-4341-8dde-78f78a410529.png",
+            "x": 546,
+            "y": 502,
+            "rotatedWidth": 412,
+            "rotatedHeight": 411
+          },
+          {
+            "name": "06_spin_bnt",
+            "uuid": "91f7cf74-4a74-4b90-98e2-af536a1185f1",
+            "textureUuid": "60fb701c-cdb1-40f5-b792-1f0c47604478",
+            "path": "D:\\project\\LookPhysicalPinball\\temp\\trimImages\\spritesheet_js_1595576525344_image_34.png",
+            "trim": {
+              "x": 961,
+              "y": 505,
+              "width": 59,
+              "height": 59,
+              "rotatedWidth": 59,
+              "rotatedHeight": 59
+            },
+            "rawWidth": 59,
+            "rawHeight": 59,
+            "width": 65,
+            "height": 65,
+            "originalPath": "D:/project/LookPhysicalPinball/library/imports/60/60fb701c-cdb1-40f5-b792-1f0c47604478.png",
+            "x": 958,
+            "y": 502,
+            "rotatedWidth": 65,
+            "rotatedHeight": 65
+          },
+          {
+            "name": "08_spin_bnt",
+            "uuid": "3ee12a65-f921-4e20-a16a-5f5276f5928f",
+            "textureUuid": "aa987714-35a4-4a14-ab90-0155fdb37ba5",
+            "path": "D:\\project\\LookPhysicalPinball\\temp\\trimImages\\spritesheet_js_1595576525342_image_16.png",
+            "trim": {
+              "x": 549,
+              "y": 916,
+              "width": 316,
+              "height": 103,
+              "rotatedWidth": 316,
+              "rotatedHeight": 103
+            },
+            "rawWidth": 316,
+            "rawHeight": 103,
+            "width": 322,
+            "height": 109,
+            "originalPath": "D:/project/LookPhysicalPinball/library/imports/aa/aa987714-35a4-4a14-ab90-0155fdb37ba5.png",
+            "x": 546,
+            "y": 913,
+            "rotatedWidth": 322,
+            "rotatedHeight": 109
+          },
+          {
+            "name": "02_rk_2",
+            "uuid": "a99e7dca-53f3-41c5-a0f1-6f554ae9e9b2",
+            "textureUuid": "2bd48f30-1c87-48cb-8a81-aaadc375eaa1",
+            "path": "D:\\project\\LookPhysicalPinball\\temp\\trimImages\\spritesheet_js_1595576525345_image_39.png",
+            "trim": {
+              "x": 871,
+              "y": 916,
+              "width": 148,
+              "height": 48,
+              "rotatedWidth": 148,
+              "rotatedHeight": 48
+            },
+            "rawWidth": 152,
+            "rawHeight": 52,
+            "width": 154,
+            "height": 54,
+            "originalPath": "D:/project/LookPhysicalPinball/library/imports/2b/2bd48f30-1c87-48cb-8a81-aaadc375eaa1.png",
+            "x": 868,
+            "y": 913,
+            "rotatedWidth": 154,
+            "rotatedHeight": 54
+          },
+          {
+            "name": "ring",
+            "uuid": "c48588ca-7544-4a16-9a4a-8ec30294e690",
+            "textureUuid": "e060cac2-442c-4d44-8dea-65e727054ea8",
+            "path": "D:\\project\\LookPhysicalPinball\\temp\\trimImages\\spritesheet_js_1595576525346_image_46.png",
+            "trim": {
+              "x": 871,
+              "y": 970,
+              "width": 51,
+              "height": 51,
+              "rotatedWidth": 51,
+              "rotatedHeight": 51
+            },
+            "rawWidth": 51,
+            "rawHeight": 51,
+            "width": 57,
+            "height": 57,
+            "originalPath": "D:/project/LookPhysicalPinball/library/imports/e0/e060cac2-442c-4d44-8dea-65e727054ea8.png",
+            "x": 868,
+            "y": 967,
+            "rotatedWidth": 57,
+            "rotatedHeight": 57
+          },
+          {
+            "name": "10_spin_bnt",
+            "uuid": "43fbeb09-ab5e-4b58-9561-80cf3d346248",
+            "textureUuid": "ac02188e-7bde-4952-a2c7-9091c0f31601",
+            "path": "D:\\project\\LookPhysicalPinball\\temp\\trimImages\\spritesheet_js_1595576525342_image_17.png",
+            "trim": {
+              "x": 928,
+              "y": 970,
+              "width": 84,
+              "height": 48,
+              "rotatedWidth": 84,
+              "rotatedHeight": 48
+            },
+            "rawWidth": 88,
+            "rawHeight": 52,
+            "width": 90,
+            "height": 54,
+            "originalPath": "D:/project/LookPhysicalPinball/library/imports/ac/ac02188e-7bde-4952-a2c7-9091c0f31601.png",
+            "x": 925,
+            "y": 967,
+            "rotatedWidth": 90,
+            "rotatedHeight": 54
+          },
+          {
+            "name": "25",
+            "uuid": "2fbcdd1d-52f5-470c-b534-335a57953352",
+            "textureUuid": "f4e5b79c-5760-4aa6-a2e0-24731bacb5b3",
+            "path": "D:\\project\\LookPhysicalPinball\\temp\\trimImages\\spritesheet_js_1595576525341_image_12.png",
+            "trim": {
+              "x": 961,
+              "y": 570,
+              "width": 52,
+              "height": 52,
+              "rotatedWidth": 52,
+              "rotatedHeight": 52
+            },
+            "rawWidth": 58,
+            "rawHeight": 58,
+            "width": 58,
+            "height": 58,
+            "originalPath": "D:/project/LookPhysicalPinball/library/imports/f4/f4e5b79c-5760-4aa6-a2e0-24731bacb5b3.png",
+            "x": 958,
+            "y": 567,
+            "rotatedWidth": 58,
+            "rotatedHeight": 58
+          },
+          {
+            "name": "04_zy_hd",
+            "uuid": "cf8c78b8-73e6-4245-b354-cd963e9167fc",
+            "textureUuid": "63f5f263-ab55-4149-a73a-b9b70f8149a7",
+            "path": "D:\\project\\LookPhysicalPinball\\temp\\trimImages\\spritesheet_js_1595576525346_image_48.png",
+            "trim": {
+              "x": 961,
+              "y": 628,
+              "width": 52,
+              "height": 52,
+              "rotatedWidth": 52,
+              "rotatedHeight": 52
+            },
+            "rawWidth": 52,
+            "rawHeight": 52,
+            "width": 58,
+            "height": 58,
+            "originalPath": "D:/project/LookPhysicalPinball/library/imports/63/63f5f263-ab55-4149-a73a-b9b70f8149a7.png",
+            "x": 958,
+            "y": 625,
+            "rotatedWidth": 58,
+            "rotatedHeight": 58
+          },
+          {
+            "name": "24",
+            "uuid": "d283dbe5-b739-47e2-8e62-593301b380a0",
+            "textureUuid": "c80e6495-ecac-43f5-8ec5-70c37266b62b",
+            "path": "D:\\project\\LookPhysicalPinball\\temp\\trimImages\\spritesheet_js_1595576525346_image_49.png",
+            "trim": {
+              "x": 961,
+              "y": 686,
+              "width": 52,
+              "height": 52,
+              "rotatedWidth": 52,
+              "rotatedHeight": 52
+            },
+            "rawWidth": 56,
+            "rawHeight": 56,
+            "width": 58,
+            "height": 58,
+            "originalPath": "D:/project/LookPhysicalPinball/library/imports/c8/c80e6495-ecac-43f5-8ec5-70c37266b62b.png",
+            "x": 958,
+            "y": 683,
+            "rotatedWidth": 58,
+            "rotatedHeight": 58
+          },
+          {
+            "name": "07_zy_jb2",
+            "uuid": "7b774f3c-b5f7-429a-afd5-db6f7c63eed5",
+            "textureUuid": "68442e55-a1fc-4ae6-9b74-010a4133d633",
+            "path": "D:\\project\\LookPhysicalPinball\\temp\\trimImages\\spritesheet_js_1595576525343_image_30.png",
+            "trim": {
+              "x": 961,
+              "y": 744,
+              "width": 44,
+              "height": 45,
+              "rotatedWidth": 45,
+              "rotatedHeight": 44
+            },
+            "rawWidth": 44,
+            "rawHeight": 45,
+            "width": 50,
+            "height": 51,
+            "originalPath": "D:/project/LookPhysicalPinball/library/imports/68/68442e55-a1fc-4ae6-9b74-010a4133d633.png",
+            "x": 958,
+            "y": 741,
+            "rotated": true,
+            "rotatedWidth": 51,
+            "rotatedHeight": 50
+          },
+          {
+            "name": "05_zy_pp",
+            "uuid": "e428e780-7f92-4080-9eb6-b3a33e37592f",
+            "textureUuid": "b01e3b8d-d41f-463e-ae7e-c3cd3d35d935",
+            "path": "D:\\project\\LookPhysicalPinball\\temp\\trimImages\\spritesheet_js_1595576525346_image_53.png",
+            "trim": {
+              "x": 961,
+              "y": 794,
+              "width": 36,
+              "height": 41,
+              "rotatedWidth": 41,
+              "rotatedHeight": 36
+            },
+            "rawWidth": 36,
+            "rawHeight": 42,
+            "width": 42,
+            "height": 47,
+            "originalPath": "D:/project/LookPhysicalPinball/library/imports/b0/b01e3b8d-d41f-463e-ae7e-c3cd3d35d935.png",
+            "x": 958,
+            "y": 791,
+            "rotated": true,
+            "rotatedWidth": 47,
+            "rotatedHeight": 42
+          },
+          {
+            "name": "12_bg_szzt",
+            "uuid": "64650ee1-ab48-469b-bf87-f91c650e6c84",
+            "textureUuid": "009facd0-34d7-46d6-9973-c2bb60ff66d9",
+            "path": "D:\\project\\LookPhysicalPinball\\temp\\trimImages\\spritesheet_js_1595576525343_image_26.png",
+            "trim": {
+              "x": 961,
+              "y": 836,
+              "width": 40,
+              "height": 40,
+              "rotatedWidth": 40,
+              "rotatedHeight": 40
+            },
+            "rawWidth": 40,
+            "rawHeight": 40,
+            "width": 46,
+            "height": 46,
+            "originalPath": "D:/project/LookPhysicalPinball/library/imports/00/009facd0-34d7-46d6-9973-c2bb60ff66d9.png",
+            "x": 958,
+            "y": 833,
+            "rotatedWidth": 46,
+            "rotatedHeight": 46
+          }
+        ],
+        "width": 1024,
+        "height": 1024,
+        "name": "AutoAtlas-2",
+        "imagePath": "D:\\project\\LookPhysicalPinball\\temp\\TexturePacker\\build\\raw-assets\\texture\\AutoAtlas.pac\\AutoAtlas-2.png",
+        "compressd": {
+          "suffix": [
+            ".png"
+          ],
+          "imagePathNoExt": "D:\\project\\LookPhysicalPinball\\temp\\TexturePacker\\build\\raw-assets\\texture\\AutoAtlas.pac\\compressed\\AutoAtlas-2"
+        }
+      },
+      {
+        "files": [
+          {
+            "name": "02_ZT",
+            "uuid": "48ae8a05-335f-4f1a-8d7c-308228da6747",
+            "textureUuid": "597a9422-b0b1-49db-8913-5657c561b419",
+            "path": "D:\\project\\LookPhysicalPinball\\temp\\trimImages\\spritesheet_js_1595576525342_image_18.png",
+            "trim": {
+              "x": 3,
+              "y": 3,
+              "width": 537,
+              "height": 537,
+              "rotatedWidth": 537,
+              "rotatedHeight": 537
+            },
+            "rawWidth": 541,
+            "rawHeight": 541,
+            "width": 543,
+            "height": 543,
+            "originalPath": "D:/project/LookPhysicalPinball/library/imports/59/597a9422-b0b1-49db-8913-5657c561b419.png",
+            "x": 0,
+            "y": 0,
+            "rotatedWidth": 543,
+            "rotatedHeight": 543
+          },
+          {
+            "name": "04_Congratulations_bnt",
+            "uuid": "e29a5a43-ab79-45a5-bc0b-5e6549e323b2",
+            "textureUuid": "aaeacad4-cdc5-4002-80e2-12286418ef0f",
+            "path": "D:\\project\\LookPhysicalPinball\\temp\\trimImages\\spritesheet_js_1595576525346_image_52.png",
+            "trim": {
+              "x": 3,
+              "y": 546,
+              "width": 374,
+              "height": 161,
+              "rotatedWidth": 161,
+              "rotatedHeight": 374
+            },
+            "rawWidth": 379,
+            "rawHeight": 166,
+            "width": 380,
+            "height": 167,
+            "originalPath": "D:/project/LookPhysicalPinball/library/imports/aa/aaeacad4-cdc5-4002-80e2-12286418ef0f.png",
+            "x": 0,
+            "y": 543,
+            "rotated": true,
+            "rotatedWidth": 167,
+            "rotatedHeight": 380
+          },
+          {
+            "name": "08_score_bnt",
+            "uuid": "612d93a2-2745-450f-871c-db9011d2fb51",
+            "textureUuid": "5df9dc1e-58ee-4916-a28e-bc34440dd449",
+            "path": "D:\\project\\LookPhysicalPinball\\temp\\trimImages\\spritesheet_js_1595576525342_image_23.png",
+            "trim": {
+              "x": 3,
+              "y": 926,
+              "width": 622,
+              "height": 53,
+              "rotatedWidth": 622,
+              "rotatedHeight": 53
+            },
+            "rawWidth": 622,
+            "rawHeight": 53,
+            "width": 628,
+            "height": 59,
+            "originalPath": "D:/project/LookPhysicalPinball/library/imports/5d/5df9dc1e-58ee-4916-a28e-bc34440dd449.png",
+            "x": 0,
+            "y": 923,
+            "rotatedWidth": 628,
+            "rotatedHeight": 59
+          },
+          {
+            "name": "16_zy_bg",
+            "uuid": "9867c8b6-daa5-41b5-a33b-732d14405abb",
+            "textureUuid": "9a780805-e2d4-4030-9807-5ce4622e5b3c",
+            "path": "D:\\project\\LookPhysicalPinball\\temp\\trimImages\\spritesheet_js_1595576525345_image_36.png",
+            "trim": {
+              "x": 3,
+              "y": 985,
+              "width": 36,
+              "height": 39,
+              "rotatedWidth": 39,
+              "rotatedHeight": 36
+            },
+            "rawWidth": 37,
+            "rawHeight": 42,
+            "width": 42,
+            "height": 45,
+            "originalPath": "D:/project/LookPhysicalPinball/library/imports/9a/9a780805-e2d4-4030-9807-5ce4622e5b3c.png",
+            "x": 0,
+            "y": 982,
+            "rotated": true,
+            "rotatedWidth": 45,
+            "rotatedHeight": 42
+          },
+          {
+            "name": "05_score_bnt",
+            "uuid": "5684533e-22e9-4e1f-9117-59ae596a7e04",
+            "textureUuid": "9929e5d0-3c52-4e2e-ab4c-f67b8519d63d",
+            "path": "D:\\project\\LookPhysicalPinball\\temp\\trimImages\\spritesheet_js_1595576525342_image_21.png",
+            "trim": {
+              "x": 170,
+              "y": 546,
+              "width": 302,
+              "height": 123,
+              "rotatedWidth": 123,
+              "rotatedHeight": 302
+            },
+            "rawWidth": 305,
+            "rawHeight": 124,
+            "width": 308,
+            "height": 129,
+            "originalPath": "D:/project/LookPhysicalPinball/library/imports/99/9929e5d0-3c52-4e2e-ab4c-f67b8519d63d.png",
+            "x": 167,
+            "y": 543,
+            "rotated": true,
+            "rotatedWidth": 129,
+            "rotatedHeight": 308
+          },
+          {
+            "name": "bloacks_1",
+            "uuid": "388a1c1c-c245-403a-81d4-e9e0efb4b476",
+            "textureUuid": "86572d08-76a5-484f-867e-b082267807c0",
+            "path": "D:\\project\\LookPhysicalPinball\\temp\\trimImages\\spritesheet_js_1595576525342_image_14.png",
+            "trim": {
+              "x": 170,
+              "y": 854,
+              "width": 83,
+              "height": 66,
+              "rotatedWidth": 83,
+              "rotatedHeight": 66
+            },
+            "rawWidth": 83,
+            "rawHeight": 66,
+            "width": 89,
+            "height": 72,
+            "originalPath": "D:/project/LookPhysicalPinball/library/imports/86/86572d08-76a5-484f-867e-b082267807c0.png",
+            "x": 167,
+            "y": 851,
+            "rotatedWidth": 89,
+            "rotatedHeight": 72
+          },
+          {
+            "name": "01_zy_yqrk",
+            "uuid": "280d2860-ca31-4905-9953-e4201d413bb3",
+            "textureUuid": "c9792ed7-87b1-474c-b9b4-17a898e591d1",
+            "path": "D:\\project\\LookPhysicalPinball\\temp\\trimImages\\spritesheet_js_1595576525341_image_9.png",
+            "trim": {
+              "x": 259,
+              "y": 854,
+              "width": 83,
+              "height": 62,
+              "rotatedWidth": 83,
+              "rotatedHeight": 62
+            },
+            "rawWidth": 101,
+            "rawHeight": 101,
+            "width": 89,
+            "height": 68,
+            "originalPath": "D:/project/LookPhysicalPinball/library/imports/c9/c9792ed7-87b1-474c-b9b4-17a898e591d1.png",
+            "x": 256,
+            "y": 851,
+            "rotatedWidth": 89,
+            "rotatedHeight": 68
+          },
+          {
+            "name": "bloacks_2",
+            "uuid": "559aceb0-247c-48f9-a6f2-a41237cba701",
+            "textureUuid": "dffc7eaf-fbb2-491d-b97a-d4bf26aa4609",
+            "path": "D:\\project\\LookPhysicalPinball\\temp\\trimImages\\spritesheet_js_1595576525342_image_20.png",
+            "trim": {
+              "x": 299,
+              "y": 546,
+              "width": 149,
+              "height": 157,
+              "rotatedWidth": 149,
+              "rotatedHeight": 157
+            },
+            "rawWidth": 149,
+            "rawHeight": 157,
+            "width": 155,
+            "height": 163,
+            "originalPath": "D:/project/LookPhysicalPinball/library/imports/df/dffc7eaf-fbb2-491d-b97a-d4bf26aa4609.png",
+            "x": 296,
+            "y": 543,
+            "rotatedWidth": 155,
+            "rotatedHeight": 163
+          },
+          {
+            "name": "bloacks_2",
+            "uuid": "06c3060d-8be9-4097-a7ce-6934358e633b",
+            "textureUuid": "241f2b21-656e-4e73-87ed-20ac2a0fc539",
+            "path": "D:\\project\\LookPhysicalPinball\\temp\\trimImages\\spritesheet_js_1595576525339_image_0.png",
+            "trim": {
+              "x": 299,
+              "y": 709,
+              "width": 130,
+              "height": 130,
+              "rotatedWidth": 130,
+              "rotatedHeight": 130
+            },
+            "rawWidth": 130,
+            "rawHeight": 130,
+            "width": 136,
+            "height": 136,
+            "originalPath": "D:/project/LookPhysicalPinball/library/imports/24/241f2b21-656e-4e73-87ed-20ac2a0fc539.png",
+            "x": 296,
+            "y": 706,
+            "rotatedWidth": 136,
+            "rotatedHeight": 136
+          },
+          {
+            "name": "10_zy_1bg",
+            "uuid": "eb6f94f8-4703-4741-8c71-f52a8a58521d",
+            "textureUuid": "fea9bc49-adff-4333-a61c-a6bf0c4213b0",
+            "path": "D:\\project\\LookPhysicalPinball\\temp\\trimImages\\spritesheet_js_1595576525347_image_56.png",
+            "trim": {
+              "x": 348,
+              "y": 845,
+              "width": 95,
+              "height": 74,
+              "rotatedWidth": 95,
+              "rotatedHeight": 74
+            },
+            "rawWidth": 95,
+            "rawHeight": 74,
+            "width": 101,
+            "height": 80,
+            "originalPath": "D:/project/LookPhysicalPinball/library/imports/fe/fea9bc49-adff-4333-a61c-a6bf0c4213b0.png",
+            "x": 345,
+            "y": 842,
+            "rotatedWidth": 101,
+            "rotatedHeight": 80
+          },
+          {
+            "name": "06_zt_6",
+            "uuid": "18e16ae2-caec-4371-a066-8d9bbe32ee4d",
+            "textureUuid": "d7ac2b8e-e614-4fb1-935a-d3fb40b80f1a",
+            "path": "D:\\project\\LookPhysicalPinball\\temp\\trimImages\\spritesheet_js_1595576525341_image_4.png",
+            "trim": {
+              "x": 435,
+              "y": 709,
+              "width": 132,
+              "height": 122,
+              "rotatedWidth": 132,
+              "rotatedHeight": 122
+            },
+            "rawWidth": 132,
+            "rawHeight": 122,
+            "width": 138,
+            "height": 128,
+            "originalPath": "D:/project/LookPhysicalPinball/library/imports/d7/d7ac2b8e-e614-4fb1-935a-d3fb40b80f1a.png",
+            "x": 432,
+            "y": 706,
+            "rotatedWidth": 138,
+            "rotatedHeight": 128
+          },
+          {
+            "name": "bloacks_1",
+            "uuid": "76762d57-1f75-45e6-bbd9-c4c4fe166421",
+            "textureUuid": "f48d0745-7e02-4e3d-81f0-22a8169d0f52",
+            "path": "D:\\project\\LookPhysicalPinball\\temp\\trimImages\\spritesheet_js_1595576525343_image_29.png",
+            "trim": {
+              "x": 449,
+              "y": 837,
+              "width": 82,
+              "height": 83,
+              "rotatedWidth": 82,
+              "rotatedHeight": 83
+            },
+            "rawWidth": 82,
+            "rawHeight": 83,
+            "width": 88,
+            "height": 89,
+            "originalPath": "D:/project/LookPhysicalPinball/library/imports/f4/f48d0745-7e02-4e3d-81f0-22a8169d0f52.png",
+            "x": 446,
+            "y": 834,
+            "rotatedWidth": 88,
+            "rotatedHeight": 89
+          },
+          {
+            "name": "bloacks_3",
+            "uuid": "56a0afd5-a086-4fe5-a415-bfbfeea5b2e1",
+            "textureUuid": "6ef299e3-efbd-4153-9c91-0d8785bcd9dd",
+            "path": "D:\\project\\LookPhysicalPinball\\temp\\trimImages\\spritesheet_js_1595576525342_image_22.png",
+            "trim": {
+              "x": 537,
+              "y": 837,
+              "width": 91,
+              "height": 74,
+              "rotatedWidth": 91,
+              "rotatedHeight": 74
+            },
+            "rawWidth": 91,
+            "rawHeight": 74,
+            "width": 97,
+            "height": 80,
+            "originalPath": "D:/project/LookPhysicalPinball/library/imports/6e/6ef299e3-efbd-4153-9c91-0d8785bcd9dd.png",
+            "x": 534,
+            "y": 834,
+            "rotatedWidth": 97,
+            "rotatedHeight": 80
+          },
+          {
+            "name": "bloacks_2",
+            "uuid": "1de30651-6404-436b-8d9e-be3c48626177",
+            "textureUuid": "6a9b0b04-7974-4ff6-8d7d-576a3f45bed9",
+            "path": "D:\\project\\LookPhysicalPinball\\temp\\trimImages\\spritesheet_js_1595576525341_image_6.png",
+            "trim": {
+              "x": 631,
+              "y": 917,
+              "width": 101,
+              "height": 111,
+              "rotatedWidth": 111,
+              "rotatedHeight": 101
+            },
+            "rawWidth": 101,
+            "rawHeight": 111,
+            "width": 107,
+            "height": 117,
+            "originalPath": "D:/project/LookPhysicalPinball/library/imports/6a/6a9b0b04-7974-4ff6-8d7d-576a3f45bed9.png",
+            "x": 628,
+            "y": 914,
+            "rotated": true,
+            "rotatedWidth": 117,
+            "rotatedHeight": 107
+          },
+          {
+            "name": "bloacks_2",
+            "uuid": "11c85a1b-fc78-4de3-b9be-d79d9e3e5a61",
+            "textureUuid": "5508f40c-057e-4676-928f-7548cdd98f71",
+            "path": "D:\\project\\LookPhysicalPinball\\temp\\trimImages\\spritesheet_js_1595576525340_image_2.png",
+            "trim": {
+              "x": 454,
+              "y": 546,
+              "width": 126,
+              "height": 116,
+              "rotatedWidth": 116,
+              "rotatedHeight": 126
+            },
+            "rawWidth": 126,
+            "rawHeight": 116,
+            "width": 132,
+            "height": 122,
+            "originalPath": "D:/project/LookPhysicalPinball/library/imports/55/5508f40c-057e-4676-928f-7548cdd98f71.png",
+            "x": 451,
+            "y": 543,
+            "rotated": true,
+            "rotatedWidth": 122,
+            "rotatedHeight": 132
+          },
+          {
+            "name": "bloacks_3",
+            "uuid": "fb98990f-faa2-4e27-8921-d173e834bd97",
+            "textureUuid": "fb94afbd-923a-4fe1-844e-528b07b9956e",
+            "path": "D:\\project\\LookPhysicalPinball\\temp\\trimImages\\spritesheet_js_1595576525347_image_62.png",
+            "trim": {
+              "x": 573,
+              "y": 678,
+              "width": 118,
+              "height": 118,
+              "rotatedWidth": 118,
+              "rotatedHeight": 118
+            },
+            "rawWidth": 118,
+            "rawHeight": 118,
+            "width": 124,
+            "height": 124,
+            "originalPath": "D:/project/LookPhysicalPinball/library/imports/fb/fb94afbd-923a-4fe1-844e-528b07b9956e.png",
+            "x": 570,
+            "y": 675,
+            "rotatedWidth": 124,
+            "rotatedHeight": 124
+          },
+          {
+            "name": "bloacks_1",
+            "uuid": "e96e5cd9-b970-4654-b13f-2adb9eac50bf",
+            "textureUuid": "834412ff-9290-4dd3-94e2-2fca52e0e46e",
+            "path": "D:\\project\\LookPhysicalPinball\\temp\\trimImages\\spritesheet_js_1595576525346_image_55.png",
+            "trim": {
+              "x": 634,
+              "y": 802,
+              "width": 102,
+              "height": 101,
+              "rotatedWidth": 101,
+              "rotatedHeight": 102
+            },
+            "rawWidth": 102,
+            "rawHeight": 101,
+            "width": 108,
+            "height": 107,
+            "originalPath": "D:/project/LookPhysicalPinball/library/imports/83/834412ff-9290-4dd3-94e2-2fca52e0e46e.png",
+            "x": 631,
+            "y": 799,
+            "rotated": true,
+            "rotatedWidth": 107,
+            "rotatedHeight": 108
+          },
+          {
+            "name": "25_hb_hd",
+            "uuid": "e0a6909e-2d6e-4965-9478-f8e88bc0053d",
+            "textureUuid": "2d0ff73c-9d45-4da1-90c9-6d7bcfdeb2e8",
+            "path": "D:\\project\\LookPhysicalPinball\\temp\\trimImages\\spritesheet_js_1595576525346_image_51.png",
+            "trim": {
+              "x": 546,
+              "y": 3,
+              "width": 114,
+              "height": 114,
+              "rotatedWidth": 114,
+              "rotatedHeight": 114
+            },
+            "rawWidth": 114,
+            "rawHeight": 114,
+            "width": 120,
+            "height": 120,
+            "originalPath": "D:/project/LookPhysicalPinball/library/imports/2d/2d0ff73c-9d45-4da1-90c9-6d7bcfdeb2e8.png",
+            "x": 543,
+            "y": 0,
+            "rotatedWidth": 120,
+            "rotatedHeight": 120
+          },
+          {
+            "name": "bloacks_3",
+            "uuid": "18ef5635-36db-42f9-aa27-2116051e6789",
+            "textureUuid": "d35073f4-8807-4439-865a-2f7a021d0f36",
+            "path": "D:\\project\\LookPhysicalPinball\\temp\\trimImages\\spritesheet_js_1595576525341_image_5.png",
+            "trim": {
+              "x": 546,
+              "y": 123,
+              "width": 92,
+              "height": 92,
+              "rotatedWidth": 92,
+              "rotatedHeight": 92
+            },
+            "rawWidth": 92,
+            "rawHeight": 92,
+            "width": 98,
+            "height": 98,
+            "originalPath": "D:/project/LookPhysicalPinball/library/imports/d3/d35073f4-8807-4439-865a-2f7a021d0f36.png",
+            "x": 543,
+            "y": 120,
+            "rotatedWidth": 98,
+            "rotatedHeight": 98
+          },
+          {
+            "name": "bloacks_1",
+            "uuid": "bdb76c0a-faa8-482c-9c8a-6e0efa350911",
+            "textureUuid": "2960fa21-03ac-47c5-a534-d393504b51be",
+            "path": "D:\\project\\LookPhysicalPinball\\temp\\trimImages\\spritesheet_js_1595576525345_image_42.png",
+            "trim": {
+              "x": 546,
+              "y": 221,
+              "width": 76,
+              "height": 85,
+              "rotatedWidth": 76,
+              "rotatedHeight": 85
+            },
+            "rawWidth": 76,
+            "rawHeight": 85,
+            "width": 82,
+            "height": 91,
+            "originalPath": "D:/project/LookPhysicalPinball/library/imports/29/2960fa21-03ac-47c5-a534-d393504b51be.png",
+            "x": 543,
+            "y": 218,
+            "rotatedWidth": 82,
+            "rotatedHeight": 91
+          },
+          {
+            "name": "09_zy_bg",
+            "uuid": "109a277e-5e9c-4638-9403-12e1cc0f86e7",
+            "textureUuid": "ffa07f40-2fd7-41de-85b3-b27b4daec8a5",
+            "path": "D:\\project\\LookPhysicalPinball\\temp\\trimImages\\spritesheet_js_1595576525340_image_1.png",
+            "trim": {
+              "x": 546,
+              "y": 312,
+              "width": 83,
+              "height": 72,
+              "rotatedWidth": 72,
+              "rotatedHeight": 83
+            },
+            "rawWidth": 83,
+            "rawHeight": 72,
+            "width": 89,
+            "height": 78,
+            "originalPath": "D:/project/LookPhysicalPinball/library/imports/ff/ffa07f40-2fd7-41de-85b3-b27b4daec8a5.png",
+            "x": 543,
+            "y": 309,
+            "rotated": true,
+            "rotatedWidth": 78,
+            "rotatedHeight": 89
+          }
+        ],
+        "width": 745,
+        "height": 1024,
+        "name": "AutoAtlas-3",
+        "imagePath": "D:\\project\\LookPhysicalPinball\\temp\\TexturePacker\\build\\raw-assets\\texture\\AutoAtlas.pac\\AutoAtlas-3.png",
+        "compressd": {
+          "suffix": [
+            ".png"
+          ],
+          "imagePathNoExt": "D:\\project\\LookPhysicalPinball\\temp\\TexturePacker\\build\\raw-assets\\texture\\AutoAtlas.pac\\compressed\\AutoAtlas-3"
+        }
+      },
+      {
+        "files": [
+          {
+            "name": "03_ZT",
+            "uuid": "e963cc23-6f88-4c6c-b9c5-2c7696f51cc8",
+            "textureUuid": "7c5b842e-6244-43ef-96d4-846a1ebe8e27",
+            "path": "D:\\project\\LookPhysicalPinball\\temp\\trimImages\\spritesheet_js_1595576525346_image_54.png",
+            "trim": {
+              "x": 3,
+              "y": 3,
+              "width": 494,
+              "height": 494,
+              "rotatedWidth": 494,
+              "rotatedHeight": 494
+            },
+            "rawWidth": 494,
+            "rawHeight": 494,
+            "width": 500,
+            "height": 500,
+            "originalPath": "D:/project/LookPhysicalPinball/library/imports/7c/7c5b842e-6244-43ef-96d4-846a1ebe8e27.png",
+            "x": 0,
+            "y": 0,
+            "rotatedWidth": 500,
+            "rotatedHeight": 500
+          }
+        ],
+        "width": 500,
+        "height": 500,
+        "name": "AutoAtlas-4",
+        "imagePath": "D:\\project\\LookPhysicalPinball\\temp\\TexturePacker\\build\\raw-assets\\texture\\AutoAtlas.pac\\AutoAtlas-4.png",
+        "compressd": {
+          "suffix": [
+            ".png"
+          ],
+          "imagePathNoExt": "D:\\project\\LookPhysicalPinball\\temp\\TexturePacker\\build\\raw-assets\\texture\\AutoAtlas.pac\\compressed\\AutoAtlas-4"
+        }
+      }
+    ],
+    "unpackedTextures": [
+      {
+        "name": "03_rk_03",
+        "uuid": "af626782-f173-4101-a4b9-e1fa602a2817",
+        "textureUuid": "8ea9470f-0486-4b09-b085-294809456bd3",
+        "path": "D:\\project\\LookPhysicalPinball\\temp\\trimImages\\spritesheet_js_1595576525345_image_40.png",
+        "trim": {
+          "x": 0,
+          "y": 0,
+          "width": 720,
+          "height": 1280,
+          "rotatedWidth": 720,
+          "rotatedHeight": 1280
+        },
+        "rawWidth": 720,
+        "rawHeight": 1280,
+        "width": 726,
+        "height": 1286,
+        "originalPath": "D:/project/LookPhysicalPinball/library/imports/8e/8ea9470f-0486-4b09-b085-294809456bd3.png"
+      }
+    ]
+  }
+}

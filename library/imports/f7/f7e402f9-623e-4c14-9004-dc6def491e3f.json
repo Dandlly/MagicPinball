@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "bt_relink_run",
+    "texture": "0d1bed08-40bb-46e7-a5dd-af75cf6fcd86",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      114,
+      114
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      114,
+      114
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

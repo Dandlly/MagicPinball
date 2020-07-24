@@ -1,0 +1,7 @@
+{
+  "__type__": "cc.TextAsset",
+  "_name": "zlib.min.d",
+  "_objFlags": 0,
+  "_native": "",
+  "text": "declare module Zlib {\r\n    class Inflate {\r\n        constructor(data:any);\r\n        decompress(): any;\r\n     }\r\n     \r\n    class Deflate { \r\n        constructor(data:any);\r\n        compress():any;\r\n    }\r\n}"
+}

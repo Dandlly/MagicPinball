@@ -1,0 +1,27 @@
+{
+  "__type__": "cc.JsonAsset",
+  "_name": "SimpleSDKConfig",
+  "_objFlags": 0,
+  "_native": "",
+  "json": {
+    "gameName": "MergeCarPro",
+    "debug": false,
+    "androidAppsflyerkey": "sP7yS5ScgkQJ3Gfk4p9iX",
+    "androidAdjustAppkey": "",
+    "androidTopOnAppid": "a5efdb03188f12",
+    "androidTopOnKey": "a98457842e564503cbc82a99a71f9bdd",
+    "androidToponRewardPlacementId": "b5efdb0474482b",
+    "androidToponBannePlacementId": "b5efdb0667ffdb",
+    "androidToponInterstitialPlacementId": "b5efdb05b48564",
+    "iosAppsflyerkey": "",
+    "iosAppleid": "",
+    "iosAdjustAppkey": "",
+    "iosTopOnAppid": "",
+    "iosTopOnKey": "",
+    "iosToponRewardPlacementId": "",
+    "iosToponBannePlacementId": "",
+    "iosToponInterstitialPlacementId": "",
+    "bannerWidth": -1,
+    "bannerHeight": -1
+  }
+}

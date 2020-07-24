@@ -1,0 +1,9 @@
+{
+  "engine": "cocos-creator-js",
+  "packages": "packages",
+  "name": "Physical-Pinball",
+  "uuid": "d51096a3-bf63-4dc1-8cf7-020c0f45825b",
+  "version": "2.3.3",
+  "id": "c5436c14-5ef0-433d-8f8f-ff187ae10066",
+  "isNew": false
+}
